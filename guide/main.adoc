@@ -1,0 +1,20 @@
+include::settings.adoc[]
+
+= {doctitle}
+{name-op-en}
+v{revision}
+:description: ...
+:doctype: book
+:icons: font
+:toc: left
+:toclevels: 2
+:source-highlighter: coderay
+:source-language: xml
+:sectanchors:
+:sectnums:
+
+{description}
+
+:leveloffset: +1
+
+// Include content here..

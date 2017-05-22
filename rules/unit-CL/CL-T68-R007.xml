@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testSet xmlns="http://difi.no/xsd/vefa/validator/1.0" configuration="peppolbis-t68-base-1.0">
+	<assert>
+		<scope>CL-T68-R007</scope>
+	</assert>
+	<test>
+		<assert>
+			<description>Verify use of code list.</description>
+			<success number="6">CL-T68-R007</success>
+		</assert>
+		<Catalogue xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+			xmlns="urn:oasis:names:specification:ubl:schema:xsd:Catalogue-2">
+
+			<cac:ClassifiedTaxCategory>
+				<cbc:ID>AE</cbc:ID>
+				<cbc:ID>E</cbc:ID>
+				<cbc:ID>S</cbc:ID>
+				<cbc:ID>Z</cbc:ID>
+				<cbc:ID>H</cbc:ID>
+				<cbc:ID>AA</cbc:ID>
+			</cac:ClassifiedTaxCategory>
+
+		</Catalogue>
+	</test>
+	<test>
+		<assert>
+			<description>Verify use of code list.</description>
+			<error number="2">CL-T68-R007</error>
+		</assert>
+		<Catalogue xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+			xmlns="urn:oasis:names:specification:ubl:schema:xsd:Catalogue-2">
+
+			<cac:ClassifiedTaxCategory>
+				<cbc:ID>F</cbc:ID>
+				<cbc:ID>O</cbc:ID>
+			</cac:ClassifiedTaxCategory>
+
+		</Catalogue>
+	</test>
+</testSet>

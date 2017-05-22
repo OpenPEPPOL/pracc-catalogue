@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testSet xmlns="http://difi.no/xsd/vefa/validator/1.0" configuration="peppolbis-t68-base-1.0">
+	<assert>
+		<scope>BII3-T68-R019</scope>
+	</assert>
+	<test>
+		<assert>
+			<description>Verify no error on correct use.</description>
+			<success>BII3-T68-R019</success>
+		</assert>
+		<Catalogue xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+			xmlns="urn:oasis:names:specification:ubl:schema:xsd:Catalogue-2">
+
+			<cac:Dimension>
+				<cbc:AttributeID>TEM</cbc:AttributeID>
+				<cbc:MinimumMeasure>10</cbc:MinimumMeasure>
+				<cbc:MaximumMeasure>20</cbc:MaximumMeasure>
+			</cac:Dimension>
+
+		</Catalogue>
+	</test>
+	<test>
+		<assert>
+			<description>Verify no error on other attribute.</description>
+			<success>BII3-T68-R019</success>
+		</assert>
+		<Catalogue xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+			xmlns="urn:oasis:names:specification:ubl:schema:xsd:Catalogue-2">
+
+			<cac:Dimension>
+				<cbc:AttributeID>HM</cbc:AttributeID>
+				<cbc:MinimumMeasure>20</cbc:MinimumMeasure>
+				<cbc:MaximumMeasure>10</cbc:MaximumMeasure>
+			</cac:Dimension>
+
+		</Catalogue>
+	</test>
+	<test>
+		<assert>
+			<description>Verify error on incorrect use.</description>
+			<error>BII3-T68-R019</error>
+		</assert>
+		<Catalogue xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+			xmlns="urn:oasis:names:specification:ubl:schema:xsd:Catalogue-2">
+
+			<cac:Dimension>
+				<cbc:AttributeID>TEM</cbc:AttributeID>
+				<cbc:MinimumMeasure>20</cbc:MinimumMeasure>
+				<cbc:MaximumMeasure>10</cbc:MaximumMeasure>
+			</cac:Dimension>
+
+		</Catalogue>
+	</test>
+</testSet>

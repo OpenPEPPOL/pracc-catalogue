@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testSet xmlns="http://difi.no/xsd/vefa/validator/1.0" configuration="peppolbis-t68-base-1.0">
+	<assert>
+		<scope>CL-T68-R008</scope>
+	</assert>
+	<test>
+		<assert>
+			<description>Verify use of code list.</description>
+			<success number="6">CL-T68-R008</success>
+		</assert>
+		<Catalogue xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+			xmlns="urn:oasis:names:specification:ubl:schema:xsd:Catalogue-2">
+
+			<cbc:OrderableUnit unitCode="A42"/>
+			<cbc:OrderableUnit unitCode="DWT"/>
+			<cbc:OrderableUnit unitCode="13"/>
+			<cbc:OrderableUnit unitCode="FE"/>
+			<cbc:OrderableUnit unitCode="K6"/>
+			<cbc:OrderableUnit unitCode="ZP"/>
+
+		</Catalogue>
+	</test>
+	<test>
+		<assert>
+			<description>Verify use of code list.</description>
+			<error number="2">CL-T68-R008</error>
+		</assert>
+		<Catalogue xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+			xmlns="urn:oasis:names:specification:ubl:schema:xsd:Catalogue-2">
+
+			<cbc:OrderableUnit unitCode="ZZ"/>
+			<cbc:OrderableUnit unitCode="42"/>
+
+		</Catalogue>
+	</test>
+</testSet>

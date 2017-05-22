@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testSet xmlns="http://difi.no/xsd/vefa/validator/1.0" configuration="peppolbis-t68-base-1.0">
+	<assert>
+		<scope>BII3-T68-R030</scope>
+	</assert>
+	<test>
+		<assert>
+			<description>Verify no error on correct listID.</description>
+			<success>BII3-T68-R030</success>
+		</assert>
+		<Catalogue xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+			xmlns="urn:oasis:names:specification:ubl:schema:xsd:Catalogue-2">
+
+      <cbc:PriceTypeCode listID="UNCL5387"/>
+
+		</Catalogue>
+	</test>
+	<test>
+		<assert>
+			<description>Verify error on incorrect listID.</description>
+			<error number="2">BII3-T68-R030</error>
+		</assert>
+		<Catalogue xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+			xmlns="urn:oasis:names:specification:ubl:schema:xsd:Catalogue-2">
+
+      <cbc:PriceTypeCode/>
+      <cbc:PriceTypeCode listID="UNCL5388"/>
+
+		</Catalogue>
+	</test>
+</testSet>

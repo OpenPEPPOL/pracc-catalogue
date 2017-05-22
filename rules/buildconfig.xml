@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<buildConfigurations xmlns="http://difi.no/xsd/vefa/validator/1.0">
+
+  <package>PEPPOL BIS Pre-Award Catalogue 0.8.0</package>
+
+  <testfolder>test</testfolder>
+  <testfolder>unit-BII3</testfolder>
+  <testfolder>unit-CL</testfolder>
+
+  <!-- CEN BII -->
+  <configuration>
+    <identifier>cenbii-t68-base-1.0</identifier>
+    <title>CEN BII Pre-Award Catalogue 1.0 (Base)</title>
+    <inherit>ubl-catalogue-2.1</inherit>
+    <file source="sch/BIIRULES-UBL-T68.sch" path="xsl/BIIRULES-UBL-T68.xsl" />
+  </configuration>
+
+  <configuration>
+    <identifier>cenbii-t68-base-1.0</identifier>
+    <title>CEN BII Pre-Award Catalogue 1.0 (Profile 35)</title>
+    <profileId>urn:www.cenbii.eu:profile:bii35:ver3.0</profileId>
+    <customizationId>urn:www.cenbii.eu:transaction:biitrdm068:ver3.0</customizationId>
+    <inherit>cenbii-t68-base-1.0</inherit>
+  </configuration>
+
+  <!-- PEPPOL BIS -->
+  <configuration>
+    <identifier>peppolbis-t68-base-1.0</identifier>
+    <title>PEPPOL BIS Pre-Award Catalogue 1.0 (Base)</title>
+    <inherit>cenbii-t68-base-1.0</inherit>
+    <file source="sch/OPENPEPPOL-UBL-T68.sch" path="xsl/OPENPEPPOL-UBL-T68.xsl" />
+  </configuration>
+
+  <configuration>
+    <identifier>peppolbis-t68-base-1.0</identifier>
+    <title>PEPPOL BIS Pre-Award Catalogue 1.0 (Base)</title>
+    <profileId>urn:www.cenbii.eu:profile:bii35:ver3.0</profileId>
+    <customizationId>urn:www.cenbii.eu:transaction:biitrdm068:ver3.0:extended:urn:www.peppol.eu:bis:peppol35:ver1.0</customizationId>
+    <inherit>cenbii-t68-base-1.0</inherit>
+  </configuration>
+
+</buildConfigurations>

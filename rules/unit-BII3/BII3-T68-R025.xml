@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testSet xmlns="http://difi.no/xsd/vefa/validator/1.0" configuration="peppolbis-t68-base-1.0">
+	<assert>
+		<scope>BII3-T68-R025</scope>
+	</assert>
+	<test>
+		<assert>
+			<description>Verify no error on correct listID.</description>
+			<success>BII3-T68-R025</success>
+		</assert>
+		<Catalogue xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+			xmlns="urn:oasis:names:specification:ubl:schema:xsd:Catalogue-2">
+
+      <cac:CountryCode>
+        <cbc:IdentificationCode listID="ISO3166-1:Alpha2"/>
+      </cac:CountryCode>
+
+		</Catalogue>
+	</test>
+	<test>
+		<assert>
+			<description>Verify error on incorrect listID.</description>
+			<error number="2">BII3-T68-R025</error>
+		</assert>
+		<Catalogue xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+			xmlns="urn:oasis:names:specification:ubl:schema:xsd:Catalogue-2">
+
+      <cac:CountryCode>
+        <cbc:IdentificationCode/>
+        <cbc:IdentificationCode listID="ISO3166-1"/>
+      </cac:CountryCode>
+
+		</Catalogue>
+	</test>
+</testSet>
