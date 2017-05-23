@@ -6,6 +6,8 @@
   <testfolder>test</testfolder>
   <testfolder>unit-BII3</testfolder>
   <testfolder>unit-CL</testfolder>
+  <testfolder>unit-EUGEN</testfolder>
+  <testfolder>unit-OP</testfolder>
 
   <!-- CEN BII -->
   <configuration>
@@ -32,10 +34,10 @@
   </configuration>
 
   <configuration>
-    <identifier>peppolbis-t68-base-1.0</identifier>
+    <identifier>peppolbis-t68-35-1.0</identifier>
     <title>PEPPOL BIS Pre-Award Catalogue 1.0 (Base)</title>
     <profileId>urn:www.cenbii.eu:profile:bii35:ver3.0</profileId>
-    <customizationId>urn:www.cenbii.eu:transaction:biitrdm068:ver3.0:extended:urn:www.peppol.eu:bis:peppol35:ver1.0</customizationId>
+    <customizationId>urn:www.cenbii.eu:transaction:biitrdm068:ver3.0:extended:urn:www.peppol.eu:bis:peppol35a:ver1.0</customizationId>
     <inherit>cenbii-t68-base-1.0</inherit>
   </configuration>
 

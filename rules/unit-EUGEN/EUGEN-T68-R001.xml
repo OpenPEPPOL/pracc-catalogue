@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testSet xmlns="http://difi.no/xsd/vefa/validator/1.0" configuration="peppolbis-t68-base-1.0">
+	<assert>
+		<scope>EUGEN-T68-R001</scope>
+	</assert>
+	<test>
+		<assert>
+			<description>No errors when no empty elements are present.</description>
+			<success>EUGEN-T68-R001</success>
+		</assert>
+		<Catalogue xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+			xmlns="urn:oasis:names:specification:ubl:schema:xsd:Catalogue-2">
+
+			<cac:AccountingSupplierParty>
+				<cac:Party>
+					<cac:PartyLegalEntity>
+						<cbc:CompanyID>123456789</cbc:CompanyID>
+						<cbc:RegistrationName>Test</cbc:RegistrationName>
+					</cac:PartyLegalEntity>
+					<cac:PostalAddress>
+						<cbc:CityName>Test</cbc:CityName>
+						<cbc:PostalZone>0000</cbc:PostalZone>
+						<cac:Country>
+							<cbc:IdentificationCode>NO</cbc:IdentificationCode>
+						</cac:Country>
+					</cac:PostalAddress>
+				</cac:Party>
+			</cac:AccountingSupplierParty>
+
+		</Catalogue>
+	</test>
+	<test>
+		<assert>
+			<description>Trigger error when empty elements are present.</description>
+			<error number="5">EUGEN-T68-R001</error>
+		</assert>
+		<Catalogue xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+			xmlns="urn:oasis:names:specification:ubl:schema:xsd:Catalogue-2">
+
+			<cac:AccountingSupplierParty>
+				<cac:Party>
+					<cac:PartyLegalEntity>
+						<cbc:CompanyID></cbc:CompanyID>
+						<cbc:RegistrationName></cbc:RegistrationName>
+					</cac:PartyLegalEntity>
+					<cac:PostalAddress>
+						<cbc:CityName></cbc:CityName>
+						<cbc:PostalZone></cbc:PostalZone>
+						<cac:Country>
+							<cbc:IdentificationCode></cbc:IdentificationCode>
+						</cac:Country>
+					</cac:PostalAddress>
+				</cac:Party>
+			</cac:AccountingSupplierParty>
+
+		</Catalogue>
+	</test>
+	<test>
+		<assert>
+			<description>Trigger error when empty elements are present.</description>
+			<error>EUGEN-T68-R001</error>
+		</assert>
+		<Catalogue xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+			xmlns="urn:oasis:names:specification:ubl:schema:xsd:Catalogue-2">
+
+			<cbc:ID><!-- No content --></cbc:ID>
+
+		</Catalogue>
+	</test>
+	<test>
+		<assert>
+			<description>Trigger error when element contains space.</description>
+			<error>EUGEN-T68-R001</error>
+		</assert>
+		<Catalogue xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+			xmlns="urn:oasis:names:specification:ubl:schema:xsd:Catalogue-2">
+
+			<cbc:ID> </cbc:ID>
+
+		</Catalogue>
+	</test>
+	<test>
+		<assert>
+			<description>Trigger error when element contains tab.</description>
+			<error>EUGEN-T68-R001</error>
+		</assert>
+		<Catalogue xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+			xmlns="urn:oasis:names:specification:ubl:schema:xsd:Catalogue-2">
+
+			<cbc:ID>	</cbc:ID>
+
+		</Catalogue>
+	</test>
+</testSet>
