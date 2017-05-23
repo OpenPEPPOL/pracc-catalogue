@@ -20,6 +20,11 @@
               test="count(*) != 0"
               flag="fatal">Document MUST not contain empty elements.</assert>
     </rule>
+    <rule context="/*">
+      <assert id="EUGEN-T68-R003"
+              test="not(@*:schemaLocation)"
+              flag="fatal">Document MUST not contain schema location.</assert>
+    </rule>
   </pattern>
 
   <!-- BUSINESS RULES -->
