@@ -1,0 +1,21 @@
+[[id_schemes]]
+= Code lists for identifier schemes
+
+.Code lists used to constrain values of schemeIDs for identifiers
+[cols="2,3,3", options="header"]
+|====
+|Business Term
+|Applicable XPath
+|Code list (link or subset values)
+
+| Party identifier
+| cbc:EndpointID[@schemeID]
+a| {policy8}
+#Update to latest version#
+
+| Electronic address identifier (Endpoint)
+| cac:PartyIdentification/cbc:ID[@schemeID]
+a| {policy8}
+#Update to latest version#
+
+|====

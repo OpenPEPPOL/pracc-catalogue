@@ -1,7 +1,10 @@
 :lang: en
 
-:doctitle: PEPPOL BIS Pre-Award Catalogue
+:doctitle: image:peppol.png[float="right"] PEPPOL BIS Pre-Award Catalogue
 :minor: 0.8
 :revision: 0.8.0
+:shared-dir: ../shared
+
 
 :name-op-en: OpenPEPPOL AISBL, Post-Award Coordinating Community
+include::links.adoc[]

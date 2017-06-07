@@ -1,0 +1,4 @@
+[[process]]
+= Business processes
+
+The PEPPOL BIS pre-award catalogue is most normally used in the Advanced Tendering profile ( {bii3} Profile 35) and Tendering ( {bii3} Profile 35), but it can also be used in other choreographies as qualification, DPS, mini competition and re-opening of competition (post-award phase). The use of the pre-award catalogue in these other choreographies are not explained in detail in this document.

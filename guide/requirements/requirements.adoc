@@ -1,0 +1,47 @@
+[[requirements]]
+= Pre-award Catalogue transaction business requirements
+
+The table below gives an overview of the transaction business requirements from {bii3} project on pre-award Catalogue, as well as any specific requirements from the openPEPPOL project.
+
+
+.Legend
+****
+* Requirements with an id *tbr68-xxx* are from {bii3} project on pre-award Catalogue.
+* Requirements with an id = *op-t68-xxx* are {peppol} specific requirements.
+****
+
+#Add peppol specific req. to the tables#
+
+.General business requirements
+[cols="1,4", options="header"]
+|====
+|Id
+|Requirement
+
+|tbr68-001
+|A pre-award catalogue shall contain the procurement reference number of the call for tender. It shall be reusable in post-award processes, i.e., a pre-award catalogue shall have information that makes it possible to use  as a post-award catalogue, even if some information may be added.
+|====
+
+
+.Business requirements on item level
+[cols="1,4", options="header"]
+|====
+|Id
+|Requirement
+|tbr68-002
+|It shall be possible to specify how an item can be ordered. This includes allowed units of measure, order sizes, minimal and maximal order sizes, etc. Due to restriction from the production process or to simplify or to limit the costs of the ordering and logistics process the order size is restricted. Thus, the buyer needs information to place a correct order that is not denied by the supplier.
+
+|tbr68-003
+|It shall be possible to specify how the delivered items will be packaged. To indicate from which number of ordered order units this package unit will be delivered.
+
+
+|tbr68-004
+|It shall be possible to specify logistic conditions and other needed service information on how the item will be delivered. This includes information on maximum and minimum storage temperature, information needed for cross-border logistics processes. To define the work or services to be done for each package unit along the supply chain.
+
+|tbr68-005
+|It shall be possible to specify how the item is priced. This includes factors that have influence on the price as well as relationships to other parts of the catalogue that may have impact on the price. The price can be dependent on many factors, e.g., order size, delivery region (down to the city level), allowance, charges, currency, etc. Prices shall not be negative.
+
+|tbr68-007
+|It shall be possible to provide information that helps to search for the item, e.g., keywords or item description used in a full text search.
+
+|====

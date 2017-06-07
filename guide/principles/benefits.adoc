@@ -1,0 +1,9 @@
+[[benefits]]
+= Benefits
+
+PEPPOL BIS pre-award catalogue will stimulate the service provider marked to develop services that covers tendering processes both for CA´s and EO´s. Pre-award catalogue together with metadata transaction 090 tendering and confirmation message trdm 045 will:
+
+* make it possible for CA to evaluate products and services automatically through their tendering tools
+* save time for EO to offer their products and services to CA when the list of products and services are standardized
+*	possibility for EO´s to use tools to pre-fill their information before the specific tender and send the offer in a structured way through CEF eDelivery (PEPPOL) infrastructure. The benefit is that EO use one tool in different tenders instead of dealing with different interfaces depending on which tool CA use.
+* possibility for EO´s to use the PEPPOL BIS pre-award catalogue xml when up-loading the tender in a 3-corner model on condition that tendering systems are compatible.
