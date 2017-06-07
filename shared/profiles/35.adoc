@@ -1,4 +1,5 @@
-= Profile 35 - Advanced Tendering with pre-award catalogue
+
+== Profile 35 - Advanced Tendering with pre-award catalogue
 
 ProfileID::
 urn:www.cenbii.eu:profile:bii35:ver1.0
@@ -9,7 +10,7 @@ urn:www.cenbii.eu:profile:bii35:ver1.0
 | CustomizationID
 | Role
 
-| Despatch Advice
+| PreAward Catalogue
 | urn:www.cenbii.eu:transaction:biitrns068:ver1.0 :extended:urn:www.peppol.eu:bis:peppol35a:ver1.0
 | Economic Operator
 |===

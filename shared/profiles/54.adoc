@@ -1,5 +1,5 @@
 
-= Profile 54 - Tendering
+== Profile 54 - Tendering
 
 ProfileID::
 urn:www.cenbii.eu:profile:bii54:ver1.0
@@ -10,7 +10,7 @@ urn:www.cenbii.eu:profile:bii54:ver1.0
 | CustomizationID
 | Role
 
-| Despatch Advice
+| PreAward Catalogue
 | urn:www.cenbii.eu:transaction:biitrns068:ver1.0 :extended:urn:www.peppol.eu:bis:peppol54a:ver1.0
 | Economic Operator
 |===
