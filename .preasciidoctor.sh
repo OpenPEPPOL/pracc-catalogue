@@ -2,7 +2,7 @@
 
 mkdir -p /tmp/rules
 
-for x in $(find rules/*/sch -type f); do
+for x in $(find rules/sch -type f); do
 
 	echo "Generate table for $(basename $x)"
 

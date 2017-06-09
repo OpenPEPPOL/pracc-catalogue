@@ -7,6 +7,6 @@ following:
 
 include::party_identifiers.adoc[]
 
-#include::version.adoc[]
+// include::version.adoc[]
 
 include::profiles.adoc[]
