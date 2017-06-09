@@ -6,5 +6,7 @@ principles for any identifiers used in the PEPPOL environment. The policies that
 following:
 
 include::party_identifiers.adoc[]
-include::version.adoc[]
+
+#include::version.adoc[]
+
 include::profiles.adoc[]

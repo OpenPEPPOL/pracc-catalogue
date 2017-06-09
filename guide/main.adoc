@@ -1,4 +1,5 @@
 include::settings.adoc[]
+
 = {doctitle}
 {name-op-en}
 v{revision}
@@ -19,10 +20,17 @@ v{revision}
 :leveloffset: +1
 
 include::introduction.adoc[]
+
 include::principles/index.adoc[]
+
 include::requirements/requirements.adoc[]
+
 include::process/index.adoc[]
+
 include::rules/index.adoc[]
+
 include::codes/index.adoc[]
+
 include::descriptions/index.adoc[]
+
 include::profiles/index.adoc[]
