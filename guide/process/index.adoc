@@ -5,8 +5,9 @@
 
 include::process.adoc[]
 
+////
 include::tendering.adoc[]
-
 include::adv_tendering.adoc[]
+////
 
 :leveloffset: -1
