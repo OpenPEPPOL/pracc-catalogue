@@ -5,6 +5,7 @@
 
 
 include::parties.adoc[]
+include::label.adoc[]
 
 // include::items.adoc[]
 
