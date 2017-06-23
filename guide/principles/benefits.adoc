@@ -5,7 +5,7 @@ PEPPOL BIS pre-award catalogue will stimulate the service provider marked to dev
 
 * make it possible for CA to evaluate products and services automatically through their tendering tools
 * easier for the EOs to participate in different tendering processes.
-* save time for both EO to offer their products and services to CA when the list of products and services are standardized
+* save time for the EO to offer their products and services to CA when the list of products and services are standardized
 * save time for the CA to have a standardized list of products and services
 *	possibility for EO´s to use tools to pre-fill their information before the specific tender and send the offer in a structured way through CEF eDelivery (PEPPOL) infrastructure. The benefit is that EO use one tool in different tenders instead of dealing with different interfaces depending on which tool CA use.
 * possility  for the CA to use the pre-award catalogue in mini-competitions and re-opening of competitions
