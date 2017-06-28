@@ -16,6 +16,7 @@ v{revision}
 :title-logo-image: {imagesdir}/peppol.png
 
 {description}
+include::{shared-dir}/copyright.adoc[]
 
 :leveloffset: +1
 
