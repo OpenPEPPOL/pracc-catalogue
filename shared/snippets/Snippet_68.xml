@@ -38,7 +38,7 @@
 		</cac:PostalAddress>
 	</cac:ProviderParty>
 	<!-- end::provider[] -->
-	
+
 	<!-- tag::receiver[] -->
 	<cac:ReceiverParty>
 		<cac:PartyIdentification>
@@ -80,44 +80,47 @@
 				<cbc:PriceAmount currencyID="EUR">1.5</cbc:PriceAmount>
 			</cac:Price>
 		</cac:RequiredItemLocationQuantity>
+		<!-- tag::item[] -->
 		<cac:Item>
-		<cbc:Description>Milk standard 3%</cbc:Description>
-		<cbc:PackQuantity>10</cbc:PackQuantity>
-		<cbc:PackSizeNumeric>10</cbc:PackSizeNumeric>
-		<cbc:Name>Milk standard 3%</cbc:Name>
-		<cbc:Keyword>Milk</cbc:Keyword>
-		<cbc:BrandName>Branded Milk</cbc:BrandName>
-		<cac:SellersItemIdentification>
-			<cbc:ID>89388789930</cbc:ID>
-		</cac:SellersItemIdentification>
-		<cac:StandardItemIdentification>
-			<cbc:ID schemeID="GTIN">99023409093843</cbc:ID>
-		</cac:StandardItemIdentification>
-		<cac:ItemSpecificationDocumentReference>
-			<cbc:ID>2384-34232-342-34-2333</cbc:ID>
-			<cac:Attachment>
-				<cbc:EmbeddedDocumentBinaryObject mimeCode="application/pdf">ZGVmYXVsdA==</cbc:EmbeddedDocumentBinaryObject>
-			</cac:Attachment>
-		</cac:ItemSpecificationDocumentReference>
-		<cac:OriginCountry>
-			<cbc:IdentificationCode listID="ISO3166-1:Alpha2">FR</cbc:IdentificationCode>
-		</cac:OriginCountry>
-		<cac:CommodityClassification>
-			<cbc:ItemClassificationCode listID="CPV">783xxxxxxxx</cbc:ItemClassificationCode>
-		</cac:CommodityClassification>
-		<cac:ClassifiedTaxCategory>
-			<cbc:Percent>10</cbc:Percent>
-			<cac:TaxScheme>
-				<cbc:TaxTypeCode>VAT</cbc:TaxTypeCode>
-			</cac:TaxScheme>
-		</cac:ClassifiedTaxCategory>
-		<cac:AdditionalItemProperty>
-			<cbc:Name>Fat % for milk</cbc:Name>
-			<cbc:Value>3%</cbc:Value>
-		</cac:AdditionalItemProperty>
-	</cac:Item>
-	<cac:CallForTendersLineReference>
-		<cbc:LineID>1</cbc:LineID>
-	</cac:CallForTendersLineReference>
+			<cbc:Description>Milk standard 3%</cbc:Description>
+			<cbc:PackQuantity>10</cbc:PackQuantity>
+			<cbc:PackSizeNumeric>10</cbc:PackSizeNumeric>
+			<cbc:Name>Milk standard 3%</cbc:Name>
+			<cbc:Keyword>Milk</cbc:Keyword>
+			<cbc:BrandName>Branded Milk</cbc:BrandName>
+			<cac:SellersItemIdentification>
+				<cbc:ID>89388789930</cbc:ID>
+			</cac:SellersItemIdentification>
+			<cac:StandardItemIdentification>
+				<cbc:ID schemeID="GTIN">99023409093843</cbc:ID>
+			</cac:StandardItemIdentification>
+			<cac:ItemSpecificationDocumentReference>
+				<cbc:ID>2384-34232-342-34-2333</cbc:ID>
+				<cac:Attachment>
+					<cbc:EmbeddedDocumentBinaryObject mimeCode="application/pdf"
+						>ZGVmYXVsdA==</cbc:EmbeddedDocumentBinaryObject>
+				</cac:Attachment>
+			</cac:ItemSpecificationDocumentReference>
+			<cac:OriginCountry>
+				<cbc:IdentificationCode listID="ISO3166-1:Alpha2">FR</cbc:IdentificationCode>
+			</cac:OriginCountry>
+			<cac:CommodityClassification>
+				<cbc:ItemClassificationCode listID="CPV">783xxxxxxxx</cbc:ItemClassificationCode>
+			</cac:CommodityClassification>
+			<cac:ClassifiedTaxCategory>
+				<cbc:Percent>10</cbc:Percent>
+				<cac:TaxScheme>
+					<cbc:TaxTypeCode>VAT</cbc:TaxTypeCode>
+				</cac:TaxScheme>
+			</cac:ClassifiedTaxCategory>
+			<cac:AdditionalItemProperty>
+				<cbc:Name>Fat % for milk</cbc:Name>
+				<cbc:Value>3%</cbc:Value>
+			</cac:AdditionalItemProperty>
+		</cac:Item>
+		<!-- end::item[] -->
+		<cac:CallForTendersLineReference>
+			<cbc:LineID>1</cbc:LineID>
+		</cac:CallForTendersLineReference>
 	</cac:CatalogueLine>
 </Catalogue>
