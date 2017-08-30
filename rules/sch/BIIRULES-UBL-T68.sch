@@ -94,7 +94,7 @@
               test="cac:Item"
               flag="fatal">Each pre-award catalogue line MUST specify at least one item detail</assert>
       <assert id="BII3-T68-R022"
-              test="cbc:MinimumOrderQuantity &lt;= cbc:MaximumOrderQuantity"
+              test="not(cbc:MinimumOrderQuantity) or not(cbc:MaximumOrderQuantity) or cbc:MinimumOrderQuantity &lt;= cbc:MaximumOrderQuantity"
               flag="fatal">The Minimum order quantity MUST be smaller than or equal to the Maximum order quantity.</assert>
     </rule>
     <rule context="cac:Price/cac:ValidityPeriod">

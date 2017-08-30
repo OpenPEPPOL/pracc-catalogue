@@ -21,6 +21,50 @@
 	</test>
 	<test>
 		<assert>
+			<description>Verify no error on correct use.</description>
+			<success>BII3-T68-R022</success>
+		</assert>
+		<Catalogue xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+			xmlns="urn:oasis:names:specification:ubl:schema:xsd:Catalogue-2">
+
+			<cac:CatalogueLine>
+				<cbc:MaximumOrderQuantity>20</cbc:MaximumOrderQuantity>
+			</cac:CatalogueLine>
+
+		</Catalogue>
+	</test>
+	<test>
+		<assert>
+			<description>Verify no error on correct use.</description>
+			<success>BII3-T68-R022</success>
+		</assert>
+		<Catalogue xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+			xmlns="urn:oasis:names:specification:ubl:schema:xsd:Catalogue-2">
+
+			<cac:CatalogueLine>
+				<cbc:MinimumOrderQuantity>10</cbc:MinimumOrderQuantity>
+			</cac:CatalogueLine>
+
+		</Catalogue>
+	</test>
+	<test>
+		<assert>
+			<description>Verify no error on correct use.</description>
+			<success>BII3-T68-R022</success>
+		</assert>
+		<Catalogue xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+			xmlns="urn:oasis:names:specification:ubl:schema:xsd:Catalogue-2">
+
+			<cac:CatalogueLine>
+			</cac:CatalogueLine>
+
+		</Catalogue>
+	</test>
+	<test>
+		<assert>
 			<description>Verify error on incorrect use.</description>
 			<error>BII3-T68-R022</error>
 		</assert>
