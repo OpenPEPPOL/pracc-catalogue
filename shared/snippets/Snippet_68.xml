@@ -14,12 +14,16 @@
 		<cbc:StartDate>2016-08-01</cbc:StartDate>
 		<cbc:EndDate>2016-12-31</cbc:EndDate>
 	</cac:ValidityPeriod>
+	<!-- tag::procurement[] -->
 	<cac:ReferencedContract>
 		<cbc:ContractTypeCode listID="UNCL1001">311</cbc:ContractTypeCode>
+		<!-- 1 -->
 		<cac:ContractDocumentReference>
 			<cbc:ID>CRT1387</cbc:ID>
+			<!-- 2 -->
 		</cac:ContractDocumentReference>
 	</cac:ReferencedContract>
+	<!-- end::procurement[] -->
 	<!-- tag::provider[] -->
 	<cac:ProviderParty>
 		<cac:PartyIdentification>
@@ -57,8 +61,11 @@
 		</cac:PostalAddress>
 	</cac:ReceiverParty>
 	<!-- end::receiver[] -->
+	<!-- tag::lot-ref[] -->
 	<cac:CatalogueLine>
 		<cbc:ID>1</cbc:ID>
+		<cbc:ContractSubdivision>32</cbc:ContractSubdivision>
+		<!-- end::lot-ref[] -->
 		<cbc:OrderableIndicator>true</cbc:OrderableIndicator>
 		<cbc:OrderableUnit>LTR</cbc:OrderableUnit>
 		<cbc:ContentUnitQuantity unitCode="LTR">1</cbc:ContentUnitQuantity>
@@ -81,7 +88,7 @@
 				<cbc:PriceAmount currencyID="EUR">1.5</cbc:PriceAmount>
 			</cac:Price>
 		</cac:RequiredItemLocationQuantity>
-		<!-- tag::req_item[] -->	
+		<!-- tag::req_item[] -->
 		<!-- tag::item[] -->
 		<cac:Item>
 			<cbc:Description>Milk standard 3%</cbc:Description>

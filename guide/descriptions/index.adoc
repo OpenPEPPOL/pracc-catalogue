@@ -7,5 +7,6 @@
 include::parties.adoc[]
 include::label.adoc[]
 include::item-properties.adoc[]
+include::procurement-ref.adoc[]
 
 :leveloffset: -1
