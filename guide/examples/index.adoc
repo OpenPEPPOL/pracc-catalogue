@@ -1,0 +1,18 @@
+[appendix]
+
+= Example files
+
+== Simple Pre-award catalogue:
+
+[source]
+----
+include::.{shared-dir}/examples/Profile54_trdm68.xml[]
+----
+
+== Pre-award catalogue with different levels of quantity:
+
+
+[source]
+----
+include::.{shared-dir}/examples/Profile54_trdm68_levels.xml[]
+----
