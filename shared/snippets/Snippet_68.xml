@@ -70,6 +70,7 @@
 			<cbc:PriceAmount currencyID="EUR">1.5</cbc:PriceAmount>
 			<cbc:Quantity unitCode="LTR">1</cbc:Quantity>
 		</cac:ItemComparison>
+		<!-- tag::req_item[] -->
 		<cac:RequiredItemLocationQuantity>
 			<cac:ApplicableTerritoryAddress>
 				<cac:Country>
@@ -80,6 +81,7 @@
 				<cbc:PriceAmount currencyID="EUR">1.5</cbc:PriceAmount>
 			</cac:Price>
 		</cac:RequiredItemLocationQuantity>
+		<!-- tag::req_item[] -->	
 		<!-- tag::item[] -->
 		<cac:Item>
 			<cbc:Description>Milk standard 3%</cbc:Description>

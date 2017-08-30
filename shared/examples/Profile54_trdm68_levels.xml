@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Catalogue xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+	xmlns="urn:oasis:names:specification:ubl:schema:xsd:Catalogue-2">
+	<cbc:UBLVersionID>2.1</cbc:UBLVersionID>
+	<!--<cbc:CustomizationID>urn:www.cenbii.eu:transaction:biitrns019:ver2.0:extended:urn:www.peppol.eu:bis:peppol1a:ver2.0</cbc:CustomizationID>
+	<cbc:ProfileID>urn:www.cenbii.eu:profile:bii01:ver2.0</cbc:ProfileID>
+-->	
+	<cbc:CustomizationID>urn:www.cenbii.eu:transaction:biitrdm068:ver3.0:extended:urn:www.peppol.eu:bis:peppol35a:ver1.0</cbc:CustomizationID>
+	<cbc:ProfileID>urn:www.cenbii.eu:profile:bii35:ver3.0</cbc:ProfileID>
+	<cbc:ID>1387</cbc:ID>
+	<cbc:Name>A pre-award catalogue</cbc:Name>
+	<cbc:IssueDate>2014-08-01</cbc:IssueDate>
+	<cbc:VersionID>1</cbc:VersionID>
+	<cac:ValidityPeriod>
+		<cbc:StartDate>2016-08-01</cbc:StartDate>
+		<cbc:EndDate>2016-12-31</cbc:EndDate>
+	</cac:ValidityPeriod>
+	<cac:ReferencedContract>
+		<cbc:ID>CRT1387</cbc:ID>
+	</cac:ReferencedContract>
+	<cac:ProviderParty>
+		<cac:PartyIdentification>
+			<cbc:ID schemeID="GLN">8075367945271</cbc:ID>
+		</cac:PartyIdentification>
+		<cac:PartyName>
+			<cbc:Name>ABC Supplier Ltd.</cbc:Name>
+		</cac:PartyName>
+		<cac:PostalAddress>
+			<cbc:StreetName>Elm Street No:1</cbc:StreetName>
+			<cbc:CityName>Gotham</cbc:CityName>
+			<cbc:PostalZone>06800</cbc:PostalZone>
+			<cac:Country>
+				<cbc:IdentificationCode listID="ISO3166-1:Alpha2">DE</cbc:IdentificationCode>
+			</cac:Country>
+		</cac:PostalAddress>
+	</cac:ProviderParty>
+
+	<cac:ReceiverParty>
+		<cac:PartyIdentification>
+			<cbc:ID schemeID="ZZZ">14920263491</cbc:ID>
+		</cac:PartyIdentification>
+		<cac:PartyName>
+			<cbc:Name>DEF Customer Ltd.</cbc:Name>
+		</cac:PartyName>
+		<cac:PostalAddress>
+			<cbc:StreetName>Sesame Street No:1</cbc:StreetName>
+			<cbc:CityName>Gotham</cbc:CityName>
+			<cbc:PostalZone>06801</cbc:PostalZone>
+			<cac:Country>
+				<cbc:IdentificationCode listID="ISO3166-1:Alpha2">DE</cbc:IdentificationCode>
+			</cac:Country>
+		</cac:PostalAddress>
+	</cac:ReceiverParty>
+
+	<cac:CatalogueLine>
+		<cbc:ID>1</cbc:ID>
+		<cbc:OrderableUnit>EA</cbc:OrderableUnit>
+		<cbc:ContentUnitQuantity unitCode="EA" unitCodeListID="UNECERec20"
+			>500</cbc:ContentUnitQuantity>
+		<cbc:OrderQuantityIncrementNumeric>1</cbc:OrderQuantityIncrementNumeric>
+		<cbc:MinimumOrderQuantity unitCode="CS" unitCodeListID="UNECERec20"
+			>1</cbc:MinimumOrderQuantity>
+		<cbc:PackLevelCode listID="GS17009:PEPPOL">CU</cbc:PackLevelCode>
+		<cac:Item>
+			<cbc:PackSizeNumeric>1</cbc:PackSizeNumeric>
+			<cbc:Name languageID="en">500 copy paper</cbc:Name>
+			<cac:SellersItemIdentification>
+				<cbc:ID>A</cbc:ID>
+			</cac:SellersItemIdentification>
+			<cac:OriginCountry>
+				<cbc:IdentificationCode listID="ISO3166-1:Alpha2">FR</cbc:IdentificationCode>
+			</cac:OriginCountry>
+			<cac:CommodityClassification>
+				<cbc:ItemClassificationCode listID="CPV">97687676576</cbc:ItemClassificationCode>
+			</cac:CommodityClassification>
+			<cac:ClassifiedTaxCategory>
+				<cbc:ID schemeID="UNCL5305">S</cbc:ID>
+				<cbc:Percent>25</cbc:Percent>
+				<cac:TaxScheme>
+					<cbc:ID>VAT</cbc:ID>
+				</cac:TaxScheme>
+			</cac:ClassifiedTaxCategory>
+		</cac:Item>
+		<cac:CallForTendersLineReference>
+			<cbc:LineID>1</cbc:LineID>
+		</cac:CallForTendersLineReference>
+	</cac:CatalogueLine>
+
+	<cac:CatalogueLine>
+		<cbc:ID>2</cbc:ID>
+		<cbc:OrderableUnit>CS</cbc:OrderableUnit>
+		<cbc:ContentUnitQuantity unitCode="EA" unitCodeListID="UNECERec20"
+			>2500</cbc:ContentUnitQuantity>
+		<cbc:OrderQuantityIncrementNumeric>1</cbc:OrderQuantityIncrementNumeric>
+		<cbc:MinimumOrderQuantity unitCode="CS" unitCodeListID="UNECERec20"
+			>1</cbc:MinimumOrderQuantity>
+		<cbc:PackLevelCode listID="GS17009:PEPPOL">TU</cbc:PackLevelCode>
+		<cac:ComponentRelatedItem>
+			<cbc:ID>A</cbc:ID>
+			<cbc:Quantity unitCode="EA" unitCodeListID="UNECERec20">5</cbc:Quantity>
+		</cac:ComponentRelatedItem>
+		<cac:Item>
+			<cbc:PackQuantity unitCode="CS" unitCodeListID="UNECERec20">5</cbc:PackQuantity>
+			<cbc:PackSizeNumeric>5</cbc:PackSizeNumeric>
+			<cbc:Name languageID="en">5*500 Copy paper</cbc:Name>
+			<cac:SellersItemIdentification>
+				<cbc:ID>AA</cbc:ID>
+			</cac:SellersItemIdentification>
+			<cac:OriginCountry>
+				<cbc:IdentificationCode listID="ISO3166-1:Alpha2">FR</cbc:IdentificationCode>
+			</cac:OriginCountry>
+			<cac:CommodityClassification>
+				<cbc:ItemClassificationCode listID="CPV">23435465674</cbc:ItemClassificationCode>
+			</cac:CommodityClassification>
+			<cac:ClassifiedTaxCategory>
+				<cbc:ID schemeID="UNCL5305">S</cbc:ID>
+				<cbc:Percent>25</cbc:Percent>
+				<cac:TaxScheme>
+					<cbc:ID>VAT</cbc:ID>
+				</cac:TaxScheme>
+			</cac:ClassifiedTaxCategory>
+		</cac:Item>
+		<cac:CallForTendersLineReference>
+			<cbc:LineID>2</cbc:LineID>
+		</cac:CallForTendersLineReference>
+	</cac:CatalogueLine>
+	<cac:CatalogueLine>
+		<cbc:ID>2</cbc:ID>
+		<cbc:OrderableUnit>CS</cbc:OrderableUnit>
+		<cbc:ContentUnitQuantity unitCode="EA" unitCodeListID="UNECERec20"
+			>2500</cbc:ContentUnitQuantity>
+		<cbc:OrderQuantityIncrementNumeric>1</cbc:OrderQuantityIncrementNumeric>
+		<cbc:MinimumOrderQuantity unitCode="CS" unitCodeListID="UNECERec20"
+			>1</cbc:MinimumOrderQuantity>
+		<cbc:PackLevelCode listID="GS17009:PEPPOL">TU</cbc:PackLevelCode>
+		<cac:ComponentRelatedItem>
+			<cbc:ID>AA</cbc:ID>
+			<cbc:Quantity unitCode="CS" unitCodeListID="UNECERec20">18</cbc:Quantity>
+		</cac:ComponentRelatedItem>
+		<cac:Item>
+			<cbc:PackQuantity unitCode="CS" unitCodeListID="UNECERec20">18</cbc:PackQuantity>
+			<cbc:PackSizeNumeric>90</cbc:PackSizeNumeric>
+			<cbc:Name languageID="en">Pallet of Copy paper</cbc:Name>
+			<cac:SellersItemIdentification>
+				<cbc:ID>AAA</cbc:ID>
+			</cac:SellersItemIdentification>
+			<cac:OriginCountry>
+				<cbc:IdentificationCode listID="ISO3166-1:Alpha2">FR</cbc:IdentificationCode>
+			</cac:OriginCountry>
+			<cac:CommodityClassification>
+				<cbc:ItemClassificationCode listID="CPV">123456788</cbc:ItemClassificationCode>
+			</cac:CommodityClassification>
+			<cac:ClassifiedTaxCategory>
+				<cbc:ID schemeID="UNCL5305">S</cbc:ID>
+				<cbc:Percent>25</cbc:Percent>
+				<cac:TaxScheme>
+					<cbc:ID>VAT</cbc:ID>
+				</cac:TaxScheme>
+			</cac:ClassifiedTaxCategory>
+		</cac:Item>
+		<cac:CallForTendersLineReference>
+			<cbc:LineID>3</cbc:LineID>
+		</cac:CallForTendersLineReference>
+	</cac:CatalogueLine>
+</Catalogue>

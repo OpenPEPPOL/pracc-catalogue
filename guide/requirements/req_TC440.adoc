@@ -1,8 +1,5 @@
-should[[requirements]]
-= Pre-award Catalogue transaction business requirements
 
-The table below gives an overview of the transaction business requirements for the pre-award catalogue. The requirements are derived from the {bii3} project on pre-award Catalogue, as well as the catalogue work from TC440.
-
+= Test
 
 .General business requirements
 [cols="1,4", options="header"]
@@ -11,7 +8,7 @@ The table below gives an overview of the transaction business requirements for t
 |Requirement
 
 |op-t68-001
-|The specification on the requested kind of goods and/or services shall be provided in a structured description.
+|The specification on the requested kind of goods and/or services shall be provided in a structured description..
 
 |op-t68-002
 |A pre-award catalogue shall contain the procurement reference number of the call for tenders.
@@ -48,16 +45,16 @@ The table below gives an overview of the transaction business requirements for t
 |The issuing catalogue provider shall be identified in the transaction with a name, an address, the country of registration, an endpoint and should include an identifier.
 
 |op-t68-017
-|The corresponding economic operator offering the listed items in the catalogue shall be identified in the transaction with a name, an address, the country of registration, an endpoint and should include an identifier. This might be the same party as the catalogue provider.
+|The corresponding economic operator offering the listed items in the catalogue be identified in the transaction with a name, an address, the country of registration, an endpoint and should include an identifier. This might be the same party as the catalogue provider.
 
 |op-t68-018
-|The party receiving the pre-award catalogue (catalogue receiver) shall be identified in the transaction with a name, an address, the country of registration, an endpoint and should include an identifier.
+|The party receiving the pre-award catalogue (catalogue receiver) shall be identified in the transaction with a name, an address, the country of registration, an endpoint and should include an identifier. This might be the same party as the catalogue provider.
 
 |op-t68-019
 |The contracting authority the pre-award catalogue is offered to shall be identified in the transaction with a name, an address, the country of registration, an endpoint and should include an identifier. This might be the same party as the catalogue receiver.
 
 |op-t68-020
-|The transaction may include contact information to the supplier and customer. E-Mail or internet address at which the procurement documents shall be available for unrestricted and full direct access, free of charge.
+|The transaction may include information about contacts to obtain additional information. E-Mail or internet address at which the procurement documents shall be available for unrestricted and full direct access, free of charge.
 
 |op-t68-021
 |It shall be possible to check the integrity and authentication of the information content and to audit these aspects of the content. It shall be possible to check that the pre-award catalogue is authentic.
@@ -91,10 +88,10 @@ The table below gives an overview of the transaction business requirements for t
 |A catalogue line may specify in which period of time the catalogue line is valid.
 
 |op-t68-036
-|A catalogue line should provide for an indicator that clearly states whether the line item can be ordered according to the information given in the line.
+|A catalogue line must provide for an indicator that clearly states whether the line item can be ordered according to the information given in the line.
 
 |op-t68-037
-|A catalogue line should provide for additional information about items in the form of attachments and external references.
+|A catalogue line must provide for additional information about items in the form of attachments and external references.
 
 |====
 
@@ -115,7 +112,7 @@ The table below gives an overview of the transaction business requirements for t
 |An item may have a description.
 
 |op-t68-043
-|It shall be possible to specify how an item can be ordered. This includes amongst others allowed units of measure, order sizes, minimal and maximal order sizes. There might exist restrictions from the production process or a need to simplify or limit the costs of the ordering and logistics process, so that the order size is restricted. Thus, the buyer needs information to place a correct order that is not denied by the supplier.
+|It shall be possible to specify how an item can be ordered. This includes allowed units of measure, order sizes, minimal and maximal order sizes, etc. Due to restriction from the production process or to simplify or to limit the costs of the ordering and logistics process the order size is restricted. Thus, the buyer needs information to place a correct order that is not denied by the supplier.
 
 |op-t68-044
 |It shall be possible to specify how the delivered items will be packaged. To indicate from which number of ordered order units this package unit will be delivered.
@@ -127,7 +124,7 @@ The table below gives an overview of the transaction business requirements for t
 |It shall be possible to specify how the item is priced. This includes factors that have influence on the price as well as relationships to other parts of the catalogue that may have impact on the price. The price can be dependent on many factors, e.g., order size, delivery region (down to the city level), allowance, charges, currency, etc.
 
 |op-t68-047
-|It should be possible to specify the period of time an item price is valid. If no validity period is specified, the price is valid until cancelled. The same as in tbr19-003, but on the item level. This allows to have items with different validity periods in the same catalogue. This does not mean, that the item will expire. It only means, that after this period the item has to be ordered for a different price.
+|It must be possible to specify the period of time an item price is valid. If no validity period is specified, the price is valid until cancelled. The same as in tbr19-003, but on the item level. This allows to have items with different validity periods in the same catalogue. This does not mean, that the item will expire. It only means, that after this period the item has to be ordered for a different price.
 
 |op-t68-048
 |Prices shall not be negative.
@@ -151,28 +148,28 @@ The table below gives an overview of the transaction business requirements for t
 |An item shall include information that allow to compare the item with other items.
 
 |op-t68-055
-|It should be possible to provide information on the product marking, e.g., to indicate that environmental or social requirements on the item production were followed. Procurement managers need information about environmental marking applicable for a given item in order to ensure that environmental, ecological, food safety and basic human rights aspects were respected. On the other side, sales managers wish to provide this kind of information, e.g., for marketing purposes.
+|It must be possible to provide information on the product marking, e.g., to indicate that environmental or social requirements on the item production were followed. Procurement managers need information about environmental marking applicable for a given item in order to ensure that environmental, ecological, food safety and basic human rights aspects were respected. On the other side, sales managers wish to provide this kind of information, e.g., for marketing purposes.
 
 |op-t68-056
-|It should be possible to specify the manufacturer of the item. In particular, for the case where the supplier is different from the manufacturer of the item.
+|It must be possible to specify the manufacturer of the item. In particular, for the case where the supplier is different from the manufacturer of the item.
 
 |op-t68-057
-|It should be possible to specify hazard indicators for an item by any indicator system. If an item can be a danger to people or the environment, so called hazardous goods, often legal requirements demand that such items have indicators to indicate the danger that come from this item. Furthermore, such items require special handling in the logistics process
+|It must be possible to specify hazard indicators for an item by any indicator system. If an item can be a danger to people or the environment, so called hazardous goods, often legal requirements demand that such items have indicators to indicate the danger that come from this item. Furthermore, such items require special handling in the logistics process
 
 |op-t68-058
 |It shall be possible to specify the semantic relationships with cardinalities between different items in the pre-award catalogue request. In particular, it shall be possible to specify part-of relationships, to specify that not only an item is tendered, but also additional items belonging to it. E.g., items that are accessories for other items or are replacements for defect components of an item. This helps to specify for instance that not only printers are tendered, but also print cartridges.
 
 |op-t68-059
-|It should be possible to specify a delivery location on line level, with address, city, post code, etc., so that all details on each line are dependent on this location, including price, tax and other specifications. Needed to support the buying decision, to see how much has to be paid in the end.
+|It must be possible to specify a delivery location on line level, with address, city, post code, etc., so that all details on each line are dependent on this location, including price, tax and other specifications. Needed to support the buying decision, to see how much has to be paid in the end.
 
 |op-t68-060
-|It should be possible to specify a manufacturing date, a best before date and an expiry date (last date when product may be used or consumed) for an item.
+|It must be possible to specify a manufacturing date, a best before date and an expiry date (last date when product may be used or consumed) for an item.
 
 |op-t68-061
-|It should be possible to specify serial numbers, batch numbers and lot numbers for an item.
+|It must be possible to specify serial numbers, batch numbers and lot numbers for an item.
 
 op-t68-062
-|It should be possible to state the country of origin for an item.
+|It must be possible to state the country of origin for an item.
 
 
 |====
