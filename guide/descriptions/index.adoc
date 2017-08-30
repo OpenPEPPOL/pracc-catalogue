@@ -6,7 +6,6 @@
 
 include::parties.adoc[]
 include::label.adoc[]
-
-// include::items.adoc[]
+include::item-properties.adoc[]
 
 :leveloffset: -1
