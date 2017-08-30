@@ -1,4 +1,4 @@
-should[[requirements]]
+[[requirements]]
 = Pre-award Catalogue transaction business requirements
 
 The table below gives an overview of the transaction business requirements for the pre-award catalogue. The requirements are derived from the {bii3} project on pre-award Catalogue, as well as the catalogue work from TC440.
