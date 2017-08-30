@@ -10,7 +10,7 @@
 |Applicable XPath
 |Code list (link or subset values)
 
-| Document type
+| Attachment description code
 | UNCL1001
 | cbc:DocumentTypeCode
 a| link:https://www.unece.org/fileadmin/DAM/trade/untdid/d17a/tred/tred1001.htm[UN/CEFACT code list 1001, D.17A]
@@ -33,12 +33,14 @@ a| link:http://www.iso.org/iso/home/standards/country_codes.htm[ISO 3166-1]
 | cbc:UNDGCode
 a| link:https://www.unece.org/fileadmin/DAM/trade/untdid/d17a/tred/tred8273.htm[UN/CEFACT code list 8273, D.17A]
 
-| Contract identifier
+| Contract type (procurement project identifier)
 | UNCL1001
 | cbc:ContractTypeCode
-a| link:https://www.unece.org/fileadmin/DAM/trade/untdid/d17a/tred/tred1001.htm[UN/CEFACT code list 1001, D.17A]
+a| Subset of  link:https://www.unece.org/fileadmin/DAM/trade/untdid/d17a/tred/tred1001.htm[UN/CEFACT code list 1001, D.17A]
+[horizontal]
+311:: Request for quote
 
-#Should this be a subset containig only contract types?#
+is the only allowed value
 
 | Item price type
 | UNCL5387
@@ -48,9 +50,7 @@ a| link:https://www.unece.org/fileadmin/DAM/trade/untdid/d17a/tred/tred5387.htm[
 | Orderable unit code
 |
 | cbc:*[@unitCode]
-a| link:http://www.unece.org/tradewelcome/un-centre-for-trade-facilitation-and-e-businessuncefact/outputs/cefactrecommendationsrec-index/list-of-trade-facilitation-recommendations-n-16-to-20.html[UN/ECE Recommendation 20]
-
-#Add version information?#
+a| link:http://www.unece.org/tradewelcome/un-centre-for-trade-facilitation-and-e-businessuncefact/outputs/cefactrecommendationsrec-index/list-of-trade-facilitation-recommendations-n-16-to-20.html[UN/ECE Recommendation 20, Revision 8 (2012) ]
 
 | Currency identifier
 |
@@ -60,7 +60,7 @@ a| link:https://www.iso.org/iso-4217-currency-codes.html[ISO 4217:2015]
 | Item VAT category code
 | UNCL5305
 | cac:ClassifiedTaxCategory/cbc:ID
-a| Subset of UN/CEFACT code list 5305
+a| Subset of link:https://www.unece.org/fileadmin/DAM/trade/untdid/d17a/tred/tred5305.htm[UN/CEFACT code list 5305]
 [horizontal]
 AE:: Vat Reverse Charge
 E:: Exempt from Tax
