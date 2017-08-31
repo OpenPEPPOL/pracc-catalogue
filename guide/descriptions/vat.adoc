@@ -1,0 +1,14 @@
+= VAT
+
+VAT-information is optional in the PreAward Catalogue. Catalogue receivers may require VAT-information in the PreAward Catalogue.
+
+The following VAT-codes are available:
+
+include::../{shared-dir}/mva.adoc[]
+
+
+.Example
+[source, xml, indent=0]
+----
+include::../{shared-dir}/snippets/Snippet_68.xml[tags=vat]
+----

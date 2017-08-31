@@ -1,12 +1,13 @@
 
-= Simple Pre-award catalogue:
+= Simple Pre-award catalogue
 
 [source]
 ----
 include::../{shared-dir}/examples/Profile54_trdm68.xml[]
 ----
 
-= Pre-award catalogue with different levels of quantity:
+[[log-example]]
+= Pre-award catalogue with logistic information
 
 [source]
 ----

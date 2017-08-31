@@ -124,14 +124,14 @@
 		</cac:CallForTendersLineReference>
 	</cac:CatalogueLine>
 	<cac:CatalogueLine>
-		<cbc:ID>2</cbc:ID>
-		<cbc:OrderableUnit>CS</cbc:OrderableUnit>
+		<cbc:ID>3</cbc:ID>
+		<cbc:OrderableUnit>PF</cbc:OrderableUnit>
 		<cbc:ContentUnitQuantity unitCode="EA" unitCodeListID="UNECERec20"
-			>2500</cbc:ContentUnitQuantity>
+			>45000</cbc:ContentUnitQuantity>
 		<cbc:OrderQuantityIncrementNumeric>1</cbc:OrderQuantityIncrementNumeric>
-		<cbc:MinimumOrderQuantity unitCode="CS" unitCodeListID="UNECERec20"
+		<cbc:MinimumOrderQuantity unitCode="PF" unitCodeListID="UNECERec20"
 			>1</cbc:MinimumOrderQuantity>
-		<cbc:PackLevelCode listID="GS17009:PEPPOL">TU</cbc:PackLevelCode>
+		<cbc:PackLevelCode listID="GS17009:PEPPOL">DU</cbc:PackLevelCode>
 		<cac:ComponentRelatedItem>
 			<cbc:ID>AA</cbc:ID>
 			<cbc:Quantity unitCode="CS" unitCodeListID="UNECERec20">18</cbc:Quantity>

@@ -85,7 +85,7 @@ The table below gives an overview of the transaction business requirements for t
 |A catalogue line shall specify the requirements on the order transaction.
 
 |op-t68-034
-|A catalogue line may specify the warrenty conditions on the items which are ordered based on the catalogue line.
+|A catalogue line may specify the warranty conditions on the items which are ordered based on the catalogue line.
 
 |op-t68-035
 |A catalogue line may specify in which period of time the catalogue line is valid.
@@ -171,7 +171,7 @@ The table below gives an overview of the transaction business requirements for t
 |op-t68-061
 |It should be possible to specify serial numbers, batch numbers and lot numbers for an item.
 
-op-t68-062
+|op-t68-062
 |It should be possible to state the country of origin for an item.
 
 

@@ -114,12 +114,15 @@
 			<cac:CommodityClassification>
 				<cbc:ItemClassificationCode listID="CPV">783xxxxxxxx</cbc:ItemClassificationCode>
 			</cac:CommodityClassification>
+			<!-- tag::vat[] -->
 			<cac:ClassifiedTaxCategory>
-				<cbc:Percent>10</cbc:Percent>
+				<cbc:ID schemeID="UNCL5305">S</cbc:ID>
+				<cbc:Percent>25</cbc:Percent>
 				<cac:TaxScheme>
-					<cbc:TaxTypeCode>VAT</cbc:TaxTypeCode>
+					<cbc:ID>VAT</cbc:ID>
 				</cac:TaxScheme>
 			</cac:ClassifiedTaxCategory>
+			<!-- end::vat[] -->
 			<cac:AdditionalItemProperty>
 				<cbc:Name>Fat % for milk</cbc:Name>
 				<cbc:Value>3%</cbc:Value>

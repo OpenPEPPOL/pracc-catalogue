@@ -1,0 +1,68 @@
+= Attachments
+
+Attachments can be sent on line level in the Catalogue. This can be images or additional descriptions of a product. It is strongly recommended to use external references in the form of URI’s for attachments.
+
+[source]
+.Example
+----
+<cac:Item>
+  ...
+  <cac:ItemSpecificationDocumentReference>
+    <cbc:ID>LK8788</cbc:ID>
+    <cbc:DocumentDescription>Product image</cbc:DocumentDescription>
+    <cac:Attachment>
+      <cac:ExternalReference>
+        <cbc:URI>http://img.trioving.net/Låskasser/LK8788_PRD_FPM_000.JPG</cbc:URI>
+      </cac:ExternalReference>
+    </cac:Attachment>
+  </cac:ItemSpecificationDocumentReference>
+  ...
+</cac:Item>
+----
+
+
+== Use of code list for attachements
+
+#Should we include this recommendation?#
+To facilitate automativ handling of attachments, we recommend using the GS1 code list  link:http://apps.gs1.org/GDD/Pages/clDetails.aspx?semanticURN=urn:gs1:gdd:cl:ReferencedFileTypeCode&release=5[ReferencedFileTypeCode version 5] for such use.
+
+[source]
+.Example of using ReferencedFileTypeCode on catalogue line.
+----
+<cac:Item>
+  ...
+  <cac:ItemSpecificationDocumentReference>
+    <cbc:ID>LK8788</cbc:ID>
+    <cbc:DocumentTypeCode listID="urn:gs1:gdd:cl:ReferencedFileTypeCode">PRODUCT_IMAGE</cbc:DocumentTypeCode> <1>
+    <cbc:DocumentDescription>Product image</cbc:DocumentDescription>
+    <cac:Attachment>
+      <cac:ExternalReference>
+        <cbc:URI>http://img.trioving.net/Låskasser/LK8788_PRD_FPM_000.JPG</cbc:URI>
+      </cac:ExternalReference>
+    </cac:Attachment>
+  </cac:ItemSpecificationDocumentReference>
+  ...
+</cac:Item>
+----
+<1> Code defining type of content.
+
+
+== Formats
+#Change text according to changes from Erlend, and indicate rule, not recommondations#
+
+Non-XML documents can be sent as attachments. This could be drawings, timesheets or other relevant documents. The attachment can either be sent as a binary object embedded in the message or as a URI to an external address as a link. It is recommended to send attachments as embedded, binary objects and not as external references.
+
+Additional recommendations:
+
+Coding::
+Base64
+Document format::
+MIME types:
+* Pdf – application / pdf
+* TXT – text / txt
+* GIF – image / gif
+* TIFF – image / tiff
+* JPEG, JPG – image / jpeg
+* PNG – image / png
+Size::
+5MB

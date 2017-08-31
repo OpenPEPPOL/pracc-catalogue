@@ -6,7 +6,7 @@ The pre-award catalogue must refer to a previous call for tenders with pre-award
 When the referenced call for tenders has lots, the lot identifier must be sent at line level in the element `cbc:ContractSubdivision`.
 
 .Example on procurement project identifier
-[source, xml]
+[source, xml, indent=0]
 ----
 include::../{shared-dir}/snippets/Snippet_68.xml[tags=procurement]
 ----
@@ -14,7 +14,7 @@ include::../{shared-dir}/snippets/Snippet_68.xml[tags=procurement]
 <2>  The procurement project identifier
 
 .Lot identifier on line level
-[source, xml]
+[source, xml, indent=0]
 ----
 include::../{shared-dir}/snippets/Snippet_68.xml[tags=lot-ref]
 ...

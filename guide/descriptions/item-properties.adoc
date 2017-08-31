@@ -10,7 +10,7 @@ Stated with amount per 100 g/ml.
 * Genetically modified +
 Legal values: True, False
 
-.Example in the PreAward EHF Catalogue message
+.Example of use in the PreAward EHF Catalogue message
 ====
 
 [source]

@@ -1,5 +1,5 @@
 [[parties]]
-= Parties in the pre-award Catalogue
+= Parties
 
 In the pre-award catalogue you can provide information on the following parties:
 
@@ -10,7 +10,7 @@ Customer:: The party that might order from the catalogue. Optional, normally onl
 
 
 .Example of provider party
-[source, xml]
+[source, xml, indent=0]
 ----
 include::../{shared-dir}/snippets/Snippet_68.xml[tags=provider]
 ----
