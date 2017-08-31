@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testSet xmlns="http://difi.no/xsd/vefa/validator/1.0" configuration="peppolbis-t68-base-1.0">
+	<assert>
+		<scope>EUGEN-T68-R120</scope>
+	</assert>
+	<test>
+		<assert>
+			<description>Verify existence of referenced item.</description>
+			<success>EUGEN-T68-R120</success>
+		</assert>
+		<Catalogue xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+			xmlns="urn:oasis:names:specification:ubl:schema:xsd:Catalogue-2">
+
+			<cac:CatalogueLine>
+				<cac:ComponentRelatedItem>
+					<cbc:ID>100</cbc:ID>
+				</cac:ComponentRelatedItem>
+			</cac:CatalogueLine>
+
+			<cac:CatalogueLine>
+				<cac:Item>
+					<cac:SellersItemIdentification>
+						<cbc:ID>100</cbc:ID>
+					</cac:SellersItemIdentification>
+				</cac:Item>
+			</cac:CatalogueLine>
+
+		</Catalogue>
+	</test>
+	<test>
+		<assert>
+			<description>Verify existence of referenced item.</description>
+			<error>EUGEN-T68-R120</error>
+		</assert>
+		<Catalogue xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+			xmlns="urn:oasis:names:specification:ubl:schema:xsd:Catalogue-2">
+
+			<cac:CatalogueLine>
+				<cac:ComponentRelatedItem>
+					<cbc:ID>100</cbc:ID>
+				</cac:ComponentRelatedItem>
+			</cac:CatalogueLine>
+
+			<cac:CatalogueLine>
+				<cac:Item>
+					<cac:SellersItemIdentification>
+						<cbc:ID>200</cbc:ID>
+					</cac:SellersItemIdentification>
+				</cac:Item>
+			</cac:CatalogueLine>
+
+		</Catalogue>
+	</test>
+	<test>
+		<assert>
+			<description>Verify existence of referenced item.</description>
+			<error>EUGEN-T68-R120</error>
+		</assert>
+		<Catalogue xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+			xmlns="urn:oasis:names:specification:ubl:schema:xsd:Catalogue-2">
+
+			<cac:CatalogueLine>
+				<cac:ComponentRelatedItem>
+					<cbc:ID>100</cbc:ID>
+				</cac:ComponentRelatedItem>
+			</cac:CatalogueLine>
+
+			<cac:CatalogueLine>
+				<cac:Item>
+					<cac:SellersItemIdentification>
+						<cbc:ID>200</cbc:ID>
+					</cac:SellersItemIdentification>
+				</cac:Item>
+			</cac:CatalogueLine>
+
+		</Catalogue>
+	</test>
+	<test>
+		<assert>
+			<description>Verify existence of referenced item.</description>
+			<error>EUGEN-T68-R120</error>
+		</assert>
+		<Catalogue xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+			xmlns="urn:oasis:names:specification:ubl:schema:xsd:Catalogue-2">
+
+			<cac:CatalogueLine>
+				<cac:ComponentRelatedItem>
+					<cbc:ID>100</cbc:ID>
+				</cac:ComponentRelatedItem>
+			</cac:CatalogueLine>
+
+			<cac:CatalogueLine>
+				<cac:Item>
+					<cac:SellersItemIdentification>
+						<cbc:ID>100</cbc:ID>
+					</cac:SellersItemIdentification>
+				</cac:Item>
+			</cac:CatalogueLine>
+
+			<cac:CatalogueLine>
+				<cac:Item>
+					<cac:SellersItemIdentification>
+						<cbc:ID>100</cbc:ID>
+					</cac:SellersItemIdentification>
+				</cac:Item>
+			</cac:CatalogueLine>
+
+		</Catalogue>
+	</test>
+</testSet>

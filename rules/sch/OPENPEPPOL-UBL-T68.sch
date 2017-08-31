@@ -9,10 +9,13 @@
   <ns prefix="ubl" uri="urn:oasis:names:specification:ubl:schema:xsd:Catalogue-2"/>
 
   <!--
-    EUGEN-T68-R***
+    EUGEN-T68-R0** Document level
       00X - Document in general
       01X - Document level rules
       02X - Referenced contract on document level.
+    EUGEN-T68-R1** Catalogue line level
+      12X - References
+    EUGEN-T68-R2** Catalogue line item level
   -->
 
   <!-- ASSERTING NO ELMENTS ARE EMPTY -->
@@ -48,6 +51,13 @@
       <assert id="EUGEN-T68-R021"
               test="cbc:ContractTypeCode"
               flag="fatal">A referenced contract must have a type code specified.</assert>
+    </rule>
+    <rule context="cac:ComponentRelatedItem">
+      <let name="componentRelatedItemId" value="normalize-space(cbc:ID)"/>
+
+      <assert id="EUGEN-T68-R120"
+              test="count(//cac:SellersItemIdentification/cbc:ID[normalize-space(.) = $componentRelatedItemId]) = 1"
+              flag="fatal">Referenced item must exist once in the catalogue.</assert>
     </rule>
   </pattern>
 
