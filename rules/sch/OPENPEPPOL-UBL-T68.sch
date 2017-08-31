@@ -8,6 +8,13 @@
   <ns prefix="cac" uri="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"/>
   <ns prefix="ubl" uri="urn:oasis:names:specification:ubl:schema:xsd:Catalogue-2"/>
 
+  <!--
+    EUGEN-T68-R***
+      00X - Document in general
+      01X - Document level rules
+      02X - Referenced contract on document level.
+  -->
+
   <!-- ASSERTING NO ELMENTS ARE EMPTY -->
   <pattern>
     <rule context="cbc:*">
@@ -33,6 +40,14 @@
       <assert id="EUGEN-T68-R010"
               test="cbc:UBLVersionID = '2.1'"
               flag="fatal">UBL version MUST be '2.1'.</assert>
+      <assert id="EUGEN-T68-R020"
+              test="cac:ReferencedContract"
+              flag="fatal">A referenced contract must be specified.</assert>
+    </rule>
+    <rule context="cac:ReferencedContract">
+      <assert id="EUGEN-T68-R021"
+              test="cbc:ContractTypeCode"
+              flag="fatal">A referenced contract must have a type code specified.</assert>
     </rule>
   </pattern>
 
@@ -49,6 +64,11 @@
       <assert id="OP-T68-R002"
               test="some $code in $icd satisfies $code = @schemeID"
               flag="fatal">SchemeID for party identifier MUST be from PEPPOL Policy for identifiers, policy 8.</assert>
+    </rule>
+    <rule context="cac:ReferencedContract/cbc:ContractTypeCode">
+      <assert id="OP-T68-R003"
+              test="normalize-space(.) = '311'"
+              flag="fatal">A reference contract type code must be '311'.</assert>
     </rule>
   </pattern>
 

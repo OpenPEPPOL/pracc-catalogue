@@ -150,11 +150,12 @@
               test="some $code in $iso3166 satisfies $code = normalize-space(.)"
               flag="fatal">A country identification code must be coded using ISO 3166, alpha 2 codes</assert>
     </rule>
-    <rule context="cac:ReferencedContract//cbc:ContractTypeCode">
+    <!-- Disabled in favour of EUGEN-T68-R020 -->
+    <!-- <rule context="cac:ReferencedContract/cbc:ContractTypeCode">
       <assert id="CL-T68-R004"
               test="some $code in $uncl1001 satisfies $code = normalize-space(.)"
               flag="fatal">A contract type code must be from the code list UNCL 1001</assert>
-    </rule>
+    </rule> -->
     <rule context="cbc:OrderableUnit">
       <assert id="CL-T68-R005"
               test="some $code in $unclrec20 satisfies $code = normalize-space(.)"
