@@ -24,10 +24,29 @@ h| Qualifier
 h| Document location
 | `cbc:EmbeddedDocumentBinaryObject/@mimeCode`
 h| Source codelist
-| link:http://www.iana.org/assignments/media-types[IANA]
+|
+  Subset of link:http://www.iana.org/assignments/media-types[IANA] and link:http://filext.com/file-extension/DWG[AutoCAD file type].
 |===
 
-#Add version information?#
+[cols="1,4"]
+|===
+.1+h| Documents
+| application/pdf
+
+.3+h| Images
+| image/png
+| image/jpeg
+| image/tiff
+
+.1+h| Video
+| video/mp4
+
+.4+h| Drawings
+| application/acad
+| application/autocad_dwg
+| application/dwg
+| drawing/dwg
+|===
 
 
 == Country code
@@ -78,8 +97,6 @@ h| Source codelist
 >| 311
 | Request for quote
 |===
-
-is the only allowed value
 
 
 == Item price type
