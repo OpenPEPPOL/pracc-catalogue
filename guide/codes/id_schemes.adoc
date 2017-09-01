@@ -8,12 +8,12 @@
 |Applicable XPath
 |Code list (link or subset values)
 
-| Party identifier
+| Electronic address identifier (Endpoint)
 | cbc:EndpointID[@schemeID]
 a| {policy8}
 #Update to latest version#
 
-| Electronic address identifier (Endpoint)
+| Party identifier
 | cac:PartyIdentification/cbc:ID[@schemeID]
 a| {policy8}
 #Update to latest version#
