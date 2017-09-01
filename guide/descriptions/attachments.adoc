@@ -2,8 +2,10 @@
 
 Attachments can be sent on line level in the Catalogue. This can be images or additional descriptions of a product. It is strongly recommended to use external references in the form of URI’s for attachments.
 
+If binary objects are attached to the PreAward Catalogue, the valid values for mimetype can be found in section <<Mime code of attached document>> 
+
 [source]
-.Example
+.Example of using external reference
 ----
 <cac:Item>
   ...
@@ -20,6 +22,11 @@ Attachments can be sent on line level in the Catalogue. This can be images or ad
 </cac:Item>
 ----
 
+[source, xml, indent=0]
+.Example of using attached binary objects
+----
+include::../{shared-dir}/snippets/Snippet_68.xml[tags=attachment]
+----
 
 == Use of code list for attachements
 
@@ -45,24 +52,3 @@ To facilitate automativ handling of attachments, we recommend using the GS1 code
 </cac:Item>
 ----
 <1> Code defining type of content.
-
-
-== Formats
-#Change text according to changes from Erlend, and indicate rule, not recommondations#
-
-Non-XML documents can be sent as attachments. This could be drawings, timesheets or other relevant documents. The attachment can either be sent as a binary object embedded in the message or as a URI to an external address as a link. It is recommended to send attachments as embedded, binary objects and not as external references.
-
-Additional recommendations:
-
-Coding::
-Base64
-Document format::
-MIME types:
-* Pdf – application / pdf
-* TXT – text / txt
-* GIF – image / gif
-* TIFF – image / tiff
-* JPEG, JPG – image / jpeg
-* PNG – image / png
-Size::
-5MB

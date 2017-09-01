@@ -2,7 +2,7 @@
 
 Various quantities and units can be stated in the PreAward Catalogue. These are both related to the ordering process and the logistics process.
 
-Below is a list of information elements regarding quantities and units in the format. For all quantities there must be a legal Unit according to the <<element-codes>>
+Below is a list of information elements regarding quantities and units in the format. For all quantities there must be a legal Unit according to the section <<Unit of measure>>
 
 Orderable unit (OrderableUnit)::
 The unit in which the item described in this catalogue line can be ordered. Mandatory if the item is orderable.
@@ -130,7 +130,7 @@ Quantity of the related component
 
 = Catch Weight
 
-To inform that an item is catch weight (ex. Orderable quantity is pcs, but invoiced quantity is kilo, and  where one pcs can be of variable weight), set unit code for content unit to 31 (catch weight) according to UN Recommondations 20.
+To inform that an item is catch weight (ex. Orderable quantity is pcs, but invoiced quantity is kilo, and  where one pcs can be of variable weight), set unit code for content unit to 31 (catch weight) according to UN Recommondations 20. ( <<Unit of measure>> )
 
 [source]
 .Example

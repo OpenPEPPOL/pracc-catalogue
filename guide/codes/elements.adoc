@@ -112,7 +112,7 @@ h| Source codelist
 |===
 
 
-== Orderable unit code
+== Unit of measure
 
 [cols="1,4"]
 |===
