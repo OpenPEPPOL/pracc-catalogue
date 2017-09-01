@@ -2,71 +2,159 @@
 = Code lists for coded elements
 
 
-.Code lists used in the Pre-award Catalogue transaction
-[cols="2,1,3,3", options="header"]
-|====
-|Business Term
-|schemeID or listID
-|Applicable XPath
-|Code list (link or subset values)
+== Attachment description code
 
-| Attachment description code
-| UNCL1001
-| cbc:DocumentTypeCode
-a| link:https://www.unece.org/fileadmin/DAM/trade/untdid/d17a/tred/tred1001.htm[UN/CEFACT code list 1001, D.17A]
+[cols="1,4"]
+|===
+h| Qualifier
+| `UNCL1001` (listID)
+h| Document location
+| `cbc:DocumentTypeCode`
+h| Source codelist
+| link:https://www.unece.org/fileadmin/DAM/trade/untdid/d17a/tred/tred1001.htm[UN/CEFACT code list 1001, D.17A]
+|===
 
-| Mime code of attached document
-|
-| cbc:EmbeddedDocumentBinaryObject[@mimeCode]
-a| link:http://www.iana.org/assignments/media-types[IANA]
+
+== Mime code of attached document
+
+[cols="1,4"]
+|===
+h| Qualifier
+| _None_
+h| Document location
+| `cbc:EmbeddedDocumentBinaryObject/@mimeCode`
+h| Source codelist
+| link:http://www.iana.org/assignments/media-types[IANA]
+|===
 
 #Add version information?#
 
 
-| Country code
-| ISO3166-1:Alpha2
-| cac:CountryCode/cbc:IdentificationCode
-a| link:http://www.iso.org/iso/home/standards/country_codes.htm[ISO 3166-1]
+== Country code
 
-| Hazardous item UNDG code
-| UNCL8273
-| cbc:UNDGCode
-a| link:https://www.unece.org/fileadmin/DAM/trade/untdid/d17a/tred/tred8273.htm[UN/CEFACT code list 8273, D.17A]
+[cols="1,4"]
+|===
+h| Qualifier
+| `ISO3166-1:Alpha2` (listID)
+h| Document location
+| `cac:Country/cbc:IdentificationCode` +
+`cac:OriginCountry/cbc:IdentificationCode` +
+h| Source codelist
+| link:http://www.iso.org/iso/home/standards/country_codes.htm[ISO 3166-1]
+|===
 
-| Contract type (procurement project identifier)
-| UNCL1001
-| cbc:ContractTypeCode
-a| Subset of  link:https://www.unece.org/fileadmin/DAM/trade/untdid/d17a/tred/tred1001.htm[UN/CEFACT code list 1001, D.17A]
-[horizontal]
-311:: Request for quote
+
+== Hazardous item UNDG code
+
+[cols="1,4"]
+|===
+h| Qualifier
+| `UNCL8273` (listID)
+h| Document location
+| `cbc:UNDGCode`
+h| Source codelist
+| link:https://www.unece.org/fileadmin/DAM/trade/untdid/d17a/tred/tred8273.htm[UN/CEFACT code list 8273, D.17A]
+|===
+
+
+== Contract type (procurement project identifier)
+
+[cols="1,4"]
+|===
+h| Qualifier
+| `UNCL1001` (listID)
+h| Document location
+| `cbc:ContractTypeCode`
+h| Source codelist
+| Subset of  link:https://www.unece.org/fileadmin/DAM/trade/untdid/d17a/tred/tred1001.htm[UN/CEFACT code list 1001, D.17A]
+|===
+
+[cols="1,4", options="header"]
+.Code list
+|===
+| Code
+| Description
+
+>| 311
+| Request for quote
+|===
 
 is the only allowed value
 
-| Item price type
-| UNCL5387
-| cbc:PriceTypeCode
-a| link:https://www.unece.org/fileadmin/DAM/trade/untdid/d17a/tred/tred5387.htm[UN/CEFACT code list 5387, D.17A]
 
-| Orderable unit code
-|
-| cbc:*[@unitCode]
-a| link:http://www.unece.org/tradewelcome/un-centre-for-trade-facilitation-and-e-businessuncefact/outputs/cefactrecommendationsrec-index/list-of-trade-facilitation-recommendations-n-16-to-20.html[UN/ECE Recommendation 20, Revision 8 (2012) ]
+== Item price type
 
-| Currency identifier
-|
-| cbc:*[@currencyID]
-a| link:https://www.iso.org/iso-4217-currency-codes.html[ISO 4217:2015]
+[cols="1,4"]
+|===
+h| Qualifier
+| `UNCL5387` (listID)
+h| Document location
+| `cbc:PriceTypeCode`
+h| Source codelist
+| link:https://www.unece.org/fileadmin/DAM/trade/untdid/d17a/tred/tred5387.htm[UN/CEFACT code list 5387, D.17A]
+|===
 
-| Item VAT category code
-| UNCL5305
-| cac:ClassifiedTaxCategory/cbc:ID
-a| Subset of link:https://www.unece.org/fileadmin/DAM/trade/untdid/d17a/tred/tred5305.htm[UN/CEFACT code list 5305]
-[horizontal]
-AE:: Vat Reverse Charge
-E:: Exempt from Tax
-S:: Standard rate
-Z:: Zero rated goods
-H:: Higher rate
-AA:: Lower rate
 
-|====
+== Orderable unit code
+
+[cols="1,4"]
+|===
+h| Qualifier
+| _None_
+h| Document location
+| `cbc:*/@unitCode`
+h| Source codelist
+| link:http://www.unece.org/tradewelcome/un-centre-for-trade-facilitation-and-e-businessuncefact/outputs/cefactrecommendationsrec-index/list-of-trade-facilitation-recommendations-n-16-to-20.html[UN/ECE Recommendation 20, Revision 8 (2012)]
+|===
+
+
+== Currency identifier
+
+[cols="1,4"]
+|===
+h| Qualifier
+| _None_
+h| Document location
+| `cbc:*/@currencyID`
+h| Source codelist
+| link:https://www.iso.org/iso-4217-currency-codes.html[ISO 4217:2015]
+|===
+
+
+== Item VAT category code
+
+[cols="1,4"]
+|===
+h| Qualifier
+| UNCL5305 (schemeID)
+h| Document location
+| `cac:ClassifiedTaxCategory/cbc:ID`
+h| Source codelist
+| Subset of link:https://www.unece.org/fileadmin/DAM/trade/untdid/d17a/tred/tred5305.htm[UN/CEFACT code list 5305]
+|===
+
+
+[cols="1,4", options="header"]
+.Code list
+|===
+| Code
+| Description
+
+| AE
+| Vat Reverse Charge
+
+| E
+| Exempt from Tax
+
+| S
+| Standard rate
+
+| Z
+| Zero rated goods
+
+| H
+| Higher rate
+
+| AA
+| Lower rate
+|===
