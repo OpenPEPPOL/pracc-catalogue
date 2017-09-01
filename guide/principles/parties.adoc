@@ -1,6 +1,7 @@
 [[roles]]
 = Parties and roles
 
+image::parties.png[float="right"]
 
 == Parties
 Customer::
