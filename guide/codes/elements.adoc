@@ -29,6 +29,7 @@ h| Source codelist
 |===
 
 [cols="1,4"]
+.Code list
 |===
 .1+h| Structured content
 | application/xml

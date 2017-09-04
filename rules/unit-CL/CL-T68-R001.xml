@@ -6,18 +6,17 @@
 	<test>
 		<assert>
 			<description>Verify use of code list.</description>
-			<success number="6">CL-T68-R001</success>
+			<success number="5">CL-T68-R001</success>
 		</assert>
 		<Catalogue xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
 			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
 			xmlns="urn:oasis:names:specification:ubl:schema:xsd:Catalogue-2">
 
 			<cbc:EmbeddedDocumentBinaryObject mimeCode="application/pdf" />
-			<cbc:EmbeddedDocumentBinaryObject mimeCode="image/gif" />
 			<cbc:EmbeddedDocumentBinaryObject mimeCode="image/tiff" />
 			<cbc:EmbeddedDocumentBinaryObject mimeCode="image/jpeg" />
 			<cbc:EmbeddedDocumentBinaryObject mimeCode="image/png" />
-			<cbc:EmbeddedDocumentBinaryObject mimeCode="text/plain" />
+			<cbc:EmbeddedDocumentBinaryObject mimeCode="application/xml" />
 
 		</Catalogue>
 	</test>
