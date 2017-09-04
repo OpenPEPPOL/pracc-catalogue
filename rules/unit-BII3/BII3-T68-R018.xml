@@ -22,6 +22,57 @@
 	</test>
 	<test>
 		<assert>
+			<description>Verify no error on correct use.</description>
+			<success>BII3-T68-R018</success>
+		</assert>
+		<Catalogue xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+			xmlns="urn:oasis:names:specification:ubl:schema:xsd:Catalogue-2">
+
+			<cac:Dimension>
+				<cbc:AttributeID>HUM</cbc:AttributeID>
+				<!-- <cbc:MinimumMeasure>10</cbc:MinimumMeasure> -->
+				<cbc:MaximumMeasure>20</cbc:MaximumMeasure>
+			</cac:Dimension>
+
+		</Catalogue>
+	</test>
+	<test>
+		<assert>
+			<description>Verify no error on correct use.</description>
+			<success>BII3-T68-R018</success>
+		</assert>
+		<Catalogue xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+			xmlns="urn:oasis:names:specification:ubl:schema:xsd:Catalogue-2">
+
+			<cac:Dimension>
+				<cbc:AttributeID>HUM</cbc:AttributeID>
+				<cbc:MinimumMeasure>10</cbc:MinimumMeasure>
+				<!-- <cbc:MaximumMeasure>20</cbc:MaximumMeasure> -->
+			</cac:Dimension>
+
+		</Catalogue>
+	</test>
+	<test>
+		<assert>
+			<description>Verify no error on correct use.</description>
+			<success>BII3-T68-R018</success>
+		</assert>
+		<Catalogue xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+			xmlns="urn:oasis:names:specification:ubl:schema:xsd:Catalogue-2">
+
+			<cac:Dimension>
+				<cbc:AttributeID>HUM</cbc:AttributeID>
+				<!-- <cbc:MinimumMeasure>10</cbc:MinimumMeasure>
+				<cbc:MaximumMeasure>20</cbc:MaximumMeasure> -->
+			</cac:Dimension>
+
+		</Catalogue>
+	</test>
+	<test>
+		<assert>
 			<description>Verify no error on other attribute.</description>
 			<success>BII3-T68-R018</success>
 		</assert>

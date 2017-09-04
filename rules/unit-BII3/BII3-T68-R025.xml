@@ -12,9 +12,9 @@
 			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
 			xmlns="urn:oasis:names:specification:ubl:schema:xsd:Catalogue-2">
 
-      <cac:CountryCode>
+      <cac:Country>
         <cbc:IdentificationCode listID="ISO3166-1:Alpha2"/>
-      </cac:CountryCode>
+      </cac:Country>
 
 		</Catalogue>
 	</test>
@@ -27,10 +27,26 @@
 			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
 			xmlns="urn:oasis:names:specification:ubl:schema:xsd:Catalogue-2">
 
-      <cac:CountryCode>
+      <cac:Country>
         <cbc:IdentificationCode/>
         <cbc:IdentificationCode listID="ISO3166-1"/>
-      </cac:CountryCode>
+      </cac:Country>
+
+		</Catalogue>
+	</test>
+	<test>
+		<assert>
+			<description>Verify error on incorrect listID.</description>
+			<error number="2">BII3-T68-R025</error>
+		</assert>
+		<Catalogue xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+			xmlns="urn:oasis:names:specification:ubl:schema:xsd:Catalogue-2">
+
+      <cac:OriginCountry>
+        <cbc:IdentificationCode/>
+        <cbc:IdentificationCode listID="ISO3166-1"/>
+      </cac:OriginCountry>
 
 		</Catalogue>
 	</test>

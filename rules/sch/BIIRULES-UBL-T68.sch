@@ -9,54 +9,6 @@
   <ns prefix="ubl" uri="urn:oasis:names:specification:ubl:schema:xsd:Catalogue-2"/>
 
   <pattern id="UBL-T68">
-    <rule context="cbc:ContractTypeCode">
-      <assert id="BII3-T68-R028"
-              test="@listID = 'UNCL1001'"
-              flag="fatal">A contract type code MUST have a list identifier attribute 'UNCL1001'</assert>
-    </rule>
-    <rule context="cac:CountryCode/cbc:IdentificationCode">
-      <assert id="BII3-T68-R025"
-              test="@listID = 'ISO3166-1:Alpha2'"
-              flag="fatal">List identifier for country code must be 'ISO3166-1:Alpha2'</assert>
-    </rule>
-    <rule context="cbc:DocumentTypeCode">
-      <assert id="BII3-T68-R026"
-              test="@listID = 'UNCL1001'"
-              flag="fatal">A document type code MUST have a list identifier attribute 'UNCL1001'</assert>
-    </rule>
-    <rule context="cac:Dimension[cbc:AttributeID = 'HUM']">
-      <assert id="BII3-T68-R018"
-              test="cbc:MinimumMeasure &lt;= cbc:MaximumMeasure"
-              flag="fatal">The Handling unit minimum storage humidity MUST be smaller than or equal to the Handling unit maximum storage humidity.</assert>
-    </rule>
-    <rule context="cac:Dimension[cbc:AttributeID = 'TEM']">
-      <assert id="BII3-T68-R019"
-              test="cbc:MinimumMeasure &lt;= cbc:MaximumMeasure"
-              flag="fatal">The Handling unit minimum storage temperature MUST be smaller than or equal to the Handling unit maximum storage temperature.</assert>
-    </rule>
-    <rule context="cac:Item">
-      <assert id="BII3-T68-R013"
-              test="cbc:Name"
-              flag="fatal">A Pre-award Catalogue line item MUST have an item name</assert>
-    </rule>
-    <rule context="cac:CommodityClassification">
-      <assert id="BII3-T68-R014"
-              test="cbc:ItemClassificationCode"
-              flag="fatal">If item classification is used, item classification code MUST be sent</assert>
-    </rule>
-    <rule context="cac:AdditionalItemProperty">
-      <assert id="BII3-T68-R015"
-              test="cbc:Name and cbc:Value"
-              flag="fatal">If item property is used, both property name and value MUST be present</assert>
-    </rule>
-    <rule context="cac:ItemSpecificationDocumentReference/cac:ValidityPeriod">
-      <assert id="BII3-T68-R016"
-              test="cbc:StartDate and cbc:EndDate"
-              flag="fatal">A Catalogue Line Validity Period MUST include start date and end date</assert>
-      <assert id="BII3-T68-R020"
-              test="cbc:StartDate &lt;= cbc:EndDate"
-              flag="fatal">The Period start date of the Catalogue line validity period MUST be before the Period end date.</assert>
-    </rule>
     <rule context="/ubl:Catalogue">
       <assert id="BII3-T68-R001"
               test="cbc:CustomizationID"
@@ -85,6 +37,54 @@
       <assert id="BII3-T68-R010"
               test="cac:CatalogueLine"
               flag="fatal">A Pre-award Catalogue MUST have at least one catalogue line</assert>
+    </rule>
+    <rule context="cbc:ContractTypeCode">
+      <assert id="BII3-T68-R028"
+              test="@listID = 'UNCL1001'"
+              flag="fatal">A contract type code MUST have a list identifier attribute 'UNCL1001'</assert>
+    </rule>
+    <rule context="cac:Country/cbc:IdentificationCode | cac:OriginCountry/cbc:IdentificationCode">
+      <assert id="BII3-T68-R025"
+              test="@listID = 'ISO3166-1:Alpha2'"
+              flag="fatal">List identifier for country code must be 'ISO3166-1:Alpha2'</assert>
+    </rule>
+    <rule context="cbc:DocumentTypeCode">
+      <assert id="BII3-T68-R026"
+              test="@listID = 'UNCL1001'"
+              flag="fatal">A document type code MUST have a list identifier attribute 'UNCL1001'</assert>
+    </rule>
+    <rule context="cac:Dimension[cbc:AttributeID = 'HUM']">
+      <assert id="BII3-T68-R018"
+              test="not(cbc:MinimumMeasure) or not(cbc:MaximumMeasure) or cbc:MinimumMeasure &lt;= cbc:MaximumMeasure"
+              flag="fatal">The Handling unit minimum storage humidity MUST be smaller than or equal to the Handling unit maximum storage humidity.</assert>
+    </rule>
+    <rule context="cac:Dimension[cbc:AttributeID = 'TEM']">
+      <assert id="BII3-T68-R019"
+              test="not(cbc:MinimumMeasure) or not(cbc:MaximumMeasure) or cbc:MinimumMeasure &lt;= cbc:MaximumMeasure"
+              flag="fatal">The Handling unit minimum storage temperature MUST be smaller than or equal to the Handling unit maximum storage temperature.</assert>
+    </rule>
+    <rule context="cac:Item">
+      <assert id="BII3-T68-R013"
+              test="cbc:Name"
+              flag="fatal">A Pre-award Catalogue line item MUST have an item name</assert>
+    </rule>
+    <rule context="cac:CommodityClassification">
+      <assert id="BII3-T68-R014"
+              test="cbc:ItemClassificationCode"
+              flag="fatal">If item classification is used, item classification code MUST be sent</assert>
+    </rule>
+    <rule context="cac:AdditionalItemProperty">
+      <assert id="BII3-T68-R015"
+              test="cbc:Name and cbc:Value"
+              flag="fatal">If item property is used, both property name and value MUST be present</assert>
+    </rule>
+    <rule context="cac:ItemSpecificationDocumentReference/cac:ValidityPeriod">
+      <assert id="BII3-T68-R016"
+              test="cbc:StartDate and cbc:EndDate"
+              flag="fatal">A Catalogue Line Validity Period MUST include start date and end date</assert>
+      <assert id="BII3-T68-R020"
+              test="cbc:StartDate &lt;= cbc:EndDate"
+              flag="fatal">The Period start date of the Catalogue line validity period MUST be before the Period end date.</assert>
     </rule>
     <rule context="cac:CatalogueLine">
       <assert id="BII3-T68-R011"
@@ -145,7 +145,7 @@
               test="some $code in $uncl1001 satisfies $code = normalize-space(.)"
               flag="fatal">DocumentTypeCode  must be from the code list UNCL 1001</assert>
     </rule>
-    <rule context="cac:Country//cbc:IdentificationCode">
+    <rule context="cac:Country/cbc:IdentificationCode | cac:OriginCountry/cbc:IdentificationCode">
       <assert id="CL-T68-R003"
               test="some $code in $iso3166 satisfies $code = normalize-space(.)"
               flag="fatal">A country identification code must be coded using ISO 3166, alpha 2 codes</assert>
