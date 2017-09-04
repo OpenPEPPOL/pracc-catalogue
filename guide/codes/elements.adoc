@@ -30,6 +30,9 @@ h| Source codelist
 
 [cols="1,4"]
 |===
+.1+h| Structured content
+| application/xml
+
 .1+h| Documents
 | application/pdf
 
