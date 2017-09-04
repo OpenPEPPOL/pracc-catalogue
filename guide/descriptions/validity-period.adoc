@@ -1,12 +1,12 @@
 = Validity period
 
-In the preAward the following validity periods can be stated:
+In the PreAward the following validity periods can be stated:
 
 * Validity period on document level (mandatory), used to state the validity period for the entire PreAward Catalogue.
 * Validity period for a catalogue line
 * Validity period for price (See also <<price>>)
 
-WARNING: All validity periods shall have both start date and end date, and the start date must be earlier than the end date
+WARNING: All validity periods shall have both start date and end date, and the start date shall be earlier than the end date
 
 
 Example of validity periods in a PreAward Catalogue:

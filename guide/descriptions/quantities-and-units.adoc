@@ -2,7 +2,7 @@
 
 Various quantities and units can be stated in the PreAward Catalogue. These are both related to the ordering process and the logistics process.
 
-Below is a list of information elements regarding quantities and units in the format. For all quantities there must be a legal Unit according to the section <<Unit of measure>>
+Below is a list of information elements regarding quantities and units in the format. For all quantities there shall be a legal Unit according to the section <<Unit of measure>>
 
 Orderable unit (OrderableUnit)::
 The unit in which the item described in this catalogue line can be ordered. Mandatory if the item is orderable.
@@ -11,7 +11,7 @@ Item net quantity (ContentUnitQuantity)::
 The net quantity of the item that is contained in each consumable unit (excluding packaging material), e.g. ml in bottles of Shampoo.
 
 Order  quantity increment (OrderQuantityIncrementNumeric)::
-Possible limitation to the number of articles that can be ordered. If the Quantity increment is 6 the article must be ordered in a quantity of 6, 12, 18 etc.
+Possible limitation to the number of articles that can be ordered. If the Quantity increment is 6 the article shall be ordered in a quantity of 6, 12, 18 etc.
 
 Minimum order quantity (MinimumOrderQuantity)::
 The smallest number of items that can be ordered (most often 1).

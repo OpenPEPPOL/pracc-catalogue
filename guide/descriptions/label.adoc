@@ -8,7 +8,7 @@ Several labels can be connected to each product. As part of the identification t
 
 The following are used: #Add uri to code list#
 
-Introducing these classification codes in pre-award catalogue will support the aim for sustainable procurement. The Procurement systems must collect the order lines with environmental and social labels and report them to the statistics tools available for the buyers. This will make it possible to measure the purchasing behaviour and monitor that the requirements from the tendering process are fulfilled.
+Introducing these classification codes in pre-award catalogue will support the aim for sustainable procurement. The Procurement systems shall collect the order lines with environmental and social labels and report them to the statistics tools available for the buyers. This will make it possible to measure the purchasing behaviour and monitor that the requirements from the tendering process are fulfilled.
 
 .Example of Classification codes
 [cols="^.^2a,8a", options="header"]
@@ -33,7 +33,7 @@ Certificate TypeCode: OrganicLabel (Ecological)
 |===
 
 [source]
-.Example of labeling in an EHF Catalogue message
+.Example of labeling in an PreAward Catalogue message
 ----
 <cac:Certificate>
   <cbc:ID>NEO</cbc:ID>

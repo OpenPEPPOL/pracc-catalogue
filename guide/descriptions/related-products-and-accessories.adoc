@@ -1,6 +1,6 @@
 = Related Products and Accessories
 
-Products can be related to each other for ordering or logistic purposes.  All related products must also be sent as separate Catalogue lines.
+Products can be related to each other for ordering or logistic purposes.  All related products shall also be sent as separate Catalogue lines.
 
 Types of relations:
 

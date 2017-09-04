@@ -1,7 +1,7 @@
 [[item_prop]]
 = Additional Item Properties
 
-Additional properties are meant for product properties that cannot be sent in any of the defined elements in EHF Catalogue. Additional properties consist of the Name of the property and the actual Value.
+Additional properties are meant for product properties that cannot be sent in any of the defined elements in PreAward Catalogue. Additional properties consist of the Name of the property and the actual Value.
 
 .Example of additional properties:
 * Color
@@ -10,7 +10,7 @@ Stated with amount per 100 g/ml.
 * Genetically modified +
 Legal values: True, False
 
-.Example of use in the PreAward EHF Catalogue message
+.Example of use in the PreAward PreAward Catalogue message
 ====
 
 [source]
