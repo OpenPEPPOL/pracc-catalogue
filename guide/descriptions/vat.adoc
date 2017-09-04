@@ -2,9 +2,7 @@
 
 VAT-information is optional in the PreAward Catalogue. Catalogue receivers may require VAT-information in the PreAward Catalogue.
 
-The following VAT-codes are available:
-
-include::../{shared-dir}/mva.adoc[]
+Valid VAT category codes can be found in the section <<Item VAT category code>>
 
 
 .Example

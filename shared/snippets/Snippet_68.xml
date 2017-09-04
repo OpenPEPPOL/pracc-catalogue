@@ -101,6 +101,7 @@
 			<cac:StandardItemIdentification>
 				<cbc:ID schemeID="GTIN">99023409093843</cbc:ID>
 			</cac:StandardItemIdentification>
+			<!-- tag::attachment[] -->
 			<cac:ItemSpecificationDocumentReference>
 				<cbc:ID>2384-34232-342-34-2333</cbc:ID>
 				<cac:Attachment>
@@ -108,6 +109,7 @@
 						>ZGVmYXVsdA==</cbc:EmbeddedDocumentBinaryObject>
 				</cac:Attachment>
 			</cac:ItemSpecificationDocumentReference>
+			<!-- end::attachment[] -->
 			<cac:OriginCountry>
 				<cbc:IdentificationCode listID="ISO3166-1:Alpha2">FR</cbc:IdentificationCode>
 			</cac:OriginCountry>
