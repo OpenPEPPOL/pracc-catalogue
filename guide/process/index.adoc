@@ -6,5 +6,6 @@
 include::process.adoc[]
 include::use_case1.adoc[]
 include::use_case2.adoc[]
+include::relation-catalogues.adoc[]
 
 :leveloffset: -1
