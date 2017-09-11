@@ -1,5 +1,5 @@
 
-= Use case 2
+= Use case 1
 
 On behalf of many municipalities or governmental entities a central unit has been given the task to accomplish a tender for the group on office supplies.
 
