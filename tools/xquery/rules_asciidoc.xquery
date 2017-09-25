@@ -16,7 +16,7 @@ for
 $x in //iso:pattern/iso:rule/iso:assert
 
 let $RuleId := string($x/@id)
-let $rule := string($x/../@context)
+let $rule := replace(string($x/../@context),'\|','or')
 let $flag := string($x/@flag)
 let $assert := string($x/@test)
 let $tekst := $x/text()
