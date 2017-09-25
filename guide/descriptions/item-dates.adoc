@@ -1,0 +1,10 @@
+
+= Best before date and expiry date
+
+In pre-award catalogue request the contracting authority (CA) ask for a certain vaccine to be offered. Because this vaccine is defined as perishable goods the CA ask in the tender economic operator (EO) to specify best before date and expiry date. The fields will guide CA in planning the vaccine program regarding logistic to the country that it will be used and when to ordering the vaccine in good time. The information will also be used in the electronic catalogue if the EO must update information.
+
+.Example of best before and expiry date
+[source, xml, indent=0]
+----
+include::../{shared-dir}/snippets/Snippet_date.xml[tags=expiry]
+----
