@@ -2,7 +2,7 @@
 
 Attachments can be sent on line level in the Catalogue. This can be images or additional descriptions of a product. It is strongly recommended to use external references in the form of URI’s for attachments.
 
-If binary objects are attached to the PreAward Catalogue, the valid values for mimetype can be found in section <<Mime code of attached document>> 
+If binary objects are attached to the PreAward Catalogue, the valid values for mimetype can be found in section <<Mime code of attached document>>
 
 [source]
 .Example of using external reference
@@ -30,7 +30,6 @@ include::../{shared-dir}/snippets/Snippet_68.xml[tags=attachment]
 
 == Use of code list for attachements
 
-#Should we include this recommendation?#
 To facilitate automativ handling of attachments, we recommend using the GS1 code list  link:http://apps.gs1.org/GDD/Pages/clDetails.aspx?semanticURN=urn:gs1:gdd:cl:ReferencedFileTypeCode&release=5[ReferencedFileTypeCode version 5] for such use.
 
 [source]

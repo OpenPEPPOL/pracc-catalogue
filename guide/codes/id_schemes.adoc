@@ -11,11 +11,9 @@
 | Electronic address identifier (Endpoint)
 | cbc:EndpointID[@schemeID]
 a| {policy8}
-#Update to latest version#
 
 | Party identifier
 | cac:PartyIdentification/cbc:ID[@schemeID]
 a| {policy8}
-#Update to latest version#
 
 |====

@@ -25,7 +25,7 @@ Example of validity periods in a PreAward Catalogue:
 ----
 
 [source]
-.Catalogue line #Wrong mapping from BII?#
+.Catalogue line
 ----
 <cac:LineValidityPeriod>
   <cbc:StartDate>2017-08-01</cbc:StartDate>
