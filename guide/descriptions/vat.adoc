@@ -8,5 +8,5 @@ Valid VAT category codes can be found in the section <<Item VAT category code>>
 .Example
 [source, xml, indent=0]
 ----
-include::../{shared-dir}/snippets/Snippet_68.xml[tags=vat]
+include::../{snippet-dir}/Snippet_68.xml[tags=vat]
 ----

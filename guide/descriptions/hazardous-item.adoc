@@ -5,11 +5,11 @@ If a product is classified as Hazardous item, a reference to the relevant UNDG-c
 .Example of UNDG code
 [source, xml, indent=0]
 ----
-include::../{shared-dir}/snippets/Snippet_68_undg.xml[tags=undg]
+include::../{snippet-dir}/Snippet_68_undg.xml[tags=undg]
 ----
 
 .Example of attachement with further specification
 [source, xml, indent=0]
 ----
-include::../{shared-dir}/snippets/Snippet_68_undg.xml[tags=undg-ref]
+include::../{snippet-dir}/Snippet_68_undg.xml[tags=undg-ref]
 ----

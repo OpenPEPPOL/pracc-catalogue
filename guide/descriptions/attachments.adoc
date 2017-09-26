@@ -25,7 +25,7 @@ If binary objects are attached to the PreAward Catalogue, the valid values for m
 [source, xml, indent=0]
 .Example of using attached binary objects
 ----
-include::../{shared-dir}/snippets/Snippet_68.xml[tags=attachment]
+include::../{snippet-dir}/Snippet_68.xml[tags=attachment]
 ----
 
 == Use of code list for attachements

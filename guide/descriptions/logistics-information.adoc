@@ -20,7 +20,7 @@ Below is an example of Logistics information in a PreAward Catalogue message.
 .Catalogue line for Dispatch unit, highest pack level.
 [source, xml, indent=0]
 ----
-include::../{shared-dir}/snippets/Snippet_68_log.xml[tags=du]
+include::../{snippet-dir}/Snippet_68_log.xml[tags=du]
 ----
 <1>  References the sellers item identification for the component line
 <2>  Quantity of that component (each dispatch unit contains 12 traded units)
@@ -29,7 +29,7 @@ include::../{shared-dir}/snippets/Snippet_68_log.xml[tags=du]
 .Catalogue line for Traded unit.
 [source, xml, indent=0]
 ----
-include::../{shared-dir}/snippets/Snippet_68_log.xml[tags=tu]
+include::../{snippet-dir}/Snippet_68_log.xml[tags=tu]
 ----
 <1>  References the sellers item identification for the component line
 <2>  Quantity of that component (each traded unit contains 6 consumer units)
@@ -37,5 +37,5 @@ include::../{shared-dir}/snippets/Snippet_68_log.xml[tags=tu]
 .Catalogue line for Consumer unit, lowest pack level.
 [source, xml, indent=0]
 ----
-include::../{shared-dir}/snippets/Snippet_68_log.xml[tags=cu]
+include::../{snippet-dir}/Snippet_68_log.xml[tags=cu]
 ----

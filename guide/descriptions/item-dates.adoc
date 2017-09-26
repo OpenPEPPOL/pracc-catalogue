@@ -6,5 +6,5 @@ In pre-award catalogue request the contracting authority (CA) ask for a certain 
 .Example of best before and expiry date
 [source, xml, indent=0]
 ----
-include::../{shared-dir}/snippets/Snippet_date.xml[tags=expiry]
+include::../{snippet-dir}/Snippet_date.xml[tags=expiry]
 ----

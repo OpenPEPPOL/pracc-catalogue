@@ -12,5 +12,5 @@ Customer:: The party that might order from the catalogue. Optional, normally onl
 .Example of provider party
 [source, xml, indent=0]
 ----
-include::../{shared-dir}/snippets/Snippet_68.xml[tags=provider]
+include::../{snippet-dir}/Snippet_68.xml[tags=provider]
 ----

@@ -4,6 +4,7 @@
   <package>PEPPOL BIS Pre-Award Catalogue 0.8.0</package>
 
   <testfolder>test</testfolder>
+  <testfolder>snippets</testfolder>
   <testfolder>unit-BII3</testfolder>
   <testfolder>unit-CL</testfolder>
   <testfolder>unit-EUGEN</testfolder>

@@ -8,7 +8,7 @@ When the referenced call for tenders has lots, the lot identifier shall be sent 
 .Example on procurement project identifier
 [source, xml, indent=0]
 ----
-include::../{shared-dir}/snippets/Snippet_68.xml[tags=procurement]
+include::../{snippet-dir}/Snippet_68.xml[tags=procurement]
 ----
 <1>  Code 311 is mandatory
 <2>  The procurement project identifier
@@ -16,6 +16,6 @@ include::../{shared-dir}/snippets/Snippet_68.xml[tags=procurement]
 .Lot identifier on line level
 [source, xml, indent=0]
 ----
-include::../{shared-dir}/snippets/Snippet_68.xml[tags=lot-ref]
+include::../{snippet-dir}/Snippet_68.xml[tags=lot-ref]
 ...
 ----

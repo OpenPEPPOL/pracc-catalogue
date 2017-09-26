@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!--
+
+   Snippet-file used for the PEPPOL BIS, Pre award catalogue BIS
+   Example uses profile 35a (Tendering with pre-award catalogue)
+   
+   Errors:
+   None
+   
+   Warnings:
+   None
+
+-->
 <Catalogue xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
-	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
 	xmlns="urn:oasis:names:specification:ubl:schema:xsd:Catalogue-2">
 	<cbc:UBLVersionID>2.1</cbc:UBLVersionID>
