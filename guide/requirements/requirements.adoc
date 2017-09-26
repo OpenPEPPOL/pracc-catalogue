@@ -20,7 +20,7 @@ The table below gives an overview of the transaction business requirements for t
 |The transaction shall contain all information necessary for its application i.e. it shall not rely on the availability of external references such as a centralised repository of item information. No external data sources should be needed in order to ease the processing of a pre-award catalogue request.
 
 |op-t68-004
-|It shall be reusable in post-award processes, i.e., a pre-award catalogue shall have information that makes it possible to use as a post-award catalogue, even if some information might be added later in the process.
+|It shall be reusable in post-award processes, i.e., a pre-award catalogue shall have information that makes it possible to use as a post-award catalogue, even if some information might be added later in the process. There is a potential difference between the pre-award and the post-award catalogue when it comes to the extent of required information. A "principle of proportionality" means that the information that can be required in relation to a tender and a pre-award catalogue must be in proportion to the offered contract. In a post-award catalogue, after the parties have signed an agreement, more information can be requested by the buyer to describe the products in more details.
 |====
 
 .Metadata requirements
