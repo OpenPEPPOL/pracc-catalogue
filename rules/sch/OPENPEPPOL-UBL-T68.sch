@@ -13,6 +13,8 @@
       00X - Document in general
       01X - Document level rules
       02X - Referenced contract on document level.
+      03X - Transport
+      04X - Party identifiers
     EUGEN-T68-R1** Catalogue line level
       12X - References
     EUGEN-T68-R2** Catalogue line item level
@@ -52,6 +54,16 @@
               test="cbc:ContractTypeCode"
               flag="fatal">A referenced contract must have a type code specified.</assert>
     </rule>
+    <rule context="cbc:EndpointID">
+      <assert id="EUGEN-T68-R030"
+              test="@schemeID"
+              flag="fatal">An endpoint identifier MUST have a schemeID attribute.</assert>
+    </rule>
+    <rule context="cac:PartyIdentification/cbc:ID">
+      <assert id="EUGEN-T68-R040"
+              test="@schemeID"
+              flag="fatal">A party identifier MUST have a schemeID attribute.</assert>
+    </rule>
     <rule context="cac:ComponentRelatedItem">
       <let name="componentRelatedItemId" value="normalize-space(cbc:ID)"/>
 
@@ -63,16 +75,17 @@
 
   <!-- CODE LISTS -->
   <pattern>
-    <let name="icd" value="tokenize('FR:SIRENE SE:ORGNR FR:SIRET FI:OVT DUNS GLN DK:P IT:FTI NL:KVK IT:SIA IT:SECETI DIGST DK:CPR DK:CVR DK:SE DK:VANS IT:VAT IT:CF NO:ORGNR NO:VAT HU:VAT EU:REID AT:VAT AT:GOV IS:KT IBAN AT:KUR ES:VAT IT:IPA AD:VAT AL:VAT BA:VAT BE:VAT BG:VAT CH:VAT CY:VAT CZ:VAT DE:VAT EE:VAT GB:VAT GR:VAT HR:VAT IE:VAT LI:VAT LT:VAT LU:VAT LV:VAT MC:VAT ME:VAT MK:VAT MT:VAT NL:VAT PL:VAT PT:VAT RO:VAT RS:VAT SI:VAT SK:VAT SM:VAT TR:VAT VA:VAT NL:OIN SE:VAT BE:CBE FR:VAT ZZZ', '\s')"/>
+    <let name="icd_endpoint" value="tokenize('FR:SIRENE SE:ORGNR FR:SIRET FI:OVT DUNS GLN DK:P IT:FTI NL:KVK IT:SIA IT:SECETI DIGST DK:CPR DK:CVR DK:SE DK:VANS IT:VAT IT:CF NO:ORGNR HU:VAT EU:REID AT:VAT AT:GOV IS:KT IBAN AT:KUR ES:VAT IT:IPA AD:VAT AL:VAT BA:VAT BE:VAT BG:VAT CH:VAT CY:VAT CZ:VAT DE:VAT EE:VAT GB:VAT GR:VAT HR:VAT IE:VAT LI:VAT LT:VAT LU:VAT LV:VAT MC:VAT ME:VAT MK:VAT MT:VAT NL:VAT PL:VAT PT:VAT RO:VAT RS:VAT SI:VAT SK:VAT SM:VAT TR:VAT VA:VAT NL:OIN SE:VAT BE:CBE FR:VAT', '\s')"/> <!-- Removed: NO:VAT ZZZ -->
+    <let name="icd_party" value="tokenize('FR:SIRENE SE:ORGNR FR:SIRET FI:OVT DUNS GLN DK:P IT:FTI NL:KVK IT:SIA IT:SECETI DIGST DK:CPR DK:CVR DK:SE DK:VANS IT:VAT IT:CF NO:ORGNR NO:VAT HU:VAT EU:REID AT:VAT AT:GOV IS:KT IBAN AT:KUR ES:VAT IT:IPA AD:VAT AL:VAT BA:VAT BE:VAT BG:VAT CH:VAT CY:VAT CZ:VAT DE:VAT EE:VAT GB:VAT GR:VAT HR:VAT IE:VAT LI:VAT LT:VAT LU:VAT LV:VAT MC:VAT ME:VAT MK:VAT MT:VAT NL:VAT PL:VAT PT:VAT RO:VAT RS:VAT SI:VAT SK:VAT SM:VAT TR:VAT VA:VAT NL:OIN SE:VAT BE:CBE FR:VAT ZZZ', '\s')"/>
 
     <rule context="cbc:EndpointID[@schemeID]">
       <assert id="OP-T68-R001"
-              test="some $code in $icd satisfies $code = @schemeID"
+              test="some $code in $icd_endpoint satisfies $code = @schemeID"
               flag="fatal">SchemeID for endpoint identifier MUST be from PEPPOL Policy for identifiers, policy 8.</assert>
     </rule>
     <rule context="cac:PartyIdentification/cbc:ID[@schemeID]">
       <assert id="OP-T68-R002"
-              test="some $code in $icd satisfies $code = @schemeID"
+              test="some $code in $icd_party satisfies $code = @schemeID"
               flag="fatal">SchemeID for party identifier MUST be from PEPPOL Policy for identifiers, policy 8.</assert>
     </rule>
     <rule context="cac:ReferencedContract/cbc:ContractTypeCode">

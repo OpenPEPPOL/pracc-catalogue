@@ -6,7 +6,7 @@
 	<test>
 		<assert>
 			<description>No errors when correct identifiers are used.</description>
-			<success number="4">OP-T68-R001</success>
+			<success number="3">OP-T68-R001</success>
 		</assert>
 		<Catalogue xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
 			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
@@ -15,7 +15,6 @@
 			<cbc:EndpointID schemeID="BE:CBE"/>
 			<cbc:EndpointID schemeID="NO:ORGNR"/>
 			<cbc:EndpointID schemeID="DIGST"/>
-			<cbc:EndpointID schemeID="ZZZ"/>
 
 		</Catalogue>
 	</test>
