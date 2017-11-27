@@ -1,10 +1,10 @@
-
 = Simple Pre-award catalogue
 
 [source]
 ----
 include::../{shared-dir}/examples/Profile54_trdm68.xml[]
 ----
+
 
 [[log-example]]
 = Pre-award catalogue with logistic information

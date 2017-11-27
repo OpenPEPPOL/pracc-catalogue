@@ -21,13 +21,14 @@
 	<test>
 		<assert>
 			<description>Trigger errors when incorrect identifiers are used.</description>
-			<error>OP-T68-R001</error>
+			<error number="2">OP-T68-R001</error>
 		</assert>
 		<Catalogue xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
 			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
 			xmlns="urn:oasis:names:specification:ubl:schema:xsd:Catalogue-2">
 
 			<cbc:EndpointID schemeID="NL:ION"/>
+			<cbc:EndpointID schemeID="ZZZ"/>
 
 		</Catalogue>
 	</test>

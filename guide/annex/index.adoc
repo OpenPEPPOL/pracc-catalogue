@@ -7,3 +7,7 @@
 include::examples.adoc[]
 
 :leveloffset: -1
+
+= Message structure
+
+* link:./structure/[Message structure for Pre-award catalogue]
