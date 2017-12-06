@@ -99,7 +99,7 @@ Quantity of the related component
 |===
 
 [source]
-.Example of catalogue line with line identifier = 8 in the above table
+.Example of catalogue line with line identifier = 2 in the above table
 ----
 <cac:CatalogueLine>
   cbc:ID>8</cbc:ID>

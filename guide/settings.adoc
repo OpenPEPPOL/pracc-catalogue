@@ -9,4 +9,4 @@
 
 :name-op-en: OpenPEPPOL AISBL, Post-Award Coordinating Community
 
-include::links.adoc[]
+include::{shared-dir}/links.adoc[]
