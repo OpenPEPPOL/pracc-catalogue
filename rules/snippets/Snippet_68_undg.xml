@@ -93,7 +93,8 @@
 			<!-- end::undg-ref[] -->
 			<!-- tag::undg[] -->
 			<cac:HazardousItem>
-				<cbc:HazardClassID>H332</cbc:HazardClassID>
+				<cbc:ID>0024</cbc:ID>
+				<cbc:UNDGCode listID="UNCL8273">ADR</cbc:UNDGCode>
 			</cac:HazardousItem>
 			<!-- end::undg[] -->
 		</cac:Item>
