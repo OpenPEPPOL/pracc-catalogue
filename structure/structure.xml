@@ -140,6 +140,7 @@
 
             <Element>
                 <Term>cac:ContractDocumentReference</Term>
+                <Name>Procurement reference</Name>
 
                 <Element>
                     <Term>cbc:ID</Term>
@@ -405,7 +406,7 @@
 
                     <Element>
                         <Term>cbc:ID</Term>
-                        <Name>Catalogue provider standard identifier</Name>
+                        <Name>Catalogue supplier standard identifier</Name>
                         <Description>The standard identifier of the party that provides the items specified in the catalogue.</Description>
 
                         <Attribute>
@@ -427,7 +428,7 @@
 
                     <Element>
                         <Term>cbc:Name</Term>
-                        <Name>Catalogue provider name</Name>
+                        <Name>Catalogue supplier name</Name>
                         <Description>The party that provides the items specified in the catalogue.</Description>
                         <Value type="EXAMPLE">Seller name</Value>
                     </Element>
@@ -543,7 +544,7 @@
 
                     <Element>
                         <Term>cbc:ID</Term>
-                        <Name>Catalogue provider standard identifier</Name>
+                        <Name>Catalogue customer standard identifier</Name>
                         <Description>Standard identifier of the party who may order from the catalogue.</Description>
                         
                         <Attribute>
@@ -565,7 +566,7 @@
 
                     <Element>
                         <Term>cbc:Name</Term>
-                        <Name>Catalogue provider name</Name>
+                        <Name>Catalogue customer name</Name>
                         <Description>Name of the party who may order from the catalogue.</Description>
                         <Value type="EXAMPLE">Customer name</Value>
                     </Element>
@@ -1005,6 +1006,8 @@
 
                         <Element>
                             <Term>cbc:ChargeIndicator</Term>
+                            <Name>Charge indicator</Name>
+                            <Description>the only allowed value is ´false´</Description>
                             <Value type="FIXED">false</Value>
                         </Element>
 
@@ -1034,6 +1037,7 @@
 
                 <Element cardinality="0..n">
                     <Term>cac:DeliveryUnit</Term>
+                    <Name>Delivery unit</Name>
 
                     <Element>
                         <Term>cbc:BatchQuantity</Term>
