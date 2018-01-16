@@ -3,6 +3,8 @@
 
 The table below gives an overview of the transaction business requirements for the pre-award catalogue. The requirements are derived from the {bii3} project on pre-award Catalogue, as well as the catalogue work from TC440.
 
+Please note that several of the requirements refer to the order. This is due to the fact that the pre-award catalogue has been aligned with the post-award catalogue, to make it easier to move from a pre- to a post award catalogue after the contract is signed.
+
 
 .General business requirements
 [cols="1,4", options="header"]
@@ -79,19 +81,19 @@ The table below gives an overview of the transaction business requirements for t
 |A catalogue line in a pre-award catalogue shall be uniquely identifiable by an identifier, to ensure that the catalogue line can be referenced, e.g., by an id.
 
 |op-t68-032
-|A catalogue line shall specify how the corresponding items can be ordered.
+|To align with post award catalogue, a pre award catalogue line shall specify how the corresponding items can be ordered.
 
 |op-t68-033
-|A catalogue line shall specify the requirements on the order transaction.
+|To align with post award catalogue, a pre award catalogue shall specify the requirements on the order transaction.
 
 |op-t68-034
-|A catalogue line may specify the warranty conditions on the items which are ordered based on the catalogue line.
+|A catalogue line may specify the warranty conditions on the items
 
 |op-t68-035
 |A catalogue line may specify in which period of time the catalogue line is valid.
 
 |op-t68-036
-|A catalogue line should provide for an indicator that clearly states whether the line item can be ordered according to the information given in the line.
+|To align with post award catalogue, a pre award catalogue line should provide for an indicator that clearly states whether the line item can be ordered according to the information given in the line.
 
 |op-t68-037
 |A catalogue line should provide for additional information about items in the form of attachments and external references.
@@ -106,7 +108,7 @@ The table below gives an overview of the transaction business requirements for t
 |Requirement
 
 |op-t68-040
-|An item is a specification within a catalogue line of an offer of a product by the economic operator that can be ordered by the contracting authority.
+|An item is a specification within a catalogue line of an offer of a product by the economic operator
 
 |op-t68-041
 |An item in a pre-award catalogue shall be uniquely identifiable by a name and an identifier, to ensure that the item can be referenced, e.g., by an id.
@@ -115,19 +117,19 @@ The table below gives an overview of the transaction business requirements for t
 |An item may have a description.
 
 |op-t68-043
-|It shall be possible to specify how an item can be ordered. This includes amongst others allowed units of measure, order sizes, minimal and maximal order sizes. There might exist restrictions from the production process or a need to simplify or limit the costs of the ordering and logistics process, so that the order size is restricted. Thus, the buyer needs information to place a correct order that is not denied by the supplier.
+|To align with post award catalogue, it shall be possible to specify how an item can be ordered. This includes amongst others allowed units of measure, order sizes, minimal and maximal order sizes. There might exist restrictions from the production process or a need to simplify or limit the costs of the ordering and logistics process, so that the order size is restricted. Thus, the buyer needs information to place a correct order that is not denied by the supplier.
 
 |op-t68-044
-|It shall be possible to specify how the delivered items will be packaged. To indicate from which number of ordered order units this package unit will be delivered.
+|It shall be possible to specify how the items will be packaged.
 
 |op-t68-045
 |It shall be possible to specify logistic conditions and other needed service information on how the item will be delivered. This includes information on maximum and minimum storage temperature, information needed for cross-border logistics processes. To define the products to be done for each package unit along the supply chain.
 
 |op-t68-046
-|It shall be possible to specify how the item is priced. This includes factors that have influence on the price as well as relationships to other parts of the catalogue that may have impact on the price. The price can be dependent on many factors, e.g., order size, delivery region (down to the city level), allowance, charges, currency, etc.
+|It shall be possible to specify how the item is priced. This includes factors that have influence on the price as well as relationships to other parts of the catalogue that may have impact on the price. The price can be dependent on many factors, e.g., delivery region (down to the city level), allowance, charges, currency, etc.
 
 |op-t68-047
-|It should be possible to specify the period of time an item price is valid. If no validity period is specified, the price is valid until cancelled. The same as in tbr19-003, but on the item level. This allows to have items with different validity periods in the same catalogue. This does not mean, that the item will expire. It only means, that after this period the item has to be ordered for a different price.
+|It should be possible to specify the period of time an item price is valid. If no validity period is specified, the price is valid until cancelled. The same as in tbr19-003, but on the item level. This allows to have items with different validity periods in the same catalogue. This does not mean, that the item will expire.
 
 |op-t68-048
 |Prices shall not be negative.
@@ -190,7 +192,7 @@ The table below gives an overview of the transaction business requirements for t
 |An item property may be related to one or more corresponding properties of one or more classification systems. Any kind of classification system having properties might be used.
 
 |op-t68-073
-|If an item property is specified, a specific value may to be specified for this item property. The specified value has to hold true for the corresponding item. The specification of a concrete value helps to ensure that the buyer orders the item that fits his needs best.
+|If an item property is specified, a specific value may to be specified for this item property. The specified value has to hold true for the corresponding item.
 
 |op-t68-074
 |It shall be possible to specify a range of allowed values for an item property. In order to allow the supplier to offer only values in the range the contracting body needs (e.g. for a RAM memory the contracting body needs values of 1, 2 or 3 GB and no other values, for a maintenance service the action is request within 1 day). The values information allows also a validation check with respect to the offer of the economic operator.

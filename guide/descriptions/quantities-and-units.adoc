@@ -1,11 +1,11 @@
 = Quantities and Units
 
-Various quantities and units can be stated in the PreAward Catalogue. These are both related to the ordering process and the logistics process.
+Various quantities and units can be stated in the PreAward Catalogue.
 
 Below is a list of information elements regarding quantities and units in the format. For all quantities there shall be a legal Unit according to the section <<Unit of measure>>
 
 Orderable unit (OrderableUnit)::
-The unit in which the item described in this catalogue line can be ordered. Mandatory if the item is orderable.
+The unit in which the item described in this catalogue line can be ordered. Mandatory if the orderable indicator is set to true.
 
 Item net quantity (ContentUnitQuantity)::
 The net quantity of the item that is contained in each consumable unit (excluding packaging material), e.g. ml in bottles of Shampoo.

@@ -8,7 +8,7 @@ Several labels can be connected to each product. As part of the identification t
 
 The following can be used: link:https://vefa.difi.no/ehf/codelist/eco/[]
 
-Introducing these classification codes in pre-award catalogue will support the aim for sustainable procurement. The Procurement systems shall collect the order lines with environmental and social labels and report them to the statistics tools available for the buyers. This will make it possible to measure the purchasing behaviour and monitor that the requirements from the tendering process are fulfilled.
+Introducing these classification codes in pre-award catalogue will support the aim for sustainable procurement, and make it possible to measure the purchasing behaviour and monitor that the requirements from the tendering process are fulfilled.
 
 .Example of Classification codes
 [cols="^.^2a,8a", options="header"]
