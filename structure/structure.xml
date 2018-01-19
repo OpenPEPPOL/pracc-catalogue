@@ -628,11 +628,14 @@
                 <Value type="EXAMPLE">Part 2</Value>
             </Element>
 
-            <Element cardinality="0..1">
+            <Element>
                 <Term>cbc:OrderableIndicator</Term>
                 <Name>Catalogue line orderable indicator</Name>
                 <Description>Indicates whether the catalogue line can be ordered. Allowed values are ´true´ or ´false</Description>
-                <Value type="DEFAULT">true</Value>
+
+                <Reference type="RULE">EUGEN-T68-R201</Reference>
+
+                <Value type="EXAMPLE">true</Value>
             </Element>
 
             <Element cardinality="0..1">
@@ -640,6 +643,7 @@
                 <Name>Orderable unit</Name>
                 <Description>The unit in which the item described in this catalogue line can be ordered. Mandatory if the item is orderable</Description>
                 <Reference type="RULE">CL-T68-R005</Reference>
+                <Reference type="RULE">EUGEN-T68-R202</Reference>
                 <Value type="EXAMPLE">MLT</Value>
             </Element>
 
@@ -647,6 +651,8 @@
                 <Term>cbc:ContentUnitQuantity</Term>
                 <Name>Item net quantity</Name>
                 <Description>The net quantity of the item that is contained in each consumable unit, excluding any packaging materials.</Description>
+
+                <Reference type="RULE">EUGEN-T68-R200</Reference>
 
                 <Attribute>
                     <Term>unitCode</Term>
@@ -668,8 +674,9 @@
                 <Term>cbc:MinimumOrderQuantity</Term>
                 <Name>Minimum order quantity</Name>
                 <Description>The smallest number of items that can be ordered.</Description>
+
                 <Reference type="RULE">BII3-T68-R022</Reference>
-             
+                <Reference type="RULE">EUGEN-T68-R200</Reference>
 
                 <Attribute>
                     <Term>unitCode</Term>
@@ -685,7 +692,8 @@
                 <Term>cbc:MaximumOrderQuantity</Term>
                 <Name>Maximum order quantity</Name>
                 <Description>The largest number of items that can be ordered.</Description>
-                
+
+                <Reference type="RULE">EUGEN-T68-R200</Reference>
 
                 <Attribute>
                     <Term>unitCode</Term>
@@ -743,6 +751,8 @@
                     <Name>Standard unit quantity</Name>
                     <Description>E.g. if consumable units are bottles and each bottle contains 0,333 liters the standard unit quantity is 0,333.</Description>
 
+                    <!-- <Reference type="RULE">EUGEN-T68-R200</Reference> -->
+
                     <Attribute usage="Optional">
                         <Term>unitCode</Term>
                         <Name>Quanitity unit code</Name>
@@ -770,6 +780,8 @@
                     <Term>cbc:Quantity</Term>
                     <Name>Related item quantity</Name>
                     <Description>Quantity of a related item</Description>
+
+                    <!-- <Reference type="RULE">EUGEN-T68-R200</Reference> -->
 
                     <Attribute usage="Optional">
                         <Term>unitCode</Term>
@@ -799,6 +811,8 @@
                     <Name>Related item quantity</Name>
                     <Description>UOM should be stated  by using recommendation 20 v10</Description>
 
+                    <!-- <Reference type="RULE">EUGEN-T68-R200</Reference> -->
+
                     <Attribute usage="Optional">
                         <Term>unitCode</Term>
                         <Name>Quanitity unit code</Name>
@@ -826,6 +840,8 @@
                     <Term>cbc:Quantity</Term>
                     <Name>Related item quantity</Name>
                     <Description>UOM should be stated  by using recommendation 20 v10</Description>
+
+                    <!-- <Reference type="RULE">EUGEN-T68-R200</Reference> -->
 
                     <Attribute usage="Optional">
                         <Term>unitCode</Term>
@@ -856,6 +872,8 @@
                     <Term>cbc:Quantity</Term>
                     <Name>Related item quantity</Name>
                     <Description>UOM should be stated  by using recommendation 20 v10</Description>
+
+                    <!-- <Reference type="RULE">EUGEN-T68-R200</Reference> -->
 
                     <Attribute usage="Optional">
                         <Term>unitCode</Term>
@@ -1004,6 +1022,10 @@
                         <Term>cac:AllowanceCharge</Term>
                         <Name>Price discount, used only for information purpose</Name>
 
+                        <Reference type="RULE">EUGEN-T68-R050</Reference>
+                        <Reference type="RULE">EUGEN-T68-R051</Reference>
+                        <Reference type="RULE">EUGEN-T68-R052</Reference>
+
                         <Element>
                             <Term>cbc:ChargeIndicator</Term>
                             <Name>Charge indicator</Name>
@@ -1043,7 +1065,9 @@
                         <Term>cbc:BatchQuantity</Term>
                         <Name>Batch quantity</Name>
                         <Description>The quantity of ordered Items that constitutes a batch for delivery purposes.</Description>
-                        
+
+                        <!-- <Reference type="RULE">EUGEN-T68-R200</Reference> -->
+
                         <Attribute usage="Optional">
                             <Term>unitCode</Term>
                             <Name>Quanitity unit code</Name>
@@ -1059,6 +1083,8 @@
                         <Term>cbc:ConsumerUnitQuantity</Term>
                         <Name>Consumable unit quantity</Name>
                         <Description>Number of Consumer items in the orderable unit. E.g. number of bottles on a Pallet.</Description>
+
+                        <!-- <Reference type="RULE">EUGEN-T68-R200</Reference> -->
 
                         <Attribute usage="Optional">
                             <Term>unitCode</Term>
@@ -1089,6 +1115,8 @@
                     <Term>cbc:PackQuantity</Term>
                     <Name>Packed Quantity</Name>
                     <Description>The number of packed units that are in the orderable unit.</Description>
+
+                    <!-- <Reference type="RULE">EUGEN-T68-R200</Reference> -->
 
                     <Attribute usage="Optional">
                         <Term>unitCode</Term>
@@ -1562,6 +1590,10 @@
                 <Element cardinality="0..n">
                     <Term>cac:Certificate</Term>
 
+                    <Reference type="RULE">EUGEN-T68-R060</Reference>
+                    <Reference type="RULE">EUGEN-T68-R061</Reference>
+                    <Reference type="RULE">EUGEN-T68-R062</Reference>
+
                     <Element>
                         <Term>cbc:ID</Term>
                         <Name>Label Identifier</Name>
@@ -1635,6 +1667,8 @@
                         <Term>cbc:Measure</Term>
                         <Description>The measure of the item/packagin unit.</Description>          
 
+                        <Reference type="RULE">EUGEN-T68-R200</Reference>
+
                         <Attribute>
                             <Term>unitCode</Term>
                             <Name>Quandtity unit code</Name>
@@ -1649,7 +1683,10 @@
                     <Element cardinality="0..1">
                         <Term>cbc:MinimumMeasure</Term>
                         <Description>The lower margin of the recommended storage temperature range for the item.</Description>
-                        <Reference type="RULE">BII3-T68-R018, BII3-T68-R019</Reference>
+
+                        <Reference type="RULE">BII3-T68-R018</Reference>
+                        <Reference type="RULE">BII3-T68-R019</Reference>
+                        <Reference type="RULE">EUGEN-T68-R200</Reference>
 
                         <Attribute>
                             <Term>unitCode</Term>
@@ -1664,7 +1701,10 @@
                     <Element cardinality="0..1">
                         <Term>cbc:MaximumMeasure</Term>
                         <Description>The upper margin of the recommended storage temperature range for the item.</Description>
-                        <Reference type="RULE">BII3-T68-R018, BII3-T68-R019</Reference>
+
+                        <Reference type="RULE">BII3-T68-R018</Reference>
+                        <Reference type="RULE">BII3-T68-R019</Reference>
+                        <Reference type="RULE">EUGEN-T68-R200</Reference>
 
                         <Attribute>
                             <Term>unitCode</Term>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testSet xmlns="http://difi.no/xsd/vefa/validator/1.0" configuration="peppolbis-t68-base-1.0">
+	<assert>
+		<description>Verify existence of element in allowance/charge.</description>
+		<scope>EUGEN-T68-R051</scope>
+	</assert>
+	<test>
+		<assert>
+			<success>EUGEN-T68-R051</success>
+		</assert>
+		<Catalogue xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+			xmlns="urn:oasis:names:specification:ubl:schema:xsd:Catalogue-2">
+
+			<cac:AllowanceCharge>
+				<cbc:AllowanceChargeReason/>
+			</cac:AllowanceCharge>
+
+		</Catalogue>
+	</test>
+	<test>
+		<assert>
+			<error>EUGEN-T68-R051</error>
+		</assert>
+		<Catalogue xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+			xmlns="urn:oasis:names:specification:ubl:schema:xsd:Catalogue-2">
+
+			<cac:AllowanceCharge>
+				<!-- <cbc:AllowanceChargeReason/> -->
+			</cac:AllowanceCharge>
+
+		</Catalogue>
+	</test>
+</testSet>
