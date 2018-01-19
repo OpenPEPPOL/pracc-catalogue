@@ -751,9 +751,9 @@
                     <Name>Standard unit quantity</Name>
                     <Description>E.g. if consumable units are bottles and each bottle contains 0,333 liters the standard unit quantity is 0,333.</Description>
 
-                    <!-- <Reference type="RULE">EUGEN-T68-R200</Reference> -->
+                    <Reference type="RULE">EUGEN-T68-R200</Reference>
 
-                    <Attribute usage="Optional">
+                    <Attribute>
                         <Term>unitCode</Term>
                         <Name>Quanitity unit code</Name>
                         <Reference type="RULE">CL-T68-R008</Reference>
@@ -781,9 +781,9 @@
                     <Name>Related item quantity</Name>
                     <Description>Quantity of a related item</Description>
 
-                    <!-- <Reference type="RULE">EUGEN-T68-R200</Reference> -->
+                    <Reference type="RULE">EUGEN-T68-R200</Reference>
 
-                    <Attribute usage="Optional">
+                    <Attribute>
                         <Term>unitCode</Term>
                         <Name>Quanitity unit code</Name>
                         <Reference type="RULE">CL-T68-R008</Reference>
@@ -811,9 +811,9 @@
                     <Name>Related item quantity</Name>
                     <Description>UOM should be stated  by using recommendation 20 v10</Description>
 
-                    <!-- <Reference type="RULE">EUGEN-T68-R200</Reference> -->
+                    <Reference type="RULE">EUGEN-T68-R200</Reference>
 
-                    <Attribute usage="Optional">
+                    <Attribute>
                         <Term>unitCode</Term>
                         <Name>Quanitity unit code</Name>
                         <Reference type="RULE">CL-T68-R008</Reference>
@@ -841,9 +841,9 @@
                     <Name>Related item quantity</Name>
                     <Description>UOM should be stated  by using recommendation 20 v10</Description>
 
-                    <!-- <Reference type="RULE">EUGEN-T68-R200</Reference> -->
+                    <Reference type="RULE">EUGEN-T68-R200</Reference>
 
-                    <Attribute usage="Optional">
+                    <Attribute>
                         <Term>unitCode</Term>
                         <Name>Quanitity unit code</Name>
                         <Reference type="RULE">CL-T68-R008</Reference>
@@ -873,9 +873,9 @@
                     <Name>Related item quantity</Name>
                     <Description>UOM should be stated  by using recommendation 20 v10</Description>
 
-                    <!-- <Reference type="RULE">EUGEN-T68-R200</Reference> -->
+                    <Reference type="RULE">EUGEN-T68-R200</Reference>
 
-                    <Attribute usage="Optional">
+                    <Attribute>
                         <Term>unitCode</Term>
                         <Name>Quanitity unit code</Name>
                         <Reference type="RULE">CL-T68-R008</Reference>
@@ -1066,9 +1066,9 @@
                         <Name>Batch quantity</Name>
                         <Description>The quantity of ordered Items that constitutes a batch for delivery purposes.</Description>
 
-                        <!-- <Reference type="RULE">EUGEN-T68-R200</Reference> -->
+                        <Reference type="RULE">EUGEN-T68-R200</Reference>
 
-                        <Attribute usage="Optional">
+                        <Attribute>
                             <Term>unitCode</Term>
                             <Name>Quanitity unit code</Name>
                             <Reference type="RULE">CL-T68-R008</Reference>
@@ -1084,9 +1084,9 @@
                         <Name>Consumable unit quantity</Name>
                         <Description>Number of Consumer items in the orderable unit. E.g. number of bottles on a Pallet.</Description>
 
-                        <!-- <Reference type="RULE">EUGEN-T68-R200</Reference> -->
+                        <Reference type="RULE">EUGEN-T68-R200</Reference>
 
-                        <Attribute usage="Optional">
+                        <Attribute>
                             <Term>unitCode</Term>
                             <Name>Quanitity unit code</Name>
                             <Reference type="RULE">CL-T68-R008</Reference>
@@ -1116,9 +1116,9 @@
                     <Name>Packed Quantity</Name>
                     <Description>The number of packed units that are in the orderable unit.</Description>
 
-                    <!-- <Reference type="RULE">EUGEN-T68-R200</Reference> -->
+                    <Reference type="RULE">EUGEN-T68-R200</Reference>
 
-                    <Attribute usage="Optional">
+                    <Attribute>
                         <Term>unitCode</Term>
                         <Name>Quanitity unit code</Name>
                         <Reference type="RULE">CL-T68-R008</Reference>
