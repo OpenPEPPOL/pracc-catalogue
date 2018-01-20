@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Structure xmlns="urn:fdc:difi.no:2017:vefa:structure-1">
 
-    <Term/>
+    <Term>catalogue</Term>
     <Name>PEPPOL BIS Pre-Award Catalogue 1.0</Name>
+
+    <Property key="sch:prefix">EUGEN-T68</Property>
+    <Property key="sch:identifier">basic</Property>
 
     <Namespace prefix="ubl">urn:oasis:names:specification:ubl:schema:xsd:Catalogue-2</Namespace>
     <Namespace prefix="cac">urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"</Namespace>
     <Namespace prefix="cbc">urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2</Namespace>
-
-    <Rules type="schematron">../rules/sch/OPENPEPPOL-UBL-T68.sch</Rules>
-    <Rules type="schematron">../rules/sch/BIIRULES-UBL-T68.sch</Rules>
 
     <Document>
         <Term>ubl:Catalogue</Term>
@@ -772,7 +772,7 @@
                     <Term>cbc:ID</Term>
                     <Name>Item standard identifier</Name>
                     <Description>Indicate the seller's identifier for the related item.</Description>
-                    <Reference type="RULE">EUGEN-T68-R120</Reference>
+                    <Reference type="RULE">EUGEN-T68-R220</Reference>
                     <Value type="EXAMPLE">A</Value>
                 </Element>
 
@@ -1013,7 +1013,8 @@
                             <Term>cbc:EndDate</Term>
                             <Name>Period end date</Name>
                             <Description>The date is the last day of the period.</Description>
-                            <Reference type="RULE">BII3-T68-R017, BII3-T68-R021	</Reference>
+                            <Reference type="RULE">BII3-T68-R017</Reference>
+                            <Reference type="RULE">BII3-T68-R021</Reference>
                             <Value type="EXAMPLE">2017-06-15</Value>
                         </Element>
                     </Element>
@@ -1303,7 +1304,8 @@
                             <Term>cbc:StartDate</Term>
                             <Name>Period start date</Name>
                             <Description>The date is the first day of the period.</Description>
-                            <Reference type="RULE">BII3-T68-R016, BII3-T68-R020</Reference>
+                            <Reference type="RULE">BII3-T68-R016</Reference>
+                            <Reference type="RULE">BII3-T68-R020</Reference>
                             <Value type="EXAMPLE">2017-06-01</Value>
                         </Element>
 
@@ -1311,7 +1313,8 @@
                             <Term>cbc:EndDate</Term>
                             <Name>Period end date</Name>
                             <Description>The date is the last day of the period.</Description>
-                            <Reference type="RULE">BII3-T68-R016, BII3-T68-R020</Reference>
+                            <Reference type="RULE">BII3-T68-R016</Reference>
+                            <Reference type="RULE">BII3-T68-R020</Reference>
                             <Value type="EXAMPLE">2017-06-15</Value>
                         </Element>
                     </Element>

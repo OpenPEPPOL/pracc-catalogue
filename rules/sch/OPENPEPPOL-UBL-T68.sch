@@ -142,4 +142,6 @@
     </rule>
   </pattern>
 
+  <include href="../../target/generated/basic.sch"/>
+
 </schema>

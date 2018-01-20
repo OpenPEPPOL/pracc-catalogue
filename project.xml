@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Project xmlns="urn:fdc:difi.no:2017:vefa:structure:Project-1">
+
+    <Name>PEPPOL BIS Pre-Award Catalogue 1.0</Name>
+
+    <Documentation path="en/">Implementation guide</Documentation>
+
+    <!-- Syntax -->
+
+    <Resource>
+        <Type>Structure-1</Type>
+        <Path>structure/structure.xml</Path>
+        <Title>Pre-Award Catalogue</Title>
+    </Resource>
+
+    <!-- Rules -->
+
+    <Resource>
+        <Identifier>bii</Identifier>
+        <Type>native:Schematron</Type>
+        <Path>rules/sch/BIIRULES-UBL-T68.sch</Path>
+        <Title>Rules defined by CEN CII</Title>
+    </Resource>
+
+    <Resource>
+        <Identifier>eugen</Identifier>
+        <Type>native:Schematron</Type>
+        <Path>rules/sch/OPENPEPPOL-UBL-T68.sch</Path>
+        <Title>Rules defined by OpenPEPPOL</Title>
+    </Resource>
+
+    <!-- Code lists -->
+
+    <Resource>
+        <Type>CodeList-1</Type>
+        <Path>structure/codelist/ICD.xml</Path>
+    </Resource>
+    <Resource>
+        <Type>CodeList-1</Type>
+        <Path>structure/codelist/UNECERec20-11e.xml</Path>
+    </Resource>
+
+    <!-- Files -->
+
+    <Resource>
+        <Type>native:File</Type>
+        <Path>shared/examples/Profile54_trdm68.xml</Path>
+        <Title>Example file: Simple catalogue</Title>
+        <Property key="download">example-pracc-catalogue-simple.xml</Property>
+    </Resource>
+    <Resource>
+        <Type>native:File</Type>
+        <Path>shared/examples/Profile54_trdm68_levels.xml</Path>
+        <Title>Example file: Catalogue with logistic information</Title>
+        <Property key="download">example-pracc-catalogue-logistics.xml</Property>
+    </Resource>
+    <Resource>
+        <Type>native:File</Type>
+        <Path>rules/sch/OPENPEPPOL-UBL-T68.sch</Path>
+        <Title>Schematron for PEPPOL BIS Pre-Award Catalogue</Title>
+        <Description>Schematron file containing rules according to ISO Schematron.</Description>
+        <Property key="download">OPENPEPPOL-UBL-T68.sch</Property>
+    </Resource>
+    <Resource>
+        <Type>native:File</Type>
+        <Path>rules/sch/BIIRULES-UBL-T68.sch</Path>
+        <Title>Schematron for CEN BII Pre-Award Catalogue</Title>
+        <Description>Schematron file containing rules according to ISO Schematron.</Description>
+        <Property key="download">BIIRULES-UBL-T68.sch</Property>
+    </Resource>
+
+    <!-- Namespace -->
+
+    <Resource>
+        <Type>Namespace-1</Type>
+        <Path>structure/namespace/cac.xml</Path>
+    </Resource>
+    <Resource>
+        <Type>Namespace-1</Type>
+        <Path>structure/namespace/cbc.xml</Path>
+    </Resource>
+    <Resource>
+        <Type>Namespace-1</Type>
+        <Path>structure/namespace/ubl-catalogue.xml</Path>
+    </Resource>
+
+</Project>

@@ -1,0 +1,42 @@
+version: '2'
+services:
+
+  asciidoctor:
+    image: "difi/asciidoctor"
+    volumes:
+     - .:/documents
+     - ./target:/target
+
+  structure:
+    image: "difi/vefa-structure:0.5"
+    volumes:
+     - .:/src
+     - ./target:/target
+
+  schematron:
+    image: "klakegg/schematron"
+    command: prepare rules/sch/OPENPEPPOL-UBL-T68.sch /target/OPENPEPPOL-UBL-T68.sch
+    volumes:
+     - .:/src
+     - ./target/site/files:/target
+
+  validator:
+    image: "difi/vefa-validator"
+    command: build -x -t /src -t -target target/validator -n eu.peppol.pracc.catalogue
+    volumes:
+     - .:/src
+
+  target-rm:
+    image: "alpine:3.6"
+    command: sh -c 'if [ -e /src/target ]; then rm -rf /src/target/*; fi'
+    volumes:
+     - .:/src
+
+  serve:
+    image: "python:3-alpine"
+    command: python3 -m http.server 8000 -b 0.0.0.0
+    volumes:
+     - .:/src
+    ports:
+     - "8000:8000"
+    working_dir: /src/target
