@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <buildConfigurations xmlns="http://difi.no/xsd/vefa/validator/1.0">
 
-  <package>PEPPOL BIS Pre-Award Catalogue 0.8.0</package>
+  <package url="/peppolbis/pracc/catalogue/1.0/">PEPPOL BIS Pre-Award Catalogue 1.0.0</package>
 
   <testfolder>test</testfolder>
   <testfolder>snippets</testfolder>

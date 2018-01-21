@@ -19,7 +19,7 @@
         <Identifier>bii</Identifier>
         <Type>native:Schematron</Type>
         <Path>rules/sch/BIIRULES-UBL-T68.sch</Path>
-        <Title>Rules defined by CEN CII</Title>
+        <Title>Rules defined by CEN BII</Title>
     </Resource>
 
     <Resource>
