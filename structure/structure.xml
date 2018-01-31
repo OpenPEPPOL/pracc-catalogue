@@ -83,6 +83,7 @@
             <Term>cac:ValidityPeriod</Term>
             <Name>Pre award catalogue validity period</Name>
             <Reference type="RULE">BII3-T68-R006</Reference>
+            <Property key="doc">structure/docs/validity-period.adoc</Property>
 
             <Element>
                 <Term>cbc:StartDate</Term>
@@ -391,7 +392,7 @@
             </Element>
         </Element>
 
-        <Element>
+        <Element cardinality="0..1">
             <Term>cac:SellerSupplierParty</Term>
             <Name>Catalogue supplier</Name>
             <Description>The party that provides the items specified in the catalog, must be used if the supplier is different from the catalogue provider</Description>
@@ -661,6 +662,14 @@
                     <Reference type="RULE">CL-T68-R008</Reference>
                     <Value type="EXAMPLE">MLT</Value>
                 </Attribute>
+                
+                <Attribute>
+                    <Term>unitCodeListID</Term>
+                    <Name>Quantity Unit. Code List Identifier</Name>
+                    <Description>The list identifier for the unit of the quantity</Description>
+                    <Value type="FIXED">UNECERec20</Value>
+                </Attribute>
+                
             </Element>
 
             <Element cardinality="0..1">
@@ -685,6 +694,14 @@
                     <Reference type="RULE">CL-T68-R008</Reference>
                     <Value type="EXAMPLE">EA</Value>
                 </Attribute>
+                
+                <Attribute>
+                    <Term>unitCodeListID</Term>
+                    <Name>Quantity Unit. Code List Identifier</Name>
+                    <Description>The list identifier for the unit of the quantity</Description>
+                    <Value type="FIXED">UNECERec20</Value>
+                </Attribute>
+                
                 <Value type="DEFAULT">1</Value>
             </Element>
 
@@ -702,6 +719,15 @@
                     <Reference type="RULE">CL-T68-R008</Reference>
                     <Value type="EXAMPLE">EA</Value>
                 </Attribute>
+                
+                
+                <Attribute>
+                    <Term>unitCodeListID</Term>
+                    <Name>Quantity Unit. Code List Identifier</Name>
+                    <Description>The list identifier for the unit of the quantity</Description>
+                    <Value type="FIXED">UNECERec20</Value>
+                </Attribute>
+                
                 <Value type="EXAMPLE">1000</Value>
             </Element>
 
@@ -759,8 +785,18 @@
                         <Reference type="RULE">CL-T68-R008</Reference>
                         <Value type="EXAMPLE">LTR</Value>
                     </Attribute>
+                    
+                    <Attribute>
+                        <Term>unitCodeListID</Term>
+                        <Name>Quantity Unit. Code List Identifier</Name>
+                        <Description>The list identifier for the unit of the quantity</Description>
+                        <Value type="FIXED">UNECERec20</Value>
+                    </Attribute>
+                    
                     <Value type="EXAMPLE">0.333</Value>
+                    
                 </Element>
+                
             </Element>
 
             <Element cardinality="0..n">
@@ -788,6 +824,13 @@
                         <Name>Quanitity unit code</Name>
                         <Reference type="RULE">CL-T68-R008</Reference>
                         <Value type="EXAMPLE">EA</Value>
+                    </Attribute>
+                    
+                    <Attribute>
+                        <Term>unitCodeListID</Term>
+                        <Name>Quantity Unit. Code List Identifier</Name>
+                        <Description>The list identifier for the unit of the quantity</Description>
+                        <Value type="FIXED">UNECERec20</Value>
                     </Attribute>
                     
                     <Value type="EXAMPLE">5</Value>
@@ -818,6 +861,13 @@
                         <Name>Quanitity unit code</Name>
                         <Reference type="RULE">CL-T68-R008</Reference>
                         <Value type="EXAMPLE">EA</Value>
+                    </Attribute>
+                         
+                    <Attribute>
+                        <Term>unitCodeListID</Term>
+                        <Name>Quantity Unit. Code List Identifier</Name>
+                        <Description>The list identifier for the unit of the quantity</Description>
+                        <Value type="FIXED">UNECERec20</Value>
                     </Attribute>
                     
                     <Value type="EXAMPLE">10</Value>
@@ -850,6 +900,13 @@
                         <Value type="EXAMPLE">MLT</Value>
                     </Attribute>
                     
+                    <Attribute>
+                        <Term>unitCodeListID</Term>
+                        <Name>Quantity Unit. Code List Identifier</Name>
+                        <Description>The list identifier for the unit of the quantity</Description>
+                        <Value type="FIXED">UNECERec20</Value>
+                    </Attribute>
+                    
                     <Value type="EXAMPLE">1000</Value>
                     
                 </Element>
@@ -880,6 +937,13 @@
                         <Name>Quanitity unit code</Name>
                         <Reference type="RULE">CL-T68-R008</Reference>
                         <Value type="EXAMPLE">EA</Value>
+                    </Attribute>
+                    
+                    <Attribute>
+                        <Term>unitCodeListID</Term>
+                        <Name>Quantity Unit. Code List Identifier</Name>
+                        <Description>The list identifier for the unit of the quantity</Description>
+                        <Value type="FIXED">UNECERec20</Value>
                     </Attribute>
                     
                     <Value type="EXAMPLE">10</Value>
@@ -1076,6 +1140,13 @@
                             <Value type="EXAMPLE">EA</Value>
                         </Attribute>
                         
+                        <Attribute>
+                            <Term>unitCodeListID</Term>
+                            <Name>Quantity Unit. Code List Identifier</Name>
+                            <Description>The list identifier for the unit of the quantity</Description>
+                            <Value type="FIXED">UNECERec20</Value>
+                        </Attribute>
+                        
                         <Value type="EXAMPLE">12</Value>
                         
                     </Element>
@@ -1092,6 +1163,13 @@
                             <Name>Quanitity unit code</Name>
                             <Reference type="RULE">CL-T68-R008</Reference>
                             <Value type="EXAMPLE">EA</Value>
+                        </Attribute>
+                        
+                        <Attribute>
+                            <Term>unitCodeListID</Term>
+                            <Name>Quantity Unit. Code List Identifier</Name>
+                            <Description>The list identifier for the unit of the quantity</Description>
+                            <Value type="FIXED">UNECERec20</Value>
                         </Attribute>
                         
                         <Value type="EXAMPLE">5</Value>
@@ -1124,6 +1202,13 @@
                         <Name>Quanitity unit code</Name>
                         <Reference type="RULE">CL-T68-R008</Reference>
                         <Value type="EXAMPLE">EA</Value>
+                    </Attribute>
+                    
+                    <Attribute>
+                        <Term>unitCodeListID</Term>
+                        <Name>Quantity Unit. Code List Identifier</Name>
+                        <Description>The list identifier for the unit of the quantity</Description>
+                        <Value type="FIXED">UNECERec20</Value>
                     </Attribute>
                     
                     <Value type="EXAMPLE">12</Value>
@@ -1679,6 +1764,13 @@
                             <Value type="EXAMPLE">KGM</Value>
                         </Attribute>
                         
+                        <Attribute>
+                            <Term>unitCodeListID</Term>
+                            <Name>Quantity Unit. Code List Identifier</Name>
+                            <Description>The list identifier for the unit of the quantity</Description>
+                            <Value type="FIXED">UNECERec20</Value>
+                        </Attribute>
+                        
                         <Value type="EXAMPLE">1250</Value>
                         
                     </Element>
@@ -1698,6 +1790,13 @@
                             <Value type="EXAMPLE">CEL</Value>
                         </Attribute>
                         
+                        <Attribute>
+                            <Term>unitCodeListID</Term>
+                            <Name>Quantity Unit. Code List Identifier</Name>
+                            <Description>The list identifier for the unit of the quantity</Description>
+                            <Value type="FIXED">UNECERec20</Value>
+                        </Attribute>
+                        
                         <Value type="EXAMPLE">4</Value>
                     </Element>
 
@@ -1714,6 +1813,13 @@
                             <Name>Quantity unit code</Name>
                             <Reference type="RULE">CL-T68-R008</Reference>
                             <Value type="EXAMPLE">CEL</Value>
+                        </Attribute>
+                        
+                        <Attribute>
+                            <Term>unitCodeListID</Term>
+                            <Name>Quantity Unit. Code List Identifier</Name>
+                            <Description>The list identifier for the unit of the quantity</Description>
+                            <Value type="FIXED">UNECERec20</Value>
                         </Attribute>
                         
                         <Value type="EXAMPLE">10</Value>
