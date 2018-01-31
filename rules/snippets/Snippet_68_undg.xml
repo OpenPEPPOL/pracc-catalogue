@@ -65,6 +65,7 @@
 	</cac:ReceiverParty>
 	<cac:CatalogueLine>
 		<cbc:ID>1</cbc:ID>
+		<cbc:OrderableIndicator>true</cbc:OrderableIndicator>
 		<cbc:OrderableUnit>LTR</cbc:OrderableUnit>
 		<cbc:ContentUnitQuantity unitCode="LTR" unitCodeListID="UNECERec20"
 			>1</cbc:ContentUnitQuantity>

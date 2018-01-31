@@ -1,0 +1,12 @@
+
+include::guide/settings.adoc[]
+
+= Validity period
+
+Validity period is mandatory on document level, and shall have both start date and end date, and the start date shall be earlier than the end date
+
+.UBL example of validity period
+[source, xml, indent=0]
+----
+include::rules/snippets/snippet-structure-1.xml[tags=validity-doc]
+----

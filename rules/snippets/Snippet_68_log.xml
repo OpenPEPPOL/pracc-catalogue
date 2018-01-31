@@ -86,6 +86,7 @@
 	<cac:CatalogueLine>
 		<cbc:ID>2</cbc:ID>
 		<cbc:OrderableIndicator>true</cbc:OrderableIndicator>
+		<cbc:OrderableUnit>5</cbc:OrderableUnit>
 		<cbc:PackLevelCode listID="GS17009:PEPPOL">TU</cbc:PackLevelCode>
 		<cac:ComponentRelatedItem>
 			<cbc:ID>333333</cbc:ID> <!--1-->

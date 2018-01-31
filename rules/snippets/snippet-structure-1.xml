@@ -16,10 +16,12 @@
 	<cbc:Name>A pre-award catalogue</cbc:Name>
 	<cbc:IssueDate>2017-05-01</cbc:IssueDate>
 	<cbc:VersionID>1</cbc:VersionID>
+	<!-- tag::validity-doc[] -->
 	<cac:ValidityPeriod>
-		<cbc:StartDate>2017-05-01</cbc:StartDate>
-		<cbc:EndDate>2017-12-31</cbc:EndDate>
+		<cbc:StartDate>2018-01-01</cbc:StartDate>
+		<cbc:EndDate>2018-01-31</cbc:EndDate>
 	</cac:ValidityPeriod>
+	<!-- end::validity-doc[] -->
 	<cac:ReferencedContract>
 		<cbc:ContractTypeCode listID="UNCL1001">311</cbc:ContractTypeCode>
 		<cac:ContractDocumentReference>

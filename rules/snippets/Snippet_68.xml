@@ -75,16 +75,17 @@
 		<cbc:ID>1</cbc:ID>
 		<cbc:ContractSubdivision>32</cbc:ContractSubdivision>
 		<!-- end::lot-ref[] -->
+		
 		<cbc:OrderableIndicator>true</cbc:OrderableIndicator>
 		<cbc:OrderableUnit>LTR</cbc:OrderableUnit>
-		<cbc:ContentUnitQuantity unitCode="LTR">1</cbc:ContentUnitQuantity>
+		<cbc:ContentUnitQuantity unitCode="LTR" unitCodeListID="UNECERec20">1</cbc:ContentUnitQuantity>
 		<cbc:OrderQuantityIncrementNumeric>10</cbc:OrderQuantityIncrementNumeric>
-		<cbc:MinimumOrderQuantity unitCode="LTR">100</cbc:MinimumOrderQuantity>
-		<cbc:MaximumOrderQuantity unitCode="LTR">1000</cbc:MaximumOrderQuantity>
-		<cbc:PackLevelCode>4H</cbc:PackLevelCode>
+		<cbc:MinimumOrderQuantity unitCode="LTR" unitCodeListID="UNECERec20">100</cbc:MinimumOrderQuantity>
+		<cbc:MaximumOrderQuantity unitCode="LTR" unitCodeListID="UNECERec20">1000</cbc:MaximumOrderQuantity>
+		<cbc:PackLevelCode listID="GS17009:PEPPOL">4H</cbc:PackLevelCode>
 		<cac:ItemComparison>
 			<cbc:PriceAmount currencyID="EUR">1.5</cbc:PriceAmount>
-			<cbc:Quantity unitCode="LTR">1</cbc:Quantity>
+			<cbc:Quantity unitCode="LTR" unitCodeListID="UNECERec20">1</cbc:Quantity>
 		</cac:ItemComparison>
 		<!-- tag::req_item[] -->
 		<cac:RequiredItemLocationQuantity>
@@ -101,7 +102,7 @@
 		<!-- tag::item[] -->
 		<cac:Item>
 			<cbc:Description>Milk standard 3%</cbc:Description>
-			<cbc:PackQuantity>10</cbc:PackQuantity>
+			<cbc:PackQuantity unitCode="LTR" unitCodeListID="UNECERec20">10</cbc:PackQuantity>
 			<cbc:PackSizeNumeric>10</cbc:PackSizeNumeric>
 			<cbc:Name>Milk standard 3%</cbc:Name>
 			<cbc:Keyword>Milk</cbc:Keyword>
