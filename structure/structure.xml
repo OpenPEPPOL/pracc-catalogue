@@ -109,8 +109,8 @@
             <Term>cac:ReferencedContract</Term>
             <Name>Contract reference</Name>
             <Description>A reference to a contract that can be identified.</Description>
-            <Property key="doc">structure/docs/procurement-ref.adoc</Property>
             <Reference type="RULE">EUGEN-T68-R020</Reference>
+            <Property key="doc">structure/docs/procurement-ref.adoc</Property>
 
             <Element cardinality="0..1">
                 <Term>cbc:ID</Term>
@@ -158,9 +158,9 @@
         <Element>
             <Term>cac:ProviderParty</Term>
             <Name>Provider party</Name>
-            <Description>The party that sends the catalogue.</Description>
-            <Property key="doc">structure/docs/provider.adoc</Property>
+            <Description>The party that sends the catalogue.</Description> 
             <Reference type="RULE">BII3-T68-R008</Reference>
+            <Property key="doc">structure/docs/provider.adoc</Property>
 
             <Element cardinality="0..1">
                 <Term>cbc:EndpointID</Term>
@@ -278,8 +278,8 @@
             <Term>cac:ReceiverParty</Term>
             <Name>Receiver party</Name>
             <Description>The party to which the catalogue is sent.</Description>
-            <Property key="doc">structure/docs/receiver.adoc</Property>
             <Reference type="RULE">BII3-T68-R009</Reference>
+            <Property key="doc">structure/docs/receiver.adoc</Property>
 
             <Element cardinality="0..1">
                 <Term>cbc:EndpointID</Term>
@@ -616,8 +616,8 @@
             <Term>cac:CatalogueLine</Term>
             <Name>Pre award catalogue line</Name>
             <Description>Detailed information of an item, price and its composition  in a pre-award catalogue.</Description>
-            <Property key="doc">structure/docs/line.adoc</Property>
             <Reference type="RULE">BII3-T68-R010</Reference>
+            <Property key="doc">structure/docs/line.adoc</Property>
 
             <Element>
                 <Term>cbc:ID</Term>
