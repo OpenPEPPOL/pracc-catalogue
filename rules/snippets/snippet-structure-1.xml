@@ -67,6 +67,7 @@
 	</cac:ReceiverParty>
 	<!-- end::receiver[] -->
 
+<!-- tag::line[] -->
 	<cac:CatalogueLine>
 		<cbc:ID>1</cbc:ID>
 		<cbc:OrderableIndicator>true</cbc:OrderableIndicator>
@@ -76,10 +77,18 @@
 		<cbc:MinimumOrderQuantity unitCode="LTR" unitCodeListID="UNECERec20">100</cbc:MinimumOrderQuantity>
 		<cbc:MaximumOrderQuantity unitCode="LTR" unitCodeListID="UNECERec20">1000</cbc:MaximumOrderQuantity>
 		<cbc:PackLevelCode listID="GS17009:PEPPOL">4H</cbc:PackLevelCode>
+		<!-- tag::item-comparison[] -->
 		<cac:ItemComparison>
 			<cbc:PriceAmount currencyID="EUR">1.5</cbc:PriceAmount>
 			<cbc:Quantity unitCode="LTR" unitCodeListID="UNECERec20">1</cbc:Quantity>
 		</cac:ItemComparison>
+		<!-- end::item-comparison[] -->
+		<!-- tag::component-related[] -->
+		<cac:ComponentRelatedItem>
+			<cbc:ID>2</cbc:ID>
+			<cbc:Quantity unitCode="EA" unitCodeListID="UNECERec20">12</cbc:Quantity>
+		</cac:ComponentRelatedItem>
+		<!-- end::component-related[] -->
 		<cac:RequiredItemLocationQuantity>
 			<cac:ApplicableTerritoryAddress>
 				<cac:Country>
@@ -131,4 +140,5 @@
 			<cbc:LineID>1</cbc:LineID>
 		</cac:CallForTendersLineReference>
 	</cac:CatalogueLine>
+	<!-- end::line[] -->
 </Catalogue>

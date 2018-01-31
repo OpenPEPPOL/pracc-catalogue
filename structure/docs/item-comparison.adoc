@@ -1,0 +1,10 @@
+include::guide/settings.adoc[]
+
+= Item comparison
+
+
+.UBL example of item comparison information
+[source, xml, indent=0]
+----
+include::../{snippet-dir}/snippet-structure-1.xml[tags=item-comparison]
+----

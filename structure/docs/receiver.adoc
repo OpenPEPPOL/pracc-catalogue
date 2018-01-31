@@ -1,0 +1,11 @@
+include::guide/settings.adoc[]
+
+= Catalogue receiver
+
+Catalogue receiver is mandatory in the pre award catalogue
+
+.UBL example of catalogue receiver
+[source, xml, indent=0]
+----
+include::../{snippet-dir}/snippet-structure-1.xml[tags=receiver]
+----

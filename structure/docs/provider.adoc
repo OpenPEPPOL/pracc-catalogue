@@ -2,7 +2,7 @@ include::guide/settings.adoc[]
 
 = Catalogue provider
 
-The party that sends the catalogue. Information on catalogue provider is mandatory
+Catalogue provider is mandatory in the pre award catalogue
 
 .UBL example of catalogue provider
 [source, xml, indent=0]

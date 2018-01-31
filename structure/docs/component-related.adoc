@@ -1,0 +1,10 @@
+include::guide/settings.adoc[]
+
+= Component related products
+
+
+.UBL example of component related products
+[source, xml, indent=0]
+----
+include::../{snippet-dir}/snippet-structure-1.xml[tags=component-related]
+----
