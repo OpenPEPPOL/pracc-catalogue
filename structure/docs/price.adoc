@@ -1,0 +1,26 @@
+include::guide/settings.adoc[]
+
+= Price
+
+All prices in the format are related to the article or service within this PreAward Catalogue. The following prices can be stated:
+
+* Item price is net price including all discounts and charges but excluded Vat.
+* Conditional price related to a specific location or a certain quantity.
+* Campaign price.
+
+Be aware that no Gross prices can be sent in the format (price before discount and charges). All prices shall have Currency as an attribute. Currency shall be according to Code list.
+
+Example of Prices in PreAward Catalogue:
+
+.UBL example of item price
+[source, xml, indent=0]
+----
+include::../{snippet-dir}/snippet-structure-1.xml[tags=item-price]
+----
+
+
+.UBL example of conditional price
+[source, xml, indent=0]
+----
+include::../{snippet-dir}/snippet-structure-1.xml[tags=conditional-price]
+----

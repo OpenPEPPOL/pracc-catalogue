@@ -89,6 +89,31 @@
 			<cbc:Quantity unitCode="EA" unitCodeListID="UNECERec20">12</cbc:Quantity>
 		</cac:ComponentRelatedItem>
 		<!-- end::component-related[] -->
+		<!-- tag::required-related[] -->
+		<cac:RequiredRelatedItem>
+			<cbc:ID>987654</cbc:ID>
+			<cbc:Quantity unitCode="EA" unitCodeListID="UNECERec20">1</cbc:Quantity>
+		</cac:RequiredRelatedItem>
+		<!-- end::required-related[] -->
+		<!-- tag::complementary-related[] -->
+		<cac:ComplementaryRelatedItem>
+			<cbc:ID>123456</cbc:ID>
+			<cbc:Quantity unitCode="EA" unitCodeListID="UNECERec20">1</cbc:Quantity>
+		</cac:ComplementaryRelatedItem>
+		<!-- end::complementary-related[] -->
+		<!-- tag::item-price[] -->
+		<cac:RequiredItemLocationQuantity>
+			<cac:Price>
+				<cbc:PriceAmount currencyID="EUR">1.5</cbc:PriceAmount>
+				<cac:ValidityPeriod>
+					<cbc:StartDate>2018-01-01</cbc:StartDate>
+					<cbc:EndDate>2018-01-15</cbc:EndDate>
+				</cac:ValidityPeriod>
+			</cac:Price>		
+		</cac:RequiredItemLocationQuantity>
+		<!-- end::item-price[] -->
+		
+		<!-- tag::conditional-price[] -->
 		<cac:RequiredItemLocationQuantity>
 			<cac:ApplicableTerritoryAddress>
 				<cac:Country>
@@ -96,9 +121,11 @@
 				</cac:Country>
 			</cac:ApplicableTerritoryAddress>
 			<cac:Price>
-				<cbc:PriceAmount currencyID="EUR">1.5</cbc:PriceAmount>
+				<cbc:PriceAmount currencyID="EUR">1.7</cbc:PriceAmount>
 			</cac:Price>
 		</cac:RequiredItemLocationQuantity>
+		<!-- end::conditional-price[] -->
+		<!-- tag::item[] -->
 		<cac:Item>
 			<cbc:Description>Milk standard 3%</cbc:Description>
 			<cbc:PackQuantity unitCode="LTR" unitCodeListID="UNECERec20">10</cbc:PackQuantity>
@@ -136,9 +163,11 @@
 				<cbc:Value>3%</cbc:Value>
 			</cac:AdditionalItemProperty>
 		</cac:Item>
+		<!-- end::item[] -->
 		<cac:CallForTendersLineReference>
 			<cbc:LineID>1</cbc:LineID>
 		</cac:CallForTendersLineReference>
 	</cac:CatalogueLine>
 	<!-- end::line[] -->
+	
 </Catalogue>

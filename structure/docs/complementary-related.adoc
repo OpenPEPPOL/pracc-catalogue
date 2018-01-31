@@ -1,0 +1,10 @@
+include::guide/settings.adoc[]
+
+= Complementary related products
+
+
+.UBL example of complementary related products
+[source, xml, indent=0]
+----
+include::../{snippet-dir}/snippet-structure-1.xml[tags=complementary-related]
+----

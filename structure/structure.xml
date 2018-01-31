@@ -848,6 +848,7 @@
                 <Term>cac:RequiredRelatedItem</Term>
                 <Name>Required related item</Name>
                 <Description>Required related items are products that are bundled and ordered/invoiced together, e.g. bottles and desposits.</Description>
+                <Property key="doc">structure/docs/required-related.adoc</Property>
 
                 <Element cardinality="0..1">
                     <Term>cbc:ID</Term>
@@ -884,6 +885,8 @@
             <Element cardinality="0..n">
                 <Term>cac:ComplementaryRelatedItem</Term>
                 <Name>Complementary related item</Name>
+                <Description>Complementary related item is used for items that might be sold together with a product, e.g. disk station to a laptop.</Description>
+                <Property key="doc">structure/docs/complementary-related.adoc</Property>
 
                 <Element cardinality="0..1">
                     <Term>cbc:ID</Term>
@@ -1023,6 +1026,7 @@
                     <Term>cac:Price</Term>
                     <Name>Price</Name>
                     <Description>Used to give the item net price as well as conditional price related to a specific location or a quanity, as well as campaing prices.</Description>
+                    <Property key="doc">structure/docs/price.adoc</Property>
 
                     <Element>
                         <Term>cbc:PriceAmount</Term>
@@ -1189,6 +1193,7 @@
                 <Term>cac:Item</Term>
                 <Name>Pre award catalogue item details</Name>
                 <Reference type="RULE">BII3-T68-R012</Reference>
+                <Property key="doc">structure/docs/item.adoc</Property>
 
                 <Element cardinality="0..1">
                     <Term>cbc:Description</Term>

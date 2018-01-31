@@ -1,0 +1,10 @@
+include::guide/settings.adoc[]
+
+= Catalogue item
+
+
+.Example of a catalogue item
+[source, xml, indent=0]
+----
+include::../{snippet-dir}/snippet-structure-1.xml[tags=item]
+----
