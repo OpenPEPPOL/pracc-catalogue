@@ -83,7 +83,7 @@
             <Term>cac:ValidityPeriod</Term>
             <Name>Pre award catalogue validity period</Name>
             <Reference type="RULE">BII3-T68-R006</Reference>
-            <Property key="doc">docs/validity-period.adoc</Property>
+            <Property key="doc">structure/docs/validity-period.adoc</Property>
 
             <Element>
                 <Term>cbc:StartDate</Term>
@@ -157,6 +157,7 @@
             <Term>cac:ProviderParty</Term>
             <Name>Provider party</Name>
             <Description>The party that sends the catalogue.</Description>
+            <Property key="doc">structure/docs/provider.adoc</Property>
             <Reference type="RULE">BII3-T68-R008</Reference>
 
             <Element cardinality="0..1">

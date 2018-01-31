@@ -1,0 +1,11 @@
+include::guide/settings.adoc[]
+
+= Catalogue provider
+
+The party that sends the catalogue. Information on catalogue provider is mandatory
+
+.UBL example of catalogue provider
+[source, xml, indent=0]
+----
+include::../{snippet-dir}/snippet-structure-1.xml[tags=provider]
+----

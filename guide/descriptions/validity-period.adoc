@@ -14,14 +14,7 @@ Example of validity periods in a PreAward Catalogue:
 [source]
 .Document level (mandatory)
 ----
-<Catalogue>
-...
-<cac:ValidityPeriod>
-  <cbc:StartDate>2017-08-01</cbc:StartDate>
-  <cbc:EndDate>2017-12-31</cbc:EndDate>
-</cac:ValidityPeriod>
-...
-</Catalogue>
+include::../{snippet-dir}/snippet-structure-1.xml[tags=validity-doc]
 ----
 
 [source]

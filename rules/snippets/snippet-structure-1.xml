@@ -29,6 +29,7 @@
 		</cac:ContractDocumentReference>
 	</cac:ReferencedContract>
 
+<!-- tag::provider[] -->
 	<cac:ProviderParty>
 		<cac:PartyIdentification>
 			<cbc:ID schemeID="GLN">8075367945271</cbc:ID>
@@ -45,7 +46,9 @@
 			</cac:Country>
 		</cac:PostalAddress>
 	</cac:ProviderParty>
+	<!-- end::provider[] -->
 
+	<!-- tag::receiver[] -->
 	<cac:ReceiverParty>
 		<cac:PartyIdentification>
 			<cbc:ID schemeID="ZZZ">14920263491</cbc:ID>
@@ -62,6 +65,7 @@
 			</cac:Country>
 		</cac:PostalAddress>
 	</cac:ReceiverParty>
+	<!-- end::receiver[] -->
 
 	<cac:CatalogueLine>
 		<cbc:ID>1</cbc:ID>
