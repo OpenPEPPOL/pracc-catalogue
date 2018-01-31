@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeList xmlns="urn:fdc:difi.no:2017:vefa:structure:CodeList-1">
+
+    <Title>UNCL5305 Duty or tax or fee category code</Title>
+    <Identifier>UNCL5305</Identifier>
+    <Version>D.17A</Version>
+    <Agency>UN/CEFACT</Agency>
+    <Subset>OpenPEPPOL</Subset>
+
+    <Code>
+        <Id>AE</Id>
+        <Name>Vat Reverse Charge</Name>
+        <Description>Code specifying that the standard VAT rate is levied from the invoicee.</Description>
+    </Code>
+
+    <Code>
+        <Id>E</Id>
+        <Name>Exempt from Tax</Name>
+        <Description>Code specifying that taxes are not applicable.</Description>
+    </Code>
+
+    <Code>
+        <Id>S</Id>
+        <Name>Standard rate</Name>
+        <Description>Code specifying the standard rate.</Description>
+    </Code>
+
+    <Code>
+        <Id>Z</Id>
+        <Name>Zero rated goods</Name>
+        <Description>Code specifying that the goods are at a zero rate.</Description>
+    </Code>
+
+    <Code>
+        <Id>H</Id>
+        <Name>Higher rate</Name>
+        <Description>Code specifying a higher rate of duty or tax or fee.</Description>
+    </Code>
+
+    <Code>
+        <Id>AA</Id>
+        <Name>Lower rate</Name>
+        <Description>Tax rate is lower than standard rate.</Description>
+    </Code>
+
+</CodeList>

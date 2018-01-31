@@ -131,6 +131,7 @@
                 <Description>The type of a contract that is being referred to (such as framework agreement) expressed as a code.</Description>
                 <Reference type="RULE">OP-T68-R003</Reference>
                 <Reference type="RULE">EUGEN-T68-R021</Reference>
+                <Reference type="CODE_LIST">UNCL1001</Reference>
 
                 <Attribute>
                     <Term>listID</Term>
@@ -138,6 +139,7 @@
                     <Reference type="RULE">BII3-T68-R028</Reference>
                     <Value type="FIXED">UNCL1001</Value>
                 </Attribute>
+
                 <Value type="FIXED">311</Value>
             </Element>
 
@@ -173,6 +175,7 @@
                     <Description>The identification of the identification scheme.</Description>
                     <Reference type="RULE">EUGEN-T68-R030</Reference>
                     <Reference type="RULE">OP-T68-R001</Reference>
+                    <Reference type="CODE_LIST">ICD</Reference>
                     <Value type="EXAMPLE">SE:VATNO</Value>
                 </Attribute>
                 
@@ -194,6 +197,7 @@
                         <Description>Scheme id mandatory use "ZZZ" for unidentified scheme. The identification of the identification scheme.</Description>
                         <Reference type="RULE">EUGEN-T68-R040</Reference>
                         <Reference type="RULE">OP-T68-R002</Reference>
+                        <Reference type="CODE_LIST">ICD</Reference>
                         <Value type="EXAMPLE">SE:VATNO</Value>
                     </Attribute>
                     <Value type="EXAMPLE">SE5679083242</Value>
@@ -260,6 +264,7 @@
                         <Name>Country code</Name>
                         <Description>A code that identifies the country.</Description>
                         <Reference type="RULE">CL-T68-R003</Reference>
+                        <Reference type="CODE_LIST">ISO3166</Reference>
 
                         <Attribute>
                             <Term>listID</Term>
@@ -286,12 +291,12 @@
                 <Name>Catalogue receiver electronic address identifier</Name>
                 <Description>The electronic address of the party to which the catalogue is sent.</Description>
                
-
                 <Attribute>
                     <Term>schemeID</Term>
                     <Description>The identification of the identification scheme.</Description>
                     <Reference type="RULE">EUGEN-T68-R030</Reference>
                     <Reference type="RULE">OP-T68-R001</Reference>
+                    <Reference type="CODE_LIST">ICD</Reference>
                     <Value type="EXAMPLE">NO:ORGNR</Value>
                 </Attribute>
                 
@@ -313,6 +318,7 @@
                         <Description>Scheme id mandatory use "ZZZ" for unidentified scheme. The identification of the identification scheme.</Description>
                         <Reference type="RULE">EUGEN-T68-R040</Reference>
                         <Reference type="RULE">OP-T68-R002</Reference>
+                        <Reference type="CODE_LIST">ICD</Reference>
                         <Value type="EXAMPLE">NO:ORGNR</Value>
                     </Attribute>
                     
@@ -382,6 +388,7 @@
                         <Name>Country code</Name>
                         <Description>A code that identifies the country.</Description>
                         <Reference type="RULE">CL-T68-R003</Reference>
+                        <Reference type="CODE_LIST">ISO3166</Reference>
 
                         <Attribute>
                             <Term>listID</Term>
@@ -420,6 +427,7 @@
                             <Description>Scheme id mandatory use "ZZZ" for unidentified scheme. The identification of the identification scheme.</Description>
                             <Reference type="RULE">EUGEN-T68-R040</Reference>
                             <Reference type="RULE">OP-T68-R002</Reference>
+                            <Reference type="CODE_LIST">ICD</Reference>
                             <Value type="EXAMPLE">GLN</Value>
                         </Attribute>
                         
@@ -485,6 +493,7 @@
                             <Name>Country code</Name>
                             <Description>A code that identifies the country.</Description>
                             <Reference type="RULE">CL-T68-R003</Reference>
+                            <Reference type="CODE_LIST">ISO3166</Reference>
                             
                             <Attribute>
                                 <Term>listID</Term>
@@ -558,6 +567,7 @@
                             <Description>Scheme id mandatory use "ZZZ" for unidentified scheme. The identification of the identification scheme.</Description>
                             <Reference type="RULE">EUGEN-T68-R040</Reference>
                             <Reference type="RULE">OP-T68-R002</Reference>
+                            <Reference type="CODE_LIST">ICD</Reference>
                             <Value type="EXAMPLE">ZZZ</Value>
                         </Attribute>
                         
@@ -665,6 +675,7 @@
                     <Name>Quantity Unit. Code</Name>
                     <Description>The unit of the quantity</Description>
                     <Reference type="RULE">CL-T68-R008</Reference>
+                    <Reference type="CODE_LIST">UNECERec20</Reference>
                     <Value type="EXAMPLE">MLT</Value>
                 </Attribute>
                 
@@ -697,6 +708,7 @@
                     <Name>Quantity Unit. Code</Name>
                     <Description>The unit of the quantity</Description>
                     <Reference type="RULE">CL-T68-R008</Reference>
+                    <Reference type="CODE_LIST">UNECERec20</Reference>
                     <Value type="EXAMPLE">EA</Value>
                 </Attribute>
                 
@@ -722,6 +734,7 @@
                     <Name>Quantity Unit. Code</Name>
                     <Description>The unit of the quantity</Description>
                     <Reference type="RULE">CL-T68-R008</Reference>
+                    <Reference type="CODE_LIST">UNECERec20</Reference>
                     <Value type="EXAMPLE">EA</Value>
                 </Attribute>
                 
@@ -765,12 +778,12 @@
                     <Term>cbc:PriceAmount</Term>
                     <Name>Standardized unit price</Name>
                     <Description>Item comparison unit price defining price for a certain quantity.</Description>
-                    
 
                     <Attribute>
                         <Term>currencyID</Term>
                         <Name>Currency identifier</Name>
                         <Reference type="RULE">CL-T68-R009</Reference>
+                        <Reference type="CODE_LIST">ISO4217</Reference>
                         <Value type="EXAMPLE">SEK</Value>
                     </Attribute>
                     
@@ -789,6 +802,7 @@
                         <Term>unitCode</Term>
                         <Name>Quanitity unit code</Name>
                         <Reference type="RULE">CL-T68-R008</Reference>
+                        <Reference type="CODE_LIST">UNECERec20</Reference>
                         <Value type="EXAMPLE">LTR</Value>
                     </Attribute>
                     
@@ -830,6 +844,7 @@
                         <Term>unitCode</Term>
                         <Name>Quanitity unit code</Name>
                         <Reference type="RULE">CL-T68-R008</Reference>
+                        <Reference type="CODE_LIST">UNECERec20</Reference>
                         <Value type="EXAMPLE">EA</Value>
                     </Attribute>
                     
@@ -848,7 +863,7 @@
                 <Term>cac:RequiredRelatedItem</Term>
                 <Name>Required related item</Name>
                 <Description>Required related items are products that are bundled and ordered/invoiced together, e.g. bottles and desposits.</Description>
-                <Property key="doc">structure/docs/required-related.adoc</Property>
+                <!-- <Property key="doc">structure/docs/required-related.adoc</Property> -->
 
                 <Element cardinality="0..1">
                     <Term>cbc:ID</Term>
@@ -868,6 +883,7 @@
                         <Term>unitCode</Term>
                         <Name>Quanitity unit code</Name>
                         <Reference type="RULE">CL-T68-R008</Reference>
+                        <Reference type="CODE_LIST">UNECERec20</Reference>
                         <Value type="EXAMPLE">EA</Value>
                     </Attribute>
                          
@@ -907,6 +923,7 @@
                         <Term>unitCode</Term>
                         <Name>Quanitity unit code</Name>
                         <Reference type="RULE">CL-T68-R008</Reference>
+                        <Reference type="CODE_LIST">UNECERec20</Reference>
                         <Value type="EXAMPLE">MLT</Value>
                     </Attribute>
                     
@@ -946,6 +963,7 @@
                         <Term>unitCode</Term>
                         <Name>Quanitity unit code</Name>
                         <Reference type="RULE">CL-T68-R008</Reference>
+                        <Reference type="CODE_LIST">UNECERec20</Reference>
                         <Value type="EXAMPLE">EA</Value>
                     </Attribute>
                     
@@ -1009,6 +1027,7 @@
                             <Name>Country code</Name>
                             <Description>The lists of valid countries are registered with the ISO 3166-1 Maintenance agency, "Codes for the representation of names of countries and their subdivisions". It is recommended to use the alpha-2 representation.</Description>
                             <Reference type="RULE">CL-T68-R003</Reference>
+                            <Reference type="CODE_LIST">ISO3166</Reference>
                             
                             <Attribute usage="Optional">
                                 <Term>listID</Term>
@@ -1037,6 +1056,7 @@
                             <Term>currencyID</Term>
                             <Name>Currency identifier</Name>
                             <Reference type="RULE">CL-T68-R009</Reference>
+                            <Reference type="CODE_LIST">ISO4217</Reference>
                             <Value type="EXAMPLE">SEK</Value>
                         </Attribute>
                         
@@ -1050,6 +1070,7 @@
                             for the price should be defined by stating the price validity period.
                         </Description>
                         <Reference type="RULE">CL-T68-R010</Reference>
+                        <Reference type="CODE_LIST">UNCL5387</Reference>
 
                         <Attribute usage="Optional">
                             <Term>listID</Term>
@@ -1124,6 +1145,7 @@
                                 <Term>currencyID</Term>
                                 <Name>Currency identifier</Name>
                                 <Reference type="RULE">CL-T68-R009</Reference>
+                                <Reference type="CODE_LIST">ISO4217</Reference>
                                 <Value type="EXAMPLE">SEK</Value>
                             </Attribute>
                             
@@ -1148,6 +1170,7 @@
                             <Term>unitCode</Term>
                             <Name>Quanitity unit code</Name>
                             <Reference type="RULE">CL-T68-R008</Reference>
+                            <Reference type="CODE_LIST">UNECERec20</Reference>
                             <Value type="EXAMPLE">EA</Value>
                         </Attribute>
                         
@@ -1173,6 +1196,7 @@
                             <Term>unitCode</Term>
                             <Name>Quanitity unit code</Name>
                             <Reference type="RULE">CL-T68-R008</Reference>
+                            <Reference type="CODE_LIST">UNECERec20</Reference>
                             <Value type="EXAMPLE">EA</Value>
                         </Attribute>
                         
@@ -1213,6 +1237,7 @@
                         <Term>unitCode</Term>
                         <Name>Quanitity unit code</Name>
                         <Reference type="RULE">CL-T68-R008</Reference>
+                        <Reference type="CODE_LIST">UNECERec20</Reference>
                         <Value type="EXAMPLE">EA</Value>
                     </Attribute>
                     
@@ -1335,6 +1360,7 @@
                         <Name>Attachment description code</Name>
                         <Description>A functional description of the attachment, expressed as a code</Description>
                         <Reference type="RULE">CL-T68-R002</Reference>
+                        <Reference type="CODE_LIST">UNCL1001</Reference>
                        
 
                         <Attribute usage="Optional">
@@ -1375,6 +1401,7 @@
                                 <Term>mimeCode</Term>
                                 <Description>Mime type of the attached document</Description>
                                 <Reference type="RULE">CL-T68-R001</Reference>
+                                <Reference type="CODE_LIST">MimeCode</Reference>
                                 <Value type="EXAMPLE">application/pdf</Value>
                             </Attribute>
                             
@@ -1429,6 +1456,7 @@
                         <Description>The code identifying the country from which the item
                             originates. Commonly used in cross border trade for statistical and customs purposes.</Description>
                         <Reference type="RULE">CL-T68-R003</Reference>
+                        <Reference type="CODE_LIST">ISO3166</Reference>
                         
                         <Attribute>
                             <Term>listID</Term>
@@ -1506,6 +1534,7 @@
                             according to the UNDG classification schema.
                         </Description>
                         <Reference type="RULE">CL-T68-R006</Reference>
+                        <Reference type="CODE_LIST">UNCL8273</Reference>
                         
                         <Attribute usage="Optional">
                             <Term>listID</Term>
@@ -1531,6 +1560,7 @@
                         <Name>Item VAT category code</Name>
                         <Description>The VAT category for the item</Description>
                         <Reference type="RULE">CL-T68-R007</Reference>
+                        <Reference type="CODE_LIST">UNCL5305</Reference>
                         
                         <Attribute usage="Optional">
                             <Term>listID</Term>
@@ -1780,6 +1810,7 @@
                             <Term>unitCode</Term>
                             <Name>Quandtity unit code</Name>
                             <Reference type="RULE">CL-T68-R008</Reference>
+                            <Reference type="CODE_LIST">UNECERec20</Reference>
                             <Value type="EXAMPLE">KGM</Value>
                         </Attribute>
                         
@@ -1806,6 +1837,7 @@
                             <Term>unitCode</Term>
                             <Name>Quantity unit code</Name>
                             <Reference type="RULE">CL-T68-R008</Reference>
+                            <Reference type="CODE_LIST">UNECERec20</Reference>
                             <Value type="EXAMPLE">CEL</Value>
                         </Attribute>
                         
@@ -1831,6 +1863,7 @@
                             <Term>unitCode</Term>
                             <Name>Quantity unit code</Name>
                             <Reference type="RULE">CL-T68-R008</Reference>
+                            <Reference type="CODE_LIST">UNECERec20</Reference>
                             <Value type="EXAMPLE">CEL</Value>
                         </Attribute>
                         
