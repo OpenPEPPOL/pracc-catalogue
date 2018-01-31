@@ -83,7 +83,7 @@
             <Term>cac:ValidityPeriod</Term>
             <Name>Pre award catalogue validity period</Name>
             <Reference type="RULE">BII3-T68-R006</Reference>
-            <Property key="doc">structure/docs/validity-period.adoc</Property>
+            <Property key="doc">docs/validity-period.adoc</Property>
 
             <Element>
                 <Term>cbc:StartDate</Term>
