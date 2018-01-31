@@ -1319,6 +1319,8 @@
                 <Element cardinality="0..n">
                     <Term>cac:ItemSpecificationDocumentReference</Term>
                     <Name>Attached item specifications</Name>
+                    <Description>Attachments can be sent on line level in the Catalogue. This can be images or additional descriptions of a product. It is strongly recommended to use external references in the form of URI’s for attachments.</Description>
+                    <Property key="doc">structure/docs/attachments.adoc</Property>
 
                     <Element>
                         <Term>cbc:ID</Term>
@@ -1521,6 +1523,8 @@
                 <Element cardinality="0..1">
                     <Term>cac:ClassifiedTaxCategory</Term>
                     <Name>Classified tax category</Name>
+                    <Description>VAT information</Description>
+                    <Property key="doc">structure/docs/vat.adoc</Property>
                     
                     <Element cardinality="0..1">
                         <Term>cbc:ID</Term>
@@ -1561,6 +1565,9 @@
                 <Element cardinality="0..n">
                     <Term>cac:AdditionalItemProperty</Term>
                     <Name>Additional item property</Name>
+                    <Description>Additional properties are meant for product properties that cannot be sent in any of the defined elements in PreAward Catalogue. Additional properties consist of the Name of the property and the actual Value.</Description>
+                    <Property key="doc">structure/docs/additional.adoc</Property>
+                    
 
                     <Element cardinality="0..1">
                         <Term>cbc:ID</Term>

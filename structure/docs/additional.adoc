@@ -1,0 +1,11 @@
+include::guide/settings.adoc[]
+
+= Additional information
+
+
+
+.UBL example of additional item information
+[source, xml, indent=0]
+----
+include::../{snippet-dir}/snippet-structure-1.xml[tags=additional]
+----
