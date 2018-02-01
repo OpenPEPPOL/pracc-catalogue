@@ -2,11 +2,11 @@
 <testSet xmlns="http://difi.no/xsd/vefa/validator/1.0" configuration="peppolbis-t68-base-1.0">
 	<assert>
 		<description>Verify existence of orderable unit when required.</description>
-		<scope>EUGEN-T68-R202</scope>
+		<scope>EUGEN-T68-R010</scope>
 	</assert>
 	<test>
 		<assert>
-			<success>EUGEN-T68-R202</success>
+			<success>EUGEN-T68-R010</success>
 		</assert>
 		<Catalogue xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
 			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
@@ -21,7 +21,7 @@
 	</test>
 	<test>
 		<assert>
-			<success>EUGEN-T68-R202</success>
+			<success>EUGEN-T68-R010</success>
 		</assert>
 		<Catalogue xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
 			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
@@ -36,7 +36,7 @@
 	</test>
 	<test>
 		<assert>
-			<success>EUGEN-T68-R202</success>
+			<success>EUGEN-T68-R010</success>
 		</assert>
 		<Catalogue xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
 			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
@@ -50,7 +50,7 @@
 	</test>
 	<test>
 		<assert>
-			<error>EUGEN-T68-R202</error>
+			<error>EUGEN-T68-R010</error>
 		</assert>
 		<Catalogue xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
 			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"

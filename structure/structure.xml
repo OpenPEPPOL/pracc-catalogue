@@ -154,7 +154,6 @@
                 <Term>cbc:EndpointID</Term>
                 <Name>Catalogue provider electronic address identifier</Name>
                 <Description>The electronic address of the party that sends the catalogue.</Description>
-                
 
                 <Attribute>
                     <Term>schemeID</Term>
@@ -169,6 +168,7 @@
             <Element cardinality="0..1">
                 <Term>cac:PartyIdentification</Term>
                 <Name>Party identification</Name>
+                <Reference type="RULE">EUGEN-T68-R012</Reference>
 
                 <Element>
                     <Term>cbc:ID</Term>
@@ -180,6 +180,7 @@
                         <Name>Identification Scheme. Identifier</Name>
                         <Description>Scheme id mandatory use "ZZZ" for unidentified scheme. The identification of the identification scheme.</Description>
                         <Reference type="CODE_LIST">ICD</Reference>
+                        <Reference type="CODE_LIST">ICD_UNKNOWN</Reference>
                         <Value type="EXAMPLE">SE:VATNO</Value>
                     </Attribute>
                     <Value type="EXAMPLE">SE5679083242</Value>
@@ -189,6 +190,7 @@
             <Element cardinality="0..1">
                 <Term>cac:PartyName</Term>
                 <Name>Party name</Name>
+                <Reference type="RULE">EUGEN-T68-R012</Reference>
 
                 <Element>
                     <Term>cbc:Name</Term>
@@ -283,6 +285,7 @@
             <Element cardinality="0..1">
                 <Term>cac:PartyIdentification</Term>
                 <Name>Party identification</Name>
+                <Reference type="RULE">EUGEN-T68-R012</Reference>
 
                 <Element>
                     <Term>cbc:ID</Term>
@@ -294,6 +297,7 @@
                         <Name>Identification Scheme. Identifier</Name>
                         <Description>Scheme id mandatory use "ZZZ" for unidentified scheme. The identification of the identification scheme.</Description>
                         <Reference type="CODE_LIST">ICD</Reference>
+                        <Reference type="CODE_LIST">ICD_UNKNOWN</Reference>
                         <Value type="EXAMPLE">NO:ORGNR</Value>
                     </Attribute>
                     
@@ -305,6 +309,7 @@
             <Element cardinality="0..1">
                 <Term>cac:PartyName</Term>
                 <Name>Party name</Name>
+                <Reference type="RULE">EUGEN-T68-R012</Reference>
 
                 <Element>
                     <Term>cbc:Name</Term>
@@ -388,6 +393,7 @@
                 <Element cardinality="0..1">
                     <Term>cac:PartyIdentification</Term>
                     <Name>Party identification</Name>
+                    <Reference type="RULE">EUGEN-T68-R012</Reference>
 
                     <Element>
                         <Term>cbc:ID</Term>
@@ -399,6 +405,7 @@
                             <Name>Identification Scheme. Identifier</Name>
                             <Description>Scheme id mandatory use "ZZZ" for unidentified scheme. The identification of the identification scheme.</Description>
                             <Reference type="CODE_LIST">ICD</Reference>
+                            <Reference type="CODE_LIST">ICD_UNKNOWN</Reference>
                             <Value type="EXAMPLE">GLN</Value>
                         </Attribute>
                         
@@ -409,6 +416,7 @@
                 <Element cardinality="0..1">
                     <Term>cac:PartyName</Term>
                     <Name>Party name</Name>
+                    <Reference type="RULE">EUGEN-T68-R012</Reference>
 
                     <Element>
                         <Term>cbc:Name</Term>
@@ -524,6 +532,7 @@
                 <Element cardinality="0..1">
                     <Term>cac:PartyIdentification</Term>
                     <Name>Party identification</Name>
+                    <Reference type="RULE">EUGEN-T68-R012</Reference>
 
                     <Element>
                         <Term>cbc:ID</Term>
@@ -535,6 +544,7 @@
                             <Name>Identification Scheme. Identifier</Name>
                             <Description>Scheme id mandatory use "ZZZ" for unidentified scheme. The identification of the identification scheme.</Description>
                             <Reference type="CODE_LIST">ICD</Reference>
+                            <Reference type="CODE_LIST">ICD_UNKNOWN</Reference>
                             <Value type="EXAMPLE">ZZZ</Value>
                         </Attribute>
                         
@@ -545,6 +555,7 @@
                 <Element cardinality="0..1">
                     <Term>cac:PartyName</Term>
                    <Name>Party name</Name>
+                    <Reference type="RULE">EUGEN-T68-R012</Reference>
 
                     <Element>
                         <Term>cbc:Name</Term>
@@ -621,7 +632,7 @@
                 <Term>cbc:OrderableUnit</Term>
                 <Name>Orderable unit</Name>
                 <Description>The unit in which the item described in this catalogue line can be ordered. Mandatory if the item is orderable</Description>
-                <Reference type="RULE">EUGEN-T68-R202</Reference>
+                <Reference type="RULE">EUGEN-T68-R010</Reference>
                 <Value type="EXAMPLE">MLT</Value>
             </Element>
 
@@ -780,7 +791,7 @@
                     <Term>cbc:ID</Term>
                     <Name>Item standard identifier</Name>
                     <Description>Indicate the seller's identifier for the related item.</Description>
-                    <Reference type="RULE">EUGEN-T68-R220</Reference>
+                    <Reference type="RULE">EUGEN-T68-R011</Reference>
                     <Value type="EXAMPLE">A</Value>
                 </Element>
 

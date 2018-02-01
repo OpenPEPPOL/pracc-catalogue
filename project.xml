@@ -3,7 +3,7 @@
 
     <Name>PEPPOL BIS Pre-Award Catalogue 1.0</Name>
 
-    <Documentation path="en/">Implementation guide</Documentation>
+    <Documentation path="bis/">Implementation guide</Documentation>
 
     <!-- Syntax -->
 
@@ -53,6 +53,10 @@
     <Resource>
         <Type>CodeList-1</Type>
         <Path>structure/codelist/ICD.xml</Path>
+    </Resource>
+    <Resource>
+        <Type>CodeList-1</Type>
+        <Path>structure/codelist/ICD_UNKNOWN.xml</Path>
     </Resource>
     <Resource>
         <Type>CodeList-1</Type>

@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testSet xmlns="http://difi.no/xsd/vefa/validator/1.0" configuration="peppolbis-t68-base-1.0">
 	<assert>
-		<scope>EUGEN-T68-R220</scope>
+		<scope>EUGEN-T68-R011</scope>
 	</assert>
 	<test>
 		<assert>
 			<description>Verify existence of referenced item.</description>
-			<success>EUGEN-T68-R220</success>
+			<success>EUGEN-T68-R011</success>
 		</assert>
 		<Catalogue xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
 			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
@@ -31,7 +31,7 @@
 	<test>
 		<assert>
 			<description>Verify existence of referenced item.</description>
-			<error>EUGEN-T68-R220</error>
+			<error>EUGEN-T68-R011</error>
 		</assert>
 		<Catalogue xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
 			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
@@ -56,7 +56,7 @@
 	<test>
 		<assert>
 			<description>Verify existence of referenced item.</description>
-			<error>EUGEN-T68-R220</error>
+			<error>EUGEN-T68-R011</error>
 		</assert>
 		<Catalogue xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
 			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
@@ -81,7 +81,7 @@
 	<test>
 		<assert>
 			<description>Verify existence of referenced item.</description>
-			<error>EUGEN-T68-R220</error>
+			<error>EUGEN-T68-R011</error>
 		</assert>
 		<Catalogue xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
 			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"

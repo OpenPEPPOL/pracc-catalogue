@@ -1,8 +1,0 @@
-[appendix]
-= Example files
-
-:leveloffset: +1
-
-include::examples.adoc[]
-
-:leveloffset: -1

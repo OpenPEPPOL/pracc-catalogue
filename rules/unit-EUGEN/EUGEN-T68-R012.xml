@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testSet xmlns="http://difi.no/xsd/vefa/validator/1.0" configuration="peppolbis-t68-base-1.0">
+	<assert>
+		<description>Verify existence of identifier or name.</description>
+		<scope>EUGEN-T68-R012</scope>
+	</assert>
+	<test>
+		<assert>
+			<success>EUGEN-T68-R012</success>
+		</assert>
+		<Catalogue xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+			xmlns="urn:oasis:names:specification:ubl:schema:xsd:Catalogue-2">
+
+			<cac:ProviderParty>
+				<cac:PartyIdentification/>
+				<cac:PartyName/>
+			</cac:ProviderParty>
+
+			<cac:ReceiverParty>
+				<cac:PartyIdentification/>
+				<cac:PartyName/>
+			</cac:ReceiverParty>
+
+			<cac:SellerSupplierParty>
+				<cac:Party>
+					<cac:PartyIdentification/>
+					<cac:PartyName/>
+				</cac:Party>
+			</cac:SellerSupplierParty>
+
+			<cac:ContractorCustomerParty>
+				<cac:Party>
+					<cac:PartyIdentification/>
+					<cac:PartyName/>
+				</cac:Party>
+			</cac:ContractorCustomerParty>
+
+		</Catalogue>
+	</test>
+	<test>
+		<assert>
+			<success>EUGEN-T68-R012</success>
+		</assert>
+		<Catalogue xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+			xmlns="urn:oasis:names:specification:ubl:schema:xsd:Catalogue-2">
+
+			<cac:ProviderParty>
+				<cac:PartyIdentification/>
+			</cac:ProviderParty>
+
+			<cac:ReceiverParty>
+				<cac:PartyIdentification/>
+			</cac:ReceiverParty>
+
+			<cac:SellerSupplierParty>
+				<cac:Party>
+					<cac:PartyIdentification/>
+				</cac:Party>
+			</cac:SellerSupplierParty>
+
+			<cac:ContractorCustomerParty>
+				<cac:Party>
+					<cac:PartyIdentification/>
+				</cac:Party>
+			</cac:ContractorCustomerParty>
+
+		</Catalogue>
+	</test>
+	<test>
+		<assert>
+			<success>EUGEN-T68-R012</success>
+		</assert>
+		<Catalogue xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+			xmlns="urn:oasis:names:specification:ubl:schema:xsd:Catalogue-2">
+
+			<cac:ProviderParty>
+				<cac:PartyName/>
+			</cac:ProviderParty>
+
+			<cac:ReceiverParty>
+				<cac:PartyName/>
+			</cac:ReceiverParty>
+
+			<cac:SellerSupplierParty>
+				<cac:Party>
+					<cac:PartyName/>
+				</cac:Party>
+			</cac:SellerSupplierParty>
+
+			<cac:ContractorCustomerParty>
+				<cac:Party>
+					<cac:PartyName/>
+				</cac:Party>
+			</cac:ContractorCustomerParty>
+
+		</Catalogue>
+	</test>
+	<test>
+		<assert>
+			<error number="4">EUGEN-T68-R012</error>
+		</assert>
+		<Catalogue xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+			xmlns="urn:oasis:names:specification:ubl:schema:xsd:Catalogue-2">
+
+			<cac:ProviderParty>
+			</cac:ProviderParty>
+
+			<cac:ReceiverParty>
+			</cac:ReceiverParty>
+
+			<cac:SellerSupplierParty>
+				<cac:Party>
+				</cac:Party>
+			</cac:SellerSupplierParty>
+
+			<cac:ContractorCustomerParty>
+				<cac:Party>
+				</cac:Party>
+			</cac:ContractorCustomerParty>
+
+		</Catalogue>
+	</test>
+</testSet>
