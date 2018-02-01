@@ -17,7 +17,6 @@
         <Element>
             <Term>cbc:UBLVersionID</Term>
             <Description>Identifies the earliest version of the UBL 2 schema for this document type that defines all of the elements that might be encountered in the current instance.</Description>
-            <Reference type="RULE">EUGEN-T68-R010</Reference>
             <Value type="FIXED">2.1</Value>
         </Element>
 
@@ -25,7 +24,6 @@
             <Term>cbc:CustomizationID</Term>
             <Name>Specification identification</Name>
             <Description>An identification of the specification containing the total set of rules regarding semantic content, cardinalities and business rules to which the data contained in the instance document conforms.</Description>
-            <Reference type="RULE">BII3-T68-R001</Reference>
             <Value type="EXAMPLE">urn:www.cenbii.eu:transaction:biitrdm068:ver3.0:extended:urn:www.peppol.eu:bis:peppol35a:ver1.0</Value>
         </Element>
 
@@ -33,7 +31,6 @@
             <Term>cbc:ProfileID</Term>
             <Name>Business process type identifier</Name>
             <Description>Identifies the business process context in which the transaction appears. It enables the buyer to process the document in an appropriate way.</Description>
-            <Reference type="RULE">BII3-T68-R002</Reference>
             <Value type="EXAMPLE">urn:www.cenbii.eu:profile:bii35:ver3.0</Value>
         </Element>
 
@@ -41,7 +38,6 @@
             <Term>cbc:ID</Term>
             <Name>Pre-award catalogue identifier</Name>
             <Description>The identifier that enables referencing of the document instance for various purposes including referencing between transactions that are part of the same process.</Description>
-            <Reference type="RULE">BII3-T68-R003</Reference>
             <Value type="EXAMPLE">123</Value>
         </Element>
 
@@ -56,7 +52,6 @@
             <Term>cbc:IssueDate</Term>
             <Name>Catalogue issue date</Name>
             <Description>The date on which the catalogue instance was issued.</Description>
-            <Reference type="RULE">BII3-T68-R005</Reference>
             <Value type="EXAMPLE">2017-06-01</Value>
         </Element>
 
@@ -83,14 +78,12 @@
             <Term>cac:ValidityPeriod</Term>
             <Name>Pre award catalogue validity period</Name>
             <Description>The validity period must include both start date and end date, and the start date must be earlier than the end date</Description>
-            <Reference type="RULE">BII3-T68-R006</Reference>
             <Property key="doc">structure/docs/validity-period.adoc</Property>
 
             <Element>
                 <Term>cbc:StartDate</Term>
                 <Name>Period start date</Name>
                 <Description>The date when the period starts.</Description>
-                <Reference type="RULE">BII3-T68-R007</Reference>
                 <Reference type="RULE">BII3-T68-R023</Reference>
                 <Value type="EXAMPLE">2017-06-01</Value>
             </Element>
@@ -99,7 +92,6 @@
                 <Term>cbc:EndDate</Term>
                 <Name>Period end date</Name>
                 <Description>The date on which the period ends.</Description>
-                <Reference type="RULE">BII3-T68-R007</Reference>
                 <Reference type="RULE">BII3-T68-R023</Reference>
                 <Value type="EXAMPLE">2017-06-30</Value>
             </Element>
@@ -109,7 +101,6 @@
             <Term>cac:ReferencedContract</Term>
             <Name>Contract reference</Name>
             <Description>A reference to a contract that can be identified.</Description>
-            <Reference type="RULE">EUGEN-T68-R020</Reference>
             <Property key="doc">structure/docs/procurement-ref.adoc</Property>
 
             <Element cardinality="0..1">
@@ -129,14 +120,11 @@
                 <Term>cbc:ContractTypeCode</Term>
                 <Name>Contract type</Name>
                 <Description>The type of a contract that is being referred to (such as framework agreement) expressed as a code.</Description>
-                <Reference type="RULE">OP-T68-R003</Reference>
-                <Reference type="RULE">EUGEN-T68-R021</Reference>
                 <Reference type="CODE_LIST">UNCL1001</Reference>
 
                 <Attribute>
                     <Term>listID</Term>
                     <Description>The identification of a list of codes.</Description>
-                    <Reference type="RULE">BII3-T68-R028</Reference>
                     <Value type="FIXED">UNCL1001</Value>
                 </Attribute>
 
@@ -151,7 +139,6 @@
                     <Term>cbc:ID</Term>
                     <Name>Reference number</Name>
                     <Description>An identifier that is specified by the buyer and used as a reference number for all documents in the procurement process. It is also known as procurement project identifier, procurement reference number or contract folder identifier.</Description>
-               <Reference type="RULE">BII3-T68-R004</Reference>
                     <Value type="EXAMPLE">PPID-2</Value>
                 </Element>
             </Element>
@@ -161,7 +148,6 @@
             <Term>cac:ProviderParty</Term>
             <Name>Provider party</Name>
             <Description>The party that sends the catalogue.</Description> 
-            <Reference type="RULE">BII3-T68-R008</Reference>
             <Property key="doc">structure/docs/provider.adoc</Property>
 
             <Element cardinality="0..1">
@@ -173,8 +159,6 @@
                 <Attribute>
                     <Term>schemeID</Term>
                     <Description>The identification of the identification scheme.</Description>
-                    <Reference type="RULE">EUGEN-T68-R030</Reference>
-                    <Reference type="RULE">OP-T68-R001</Reference>
                     <Reference type="CODE_LIST">ICD</Reference>
                     <Value type="EXAMPLE">SE:VATNO</Value>
                 </Attribute>
@@ -195,8 +179,6 @@
                         <Term>schemeID</Term>
                         <Name>Identification Scheme. Identifier</Name>
                         <Description>Scheme id mandatory use "ZZZ" for unidentified scheme. The identification of the identification scheme.</Description>
-                        <Reference type="RULE">EUGEN-T68-R040</Reference>
-                        <Reference type="RULE">OP-T68-R002</Reference>
                         <Reference type="CODE_LIST">ICD</Reference>
                         <Value type="EXAMPLE">SE:VATNO</Value>
                     </Attribute>
@@ -263,13 +245,11 @@
                         <Term>cbc:IdentificationCode</Term>
                         <Name>Country code</Name>
                         <Description>A code that identifies the country.</Description>
-                        <Reference type="RULE">CL-T68-R003</Reference>
                         <Reference type="CODE_LIST">ISO3166</Reference>
 
                         <Attribute>
                             <Term>listID</Term>
                             <Description>The identification of a list of codes.</Description>
-                            <Reference type="RULE">BII3-T68-R025</Reference>
                             <Value type="FIXED">ISO3166-1:Alpha2</Value>
                         </Attribute>
                         
@@ -283,7 +263,6 @@
             <Term>cac:ReceiverParty</Term>
             <Name>Receiver party</Name>
             <Description>The party to which the catalogue is sent.</Description>
-            <Reference type="RULE">BII3-T68-R009</Reference>
             <Property key="doc">structure/docs/receiver.adoc</Property>
 
             <Element cardinality="0..1">
@@ -294,8 +273,6 @@
                 <Attribute>
                     <Term>schemeID</Term>
                     <Description>The identification of the identification scheme.</Description>
-                    <Reference type="RULE">EUGEN-T68-R030</Reference>
-                    <Reference type="RULE">OP-T68-R001</Reference>
                     <Reference type="CODE_LIST">ICD</Reference>
                     <Value type="EXAMPLE">NO:ORGNR</Value>
                 </Attribute>
@@ -316,8 +293,6 @@
                         <Term>schemeID</Term>
                         <Name>Identification Scheme. Identifier</Name>
                         <Description>Scheme id mandatory use "ZZZ" for unidentified scheme. The identification of the identification scheme.</Description>
-                        <Reference type="RULE">EUGEN-T68-R040</Reference>
-                        <Reference type="RULE">OP-T68-R002</Reference>
                         <Reference type="CODE_LIST">ICD</Reference>
                         <Value type="EXAMPLE">NO:ORGNR</Value>
                     </Attribute>
@@ -387,13 +362,11 @@
                         <Term>cbc:IdentificationCode</Term>
                         <Name>Country code</Name>
                         <Description>A code that identifies the country.</Description>
-                        <Reference type="RULE">CL-T68-R003</Reference>
                         <Reference type="CODE_LIST">ISO3166</Reference>
 
                         <Attribute>
                             <Term>listID</Term>
                             <Description>The identification of a list of codes.</Description>
-                            <Reference type="RULE">BII3-T68-R025</Reference>
                             <Value type="FIXED">ISO3166-1:Alpha2</Value>
                         </Attribute>
                         
@@ -425,8 +398,6 @@
                             <Term>schemeID</Term>
                             <Name>Identification Scheme. Identifier</Name>
                             <Description>Scheme id mandatory use "ZZZ" for unidentified scheme. The identification of the identification scheme.</Description>
-                            <Reference type="RULE">EUGEN-T68-R040</Reference>
-                            <Reference type="RULE">OP-T68-R002</Reference>
                             <Reference type="CODE_LIST">ICD</Reference>
                             <Value type="EXAMPLE">GLN</Value>
                         </Attribute>
@@ -492,13 +463,11 @@
                             <Term>cbc:IdentificationCode</Term>
                             <Name>Country code</Name>
                             <Description>A code that identifies the country.</Description>
-                            <Reference type="RULE">CL-T68-R003</Reference>
                             <Reference type="CODE_LIST">ISO3166</Reference>
                             
                             <Attribute>
                                 <Term>listID</Term>
                                 <Description>The identification of a list of codes.</Description>
-                                <Reference type="RULE">BII3-T68-R025</Reference>
                                 <Value type="FIXED">ISO3166-1:Alpha2</Value>
                             </Attribute>
                             
@@ -565,8 +534,6 @@
                             <Term>schemeID</Term>
                             <Name>Identification Scheme. Identifier</Name>
                             <Description>Scheme id mandatory use "ZZZ" for unidentified scheme. The identification of the identification scheme.</Description>
-                            <Reference type="RULE">EUGEN-T68-R040</Reference>
-                            <Reference type="RULE">OP-T68-R002</Reference>
                             <Reference type="CODE_LIST">ICD</Reference>
                             <Value type="EXAMPLE">ZZZ</Value>
                         </Attribute>
@@ -626,14 +593,12 @@
             <Term>cac:CatalogueLine</Term>
             <Name>Pre award catalogue line</Name>
             <Description>Detailed information of an item, price and its composition  in a pre-award catalogue.</Description>
-            <Reference type="RULE">BII3-T68-R010</Reference>
             <Property key="doc">structure/docs/line.adoc</Property>
 
             <Element>
                 <Term>cbc:ID</Term>
                 <Name>Pre award catalogue line identifier</Name>
                 <Description>Each line must have an identifier that is unique within the document to make it possible to reference the line. For example, from other documents.</Description>
-                <Reference type="RULE">BII3-T68-R011</Reference>
                 <Value type="EXAMPLE">1</Value>
             </Element>
 
@@ -649,8 +614,6 @@
                 <Name>Catalogue line orderable indicator</Name>
                 <Description>Indicates whether the catalogue line can be ordered. Allowed values are ´true´ or ´false</Description>
 
-                <Reference type="RULE">EUGEN-T68-R201</Reference>
-
                 <Value type="EXAMPLE">true</Value>
             </Element>
 
@@ -658,7 +621,6 @@
                 <Term>cbc:OrderableUnit</Term>
                 <Name>Orderable unit</Name>
                 <Description>The unit in which the item described in this catalogue line can be ordered. Mandatory if the item is orderable</Description>
-                <Reference type="RULE">CL-T68-R005</Reference>
                 <Reference type="RULE">EUGEN-T68-R202</Reference>
                 <Value type="EXAMPLE">MLT</Value>
             </Element>
@@ -668,13 +630,10 @@
                 <Name>Item net quantity</Name>
                 <Description>The net quantity of the item that is contained in each consumable unit, excluding any packaging materials.</Description>
 
-                <Reference type="RULE">EUGEN-T68-R200</Reference>
-
                 <Attribute>
                     <Term>unitCode</Term>
                     <Name>Quantity Unit. Code</Name>
                     <Description>The unit of the quantity</Description>
-                    <Reference type="RULE">CL-T68-R008</Reference>
                     <Reference type="CODE_LIST">UNECERec20</Reference>
                     <Value type="EXAMPLE">MLT</Value>
                 </Attribute>
@@ -701,13 +660,11 @@
                 <Description>The smallest number of items that can be ordered.</Description>
 
                 <Reference type="RULE">BII3-T68-R022</Reference>
-                <Reference type="RULE">EUGEN-T68-R200</Reference>
 
                 <Attribute>
                     <Term>unitCode</Term>
                     <Name>Quantity Unit. Code</Name>
                     <Description>The unit of the quantity</Description>
-                    <Reference type="RULE">CL-T68-R008</Reference>
                     <Reference type="CODE_LIST">UNECERec20</Reference>
                     <Value type="EXAMPLE">EA</Value>
                 </Attribute>
@@ -727,13 +684,10 @@
                 <Name>Maximum order quantity</Name>
                 <Description>The largest number of items that can be ordered.</Description>
 
-                <Reference type="RULE">EUGEN-T68-R200</Reference>
-
                 <Attribute>
                     <Term>unitCode</Term>
                     <Name>Quantity Unit. Code</Name>
                     <Description>The unit of the quantity</Description>
-                    <Reference type="RULE">CL-T68-R008</Reference>
                     <Reference type="CODE_LIST">UNECERec20</Reference>
                     <Value type="EXAMPLE">EA</Value>
                 </Attribute>
@@ -759,11 +713,12 @@
                 <Term>cbc:PackLevelCode</Term>
                 <Name>Handling unit packaging level, used to indicate different pack levels and their relation</Name>
                 <Description>The packaging level of the orderable unit.</Description>
+                <Reference type="CODE_LIST">GS17009</Reference>
 
                 <Attribute>
                     <Term>listID</Term>
                     <Description>The identification of a list of codes.</Description>
-                    <Value type="EXAMPLE">GS17009:PEPPOL</Value>
+                    <Value type="FIXED">GS17009:PEPPOL</Value>
                 </Attribute>
                 <Value type="EXAMPLE">TU</Value>
             </Element>
@@ -782,7 +737,6 @@
                     <Attribute>
                         <Term>currencyID</Term>
                         <Name>Currency identifier</Name>
-                        <Reference type="RULE">CL-T68-R009</Reference>
                         <Reference type="CODE_LIST">ISO4217</Reference>
                         <Value type="EXAMPLE">SEK</Value>
                     </Attribute>
@@ -796,12 +750,9 @@
                     <Name>Standard unit quantity</Name>
                     <Description>E.g. if consumable units are bottles and each bottle contains 0,333 liters the standard unit quantity is 0,333.</Description>
 
-                    <Reference type="RULE">EUGEN-T68-R200</Reference>
-
                     <Attribute>
                         <Term>unitCode</Term>
                         <Name>Quanitity unit code</Name>
-                        <Reference type="RULE">CL-T68-R008</Reference>
                         <Reference type="CODE_LIST">UNECERec20</Reference>
                         <Value type="EXAMPLE">LTR</Value>
                     </Attribute>
@@ -838,12 +789,9 @@
                     <Name>Related item quantity</Name>
                     <Description>Quantity of a related item</Description>
 
-                    <Reference type="RULE">EUGEN-T68-R200</Reference>
-
                     <Attribute>
                         <Term>unitCode</Term>
                         <Name>Quanitity unit code</Name>
-                        <Reference type="RULE">CL-T68-R008</Reference>
                         <Reference type="CODE_LIST">UNECERec20</Reference>
                         <Value type="EXAMPLE">EA</Value>
                     </Attribute>
@@ -877,12 +825,9 @@
                     <Name>Related item quantity</Name>
                     <Description>UOM should be stated  by using recommendation 20 v10</Description>
 
-                    <Reference type="RULE">EUGEN-T68-R200</Reference>
-
                     <Attribute>
                         <Term>unitCode</Term>
                         <Name>Quanitity unit code</Name>
-                        <Reference type="RULE">CL-T68-R008</Reference>
                         <Reference type="CODE_LIST">UNECERec20</Reference>
                         <Value type="EXAMPLE">EA</Value>
                     </Attribute>
@@ -917,12 +862,9 @@
                     <Name>Related item quantity</Name>
                     <Description>UOM should be stated  by using recommendation 20 v10</Description>
 
-                    <Reference type="RULE">EUGEN-T68-R200</Reference>
-
                     <Attribute>
                         <Term>unitCode</Term>
                         <Name>Quanitity unit code</Name>
-                        <Reference type="RULE">CL-T68-R008</Reference>
                         <Reference type="CODE_LIST">UNECERec20</Reference>
                         <Value type="EXAMPLE">MLT</Value>
                     </Attribute>
@@ -957,12 +899,9 @@
                     <Name>Related item quantity</Name>
                     <Description>UOM should be stated  by using recommendation 20 v10</Description>
 
-                    <Reference type="RULE">EUGEN-T68-R200</Reference>
-
                     <Attribute>
                         <Term>unitCode</Term>
                         <Name>Quanitity unit code</Name>
-                        <Reference type="RULE">CL-T68-R008</Reference>
                         <Reference type="CODE_LIST">UNECERec20</Reference>
                         <Value type="EXAMPLE">EA</Value>
                     </Attribute>
@@ -1026,13 +965,11 @@
                             <Term>cbc:IdentificationCode</Term>
                             <Name>Country code</Name>
                             <Description>The lists of valid countries are registered with the ISO 3166-1 Maintenance agency, "Codes for the representation of names of countries and their subdivisions". It is recommended to use the alpha-2 representation.</Description>
-                            <Reference type="RULE">CL-T68-R003</Reference>
                             <Reference type="CODE_LIST">ISO3166</Reference>
                             
                             <Attribute usage="Optional">
                                 <Term>listID</Term>
                                 <Name>Code list identifier</Name>
-                                <Reference type="RULE">BII3-T68-R025</Reference>
                                 <Value type="FIXED">ISO3166-1:Alpha2</Value>
                             </Attribute>
                             
@@ -1055,7 +992,6 @@
                         <Attribute>
                             <Term>currencyID</Term>
                             <Name>Currency identifier</Name>
-                            <Reference type="RULE">CL-T68-R009</Reference>
                             <Reference type="CODE_LIST">ISO4217</Reference>
                             <Value type="EXAMPLE">SEK</Value>
                         </Attribute>
@@ -1069,13 +1005,11 @@
                         <Description>The type of the price so that the receiver knows if the price may be changed is indicative. When prices are temporary the validity period 
                             for the price should be defined by stating the price validity period.
                         </Description>
-                        <Reference type="RULE">CL-T68-R010</Reference>
                         <Reference type="CODE_LIST">UNCL5387</Reference>
 
-                        <Attribute usage="Optional">
+                        <Attribute>
                             <Term>listID</Term>
                             <Name>Code list identifier</Name>
-                            <Reference type="RULE">BII3-T68-R030</Reference>
                             <Value type="FIXED">UNCL5387</Value>
                         </Attribute>
                         
@@ -1100,7 +1034,6 @@
                             <Term>cbc:StartDate</Term>
                             <Name>Period start date</Name>
                             <Description>The date is the first day of the period.</Description>
-                            <Reference type="RULE">BII3-T68-R017</Reference>
                             <Reference type="RULE">BII3-T68-R021</Reference>
                             <Value type="EXAMPLE">2017-06-01</Value>
                         </Element>
@@ -1109,7 +1042,6 @@
                             <Term>cbc:EndDate</Term>
                             <Name>Period end date</Name>
                             <Description>The date is the last day of the period.</Description>
-                            <Reference type="RULE">BII3-T68-R017</Reference>
                             <Reference type="RULE">BII3-T68-R021</Reference>
                             <Value type="EXAMPLE">2017-06-15</Value>
                         </Element>
@@ -1118,10 +1050,6 @@
                     <Element cardinality="0..1">
                         <Term>cac:AllowanceCharge</Term>
                         <Name>Price discount, used only for information purpose</Name>
-
-                        <Reference type="RULE">EUGEN-T68-R050</Reference>
-                        <Reference type="RULE">EUGEN-T68-R051</Reference>
-                        <Reference type="RULE">EUGEN-T68-R052</Reference>
 
                         <Element>
                             <Term>cbc:ChargeIndicator</Term>
@@ -1144,7 +1072,6 @@
                             <Attribute>
                                 <Term>currencyID</Term>
                                 <Name>Currency identifier</Name>
-                                <Reference type="RULE">CL-T68-R009</Reference>
                                 <Reference type="CODE_LIST">ISO4217</Reference>
                                 <Value type="EXAMPLE">SEK</Value>
                             </Attribute>
@@ -1164,12 +1091,9 @@
                         <Name>Batch quantity</Name>
                         <Description>The quantity of ordered Items that constitutes a batch for delivery purposes.</Description>
 
-                        <Reference type="RULE">EUGEN-T68-R200</Reference>
-
                         <Attribute>
                             <Term>unitCode</Term>
                             <Name>Quanitity unit code</Name>
-                            <Reference type="RULE">CL-T68-R008</Reference>
                             <Reference type="CODE_LIST">UNECERec20</Reference>
                             <Value type="EXAMPLE">EA</Value>
                         </Attribute>
@@ -1190,12 +1114,9 @@
                         <Name>Consumable unit quantity</Name>
                         <Description>Number of Consumer items in the orderable unit. E.g. number of bottles on a Pallet.</Description>
 
-                        <Reference type="RULE">EUGEN-T68-R200</Reference>
-
                         <Attribute>
                             <Term>unitCode</Term>
                             <Name>Quanitity unit code</Name>
-                            <Reference type="RULE">CL-T68-R008</Reference>
                             <Reference type="CODE_LIST">UNECERec20</Reference>
                             <Value type="EXAMPLE">EA</Value>
                         </Attribute>
@@ -1216,7 +1137,6 @@
             <Element>
                 <Term>cac:Item</Term>
                 <Name>Pre award catalogue item details</Name>
-                <Reference type="RULE">BII3-T68-R012</Reference>
                 <Property key="doc">structure/docs/item.adoc</Property>
 
                 <Element cardinality="0..1">
@@ -1231,12 +1151,9 @@
                     <Name>Packed Quantity</Name>
                     <Description>The number of packed units that are in the orderable unit.</Description>
 
-                    <Reference type="RULE">EUGEN-T68-R200</Reference>
-
                     <Attribute>
                         <Term>unitCode</Term>
                         <Name>Quanitity unit code</Name>
-                        <Reference type="RULE">CL-T68-R008</Reference>
                         <Reference type="CODE_LIST">UNECERec20</Reference>
                         <Value type="EXAMPLE">EA</Value>
                     </Attribute>
@@ -1264,7 +1181,6 @@
                     <Term>cbc:Name</Term>
                     <Name>Item name</Name>
                     <Description>A name for an item.</Description>
-                    <Reference type="RULE">BII3-T68-R013</Reference>
                     <Value type="EXAMPLE">Item name</Value>
                 </Element>
 
@@ -1359,14 +1275,11 @@
                         <Term>cbc:DocumentTypeCode</Term>
                         <Name>Attachment description code</Name>
                         <Description>A functional description of the attachment, expressed as a code</Description>
-                        <Reference type="RULE">CL-T68-R002</Reference>
                         <Reference type="CODE_LIST">UNCL1001</Reference>
-                       
 
-                        <Attribute usage="Optional">
+                        <Attribute>
                             <Term>listID</Term>
                             <Name>Code list identifier</Name>
-                            <Reference type="RULE">BII3-T68-R026</Reference>
                             <Value type="FIXED">UNCL1001</Value>
                         </Attribute>
                         
@@ -1400,7 +1313,6 @@
                             <Attribute>
                                 <Term>mimeCode</Term>
                                 <Description>Mime type of the attached document</Description>
-                                <Reference type="RULE">CL-T68-R001</Reference>
                                 <Reference type="CODE_LIST">MimeCode</Reference>
                                 <Value type="EXAMPLE">application/pdf</Value>
                             </Attribute>
@@ -1430,7 +1342,6 @@
                             <Term>cbc:StartDate</Term>
                             <Name>Period start date</Name>
                             <Description>The date is the first day of the period.</Description>
-                            <Reference type="RULE">BII3-T68-R016</Reference>
                             <Reference type="RULE">BII3-T68-R020</Reference>
                             <Value type="EXAMPLE">2017-06-01</Value>
                         </Element>
@@ -1439,7 +1350,6 @@
                             <Term>cbc:EndDate</Term>
                             <Name>Period end date</Name>
                             <Description>The date is the last day of the period.</Description>
-                            <Reference type="RULE">BII3-T68-R016</Reference>
                             <Reference type="RULE">BII3-T68-R020</Reference>
                             <Value type="EXAMPLE">2017-06-15</Value>
                         </Element>
@@ -1455,13 +1365,11 @@
                         <Name>Item origin country</Name>
                         <Description>The code identifying the country from which the item
                             originates. Commonly used in cross border trade for statistical and customs purposes.</Description>
-                        <Reference type="RULE">CL-T68-R003</Reference>
                         <Reference type="CODE_LIST">ISO3166</Reference>
                         
                         <Attribute>
                             <Term>listID</Term>
                             <Name>Code list identifier</Name>
-                            <Reference type="RULE">BII3-T68-R025</Reference>
                             <Value type="FIXED">ISO3166-1:Alpha2</Value>
                         </Attribute>
                         
@@ -1474,12 +1382,11 @@
                     <Term>cac:CommodityClassification</Term>
                     <Name>Commodity classification</Name>
 
-                    <Element cardinality="0..1">
+                    <Element>
                         <Term>cbc:ItemClassificationCode</Term>
                         <Name>Item classification code</Name>
                         <Description>A code for classifying the item by its type or nature. Classification codes are used to allow grouping of similar items for a various purposes e.g. public procurement (CPV), e-Commerce (UNSPSC) etc.</Description>
-                        <Reference type="RULE">BII3-T68-R014</Reference>
-                        
+
                         <Attribute usage="Optional">
                             <Term>listID</Term>
                             <Name>Code list identifier</Name>
@@ -1533,13 +1440,11 @@
                         <Description>Specification of the hazardous nature of an item
                             according to the UNDG classification schema.
                         </Description>
-                        <Reference type="RULE">CL-T68-R006</Reference>
                         <Reference type="CODE_LIST">UNCL8273</Reference>
                         
-                        <Attribute usage="Optional">
+                        <Attribute>
                             <Term>listID</Term>
                             <Name>Code list identifier</Name>
-                            <Reference type="RULE">BII3-T68-R029</Reference>
                             <Value type="FIXED">UNCL8273</Value>
                         </Attribute>
                        
@@ -1559,7 +1464,6 @@
                         <Term>cbc:ID</Term>
                         <Name>Item VAT category code</Name>
                         <Description>The VAT category for the item</Description>
-                        <Reference type="RULE">CL-T68-R007</Reference>
                         <Reference type="CODE_LIST">UNCL5305</Reference>
                         
                         <Attribute usage="Optional">
@@ -1727,10 +1631,6 @@
                 <Element cardinality="0..n">
                     <Term>cac:Certificate</Term>
 
-                    <Reference type="RULE">EUGEN-T68-R060</Reference>
-                    <Reference type="RULE">EUGEN-T68-R061</Reference>
-                    <Reference type="RULE">EUGEN-T68-R062</Reference>
-
                     <Element>
                         <Term>cbc:ID</Term>
                         <Name>Label Identifier</Name>
@@ -1804,12 +1704,9 @@
                         <Term>cbc:Measure</Term>
                         <Description>The measure of the item/packagin unit.</Description>          
 
-                        <Reference type="RULE">EUGEN-T68-R200</Reference>
-
                         <Attribute>
                             <Term>unitCode</Term>
                             <Name>Quandtity unit code</Name>
-                            <Reference type="RULE">CL-T68-R008</Reference>
                             <Reference type="CODE_LIST">UNECERec20</Reference>
                             <Value type="EXAMPLE">KGM</Value>
                         </Attribute>
@@ -1831,12 +1728,10 @@
 
                         <Reference type="RULE">BII3-T68-R018</Reference>
                         <Reference type="RULE">BII3-T68-R019</Reference>
-                        <Reference type="RULE">EUGEN-T68-R200</Reference>
 
                         <Attribute>
                             <Term>unitCode</Term>
                             <Name>Quantity unit code</Name>
-                            <Reference type="RULE">CL-T68-R008</Reference>
                             <Reference type="CODE_LIST">UNECERec20</Reference>
                             <Value type="EXAMPLE">CEL</Value>
                         </Attribute>
@@ -1857,12 +1752,10 @@
 
                         <Reference type="RULE">BII3-T68-R018</Reference>
                         <Reference type="RULE">BII3-T68-R019</Reference>
-                        <Reference type="RULE">EUGEN-T68-R200</Reference>
 
                         <Attribute>
                             <Term>unitCode</Term>
                             <Name>Quantity unit code</Name>
-                            <Reference type="RULE">CL-T68-R008</Reference>
                             <Reference type="CODE_LIST">UNECERec20</Reference>
                             <Value type="EXAMPLE">CEL</Value>
                         </Attribute>

@@ -18,22 +18,29 @@
     <Resource>
         <Identifier>bii</Identifier>
         <Type>native:Schematron</Type>
-        <Path>rules/sch/BIIRULES-UBL-T68.sch</Path>
+        <Path>rules/sch/parts/BIIRULES-UBL-T68-LOGIC.sch</Path>
         <Title>Rules defined by CEN BII</Title>
+        <Description>Subset of rules provided by CEN BII. Rules duplicate of generated rules are removed.</Description>
     </Resource>
-
     <Resource>
         <Identifier>eugen</Identifier>
         <Type>native:Schematron</Type>
-        <Path>rules/sch/OPENPEPPOL-UBL-T68.sch</Path>
+        <Path>rules/sch/parts/OPENPEPPOL-UBL-T68-LOGIC.sch</Path>
         <Title>Rules defined by OpenPEPPOL</Title>
+    </Resource>
+    <Resource>
+        <Identifier>empty</Identifier>
+        <Type>native:Schematron</Type>
+        <Path>rules/sch/parts/EMPTY.sch</Path>
+        <Title>Empty elements</Title>
+        <Description>Rules to verify instance documents does not contain empty elements.</Description>
     </Resource>
 
     <!-- Code lists -->
 
     <Resource>
         <Type>CodeList-1</Type>
-        <Path>structure/codelist/ICD.xml</Path>
+        <Path>structure/codelist/GS17009.xml</Path>
     </Resource>
     <Resource>
         <Type>CodeList-1</Type>
@@ -42,6 +49,10 @@
     <Resource>
         <Type>CodeList-1</Type>
         <Path>structure/codelist/ISO4217_2015.xml</Path>
+    </Resource>
+    <Resource>
+        <Type>CodeList-1</Type>
+        <Path>structure/codelist/ICD.xml</Path>
     </Resource>
     <Resource>
         <Type>CodeList-1</Type>
@@ -86,15 +97,8 @@
         <Type>native:File</Type>
         <Path>rules/sch/OPENPEPPOL-UBL-T68.sch</Path>
         <Title>Schematron for PEPPOL BIS Pre-Award Catalogue</Title>
-        <Description>Schematron file containing rules according to ISO Schematron.</Description>
+        <Description>Schematron file containing rules according to ISO Schematron. This file also include rules defined for CEN BII Pre-Award Catalogue.</Description>
         <Property key="download">OPENPEPPOL-UBL-T68.sch</Property>
-    </Resource>
-    <Resource>
-        <Type>native:File</Type>
-        <Path>rules/sch/BIIRULES-UBL-T68.sch</Path>
-        <Title>Schematron for CEN BII Pre-Award Catalogue</Title>
-        <Description>Schematron file containing rules according to ISO Schematron.</Description>
-        <Property key="download">BIIRULES-UBL-T68.sch</Property>
     </Resource>
 
     <!-- Namespace -->
