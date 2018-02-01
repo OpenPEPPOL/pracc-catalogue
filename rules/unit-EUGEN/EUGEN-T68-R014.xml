@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testSet xmlns="http://difi.no/xsd/vefa/validator/1.0" configuration="peppolbis-t68-base-1.0">
+	<assert>
+		<scope>EUGEN-T68-R014</scope>
+	</assert>
+	<test>
+		<assert>
+			<success>EUGEN-T68-R014</success>
+		</assert>
+		<Catalogue xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+			xmlns="urn:oasis:names:specification:ubl:schema:xsd:Catalogue-2">
+
+			<cac:CatalogueLine>
+				<cac:LineValidityPeriod>
+					<cbc:StartDate>2018-02-01</cbc:StartDate>
+					<cbc:EndDate>2018-02-28</cbc:EndDate>
+				</cac:LineValidityPeriod>
+
+				<cac:RequiredItemLocationQuantity>
+					<cac:Price>
+						<cac:ValidityPeriod>
+							<cbc:StartDate>2018-02-01</cbc:StartDate>
+							<cbc:EndDate>2018-02-28</cbc:EndDate>
+						</cac:ValidityPeriod>
+					</cac:Price>
+				</cac:RequiredItemLocationQuantity>
+			</cac:CatalogueLine>
+
+		</Catalogue>
+	</test>
+	<test>
+		<assert>
+			<success>EUGEN-T68-R014</success>
+		</assert>
+		<Catalogue xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+			xmlns="urn:oasis:names:specification:ubl:schema:xsd:Catalogue-2">
+
+			<cac:CatalogueLine>
+				<cac:LineValidityPeriod>
+					<cbc:StartDate>2018-02-01</cbc:StartDate>
+					<cbc:EndDate>2018-02-28</cbc:EndDate>
+				</cac:LineValidityPeriod>
+
+				<cac:RequiredItemLocationQuantity>
+					<cac:Price>
+						<cac:ValidityPeriod>
+							<cbc:StartDate>2018-02-02</cbc:StartDate>
+							<cbc:EndDate>2018-02-27</cbc:EndDate>
+						</cac:ValidityPeriod>
+					</cac:Price>
+				</cac:RequiredItemLocationQuantity>
+			</cac:CatalogueLine>
+
+		</Catalogue>
+	</test>
+	<test>
+		<assert>
+			<error>EUGEN-T68-R014</error>
+		</assert>
+		<Catalogue xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+			xmlns="urn:oasis:names:specification:ubl:schema:xsd:Catalogue-2">
+
+			<cac:CatalogueLine>
+				<cac:LineValidityPeriod>
+					<cbc:StartDate>2018-02-01</cbc:StartDate>
+					<cbc:EndDate>2018-02-28</cbc:EndDate>
+				</cac:LineValidityPeriod>
+
+				<cac:RequiredItemLocationQuantity>
+					<cac:Price>
+						<cac:ValidityPeriod>
+							<cbc:StartDate>2018-01-31</cbc:StartDate>
+							<cbc:EndDate>2018-02-28</cbc:EndDate>
+						</cac:ValidityPeriod>
+					</cac:Price>
+				</cac:RequiredItemLocationQuantity>
+			</cac:CatalogueLine>
+
+		</Catalogue>
+	</test>
+	<test>
+		<assert>
+			<error>EUGEN-T68-R014</error>
+		</assert>
+		<Catalogue xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+			xmlns="urn:oasis:names:specification:ubl:schema:xsd:Catalogue-2">
+
+			<cac:CatalogueLine>
+				<cac:LineValidityPeriod>
+					<cbc:StartDate>2018-02-01</cbc:StartDate>
+					<cbc:EndDate>2018-02-28</cbc:EndDate>
+				</cac:LineValidityPeriod>
+
+				<cac:RequiredItemLocationQuantity>
+					<cac:Price>
+						<cac:ValidityPeriod>
+							<cbc:StartDate>2018-02-01</cbc:StartDate>
+							<cbc:EndDate>2018-03-01</cbc:EndDate>
+						</cac:ValidityPeriod>
+					</cac:Price>
+				</cac:RequiredItemLocationQuantity>
+			</cac:CatalogueLine>
+
+		</Catalogue>
+	</test>
+</testSet>

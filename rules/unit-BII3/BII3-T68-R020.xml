@@ -12,12 +12,12 @@
 			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
 			xmlns="urn:oasis:names:specification:ubl:schema:xsd:Catalogue-2">
 
-			<cac:ItemSpecificationDocumentReference>
-				<cac:ValidityPeriod>
+			<cac:CatalogueLine>
+				<cac:LineValidityPeriod>
 					<cbc:StartDate>2017-01-01</cbc:StartDate>
 					<cbc:EndDate>2017-02-01</cbc:EndDate>
-				</cac:ValidityPeriod>
-			</cac:ItemSpecificationDocumentReference>
+				</cac:LineValidityPeriod>
+			</cac:CatalogueLine>
 
 		</Catalogue>
 	</test>
@@ -30,12 +30,12 @@
 			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
 			xmlns="urn:oasis:names:specification:ubl:schema:xsd:Catalogue-2">
 
-			<cac:ItemSpecificationDocumentReference>
-				<cac:ValidityPeriod>
+			<cac:CatalogueLine>
+				<cac:LineValidityPeriod>
 					<cbc:StartDate>2017-02-01</cbc:StartDate>
 					<cbc:EndDate>2017-01-01</cbc:EndDate>
-				</cac:ValidityPeriod>
-			</cac:ItemSpecificationDocumentReference>
+				</cac:LineValidityPeriod>
+			</cac:CatalogueLine>
 
 		</Catalogue>
 	</test>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<pattern id="UBL-T68" xmlns="http://purl.oclc.org/dsdl/schematron">
+<pattern xmlns="http://purl.oclc.org/dsdl/schematron">
   <rule context="cac:Dimension[cbc:AttributeID = 'HUM']">
     <assert id="BII3-T68-R018"
             test="not(cbc:MinimumMeasure) or not(cbc:MaximumMeasure) or cbc:MinimumMeasure &lt;= cbc:MaximumMeasure"
@@ -15,7 +15,7 @@
             test="cbc:Name and cbc:Value"
             flag="fatal">If item property is used, both property name and value MUST be present</assert>
   </rule>
-  <rule context="cac:ItemSpecificationDocumentReference/cac:ValidityPeriod">
+  <rule context="cac:LineValidityPeriod">
     <assert id="BII3-T68-R020"
             test="cbc:StartDate &lt;= cbc:EndDate"
             flag="fatal">The Period start date of the Catalogue line validity period MUST be before the Period end date.</assert>

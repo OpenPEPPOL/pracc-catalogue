@@ -737,7 +737,8 @@
             <Element cardinality="0..1">
                 <Term>cac:LineValidityPeriod</Term>
                 <Name>Line validity period</Name>
-                
+                <Reference type="RULE">EUGEN-T68-R013</Reference>
+
                 <Element>
                     <Term>cbc:StartDate</Term>
                     <Name>Period start date</Name>
@@ -1061,6 +1062,8 @@
                     <Element cardinality="0..n">
                         <Term>cac:ValidityPeriod</Term>
                         <Name>Price validity period</Name>
+                        <Reference type="RULE">EUGEN-T68-R014</Reference>
+                        <Reference type="RULE">EUGEN-T68-R015</Reference>
 
                         <Element>
                             <Term>cbc:StartDate</Term>
