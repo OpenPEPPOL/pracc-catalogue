@@ -1,0 +1,17 @@
+include::guide/settings.adoc[]
+
+= Attachments
+
+
+.UBL example of using external reference
+[source, xml, indent=0]
+----
+include::../{snippet-dir}/snippet-structure-1.xml[tags=external-attachment]
+----
+
+
+.UBL example of using attached binary content
+[source, xml, indent=0]
+----
+include::../{snippet-dir}/snippet-structure-1.xml[tags=binary-attachment]
+----

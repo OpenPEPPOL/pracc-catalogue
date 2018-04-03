@@ -1424,6 +1424,7 @@
                         <Description>Coded description of the specific transaction conditions
                             (purchasing, sales, payment) for an item. 
                         </Description>
+                        <Reference type="CODE_LIST">TransactionCondition</Reference>
                         <Value type="EXAMPLE">SER</Value>
                     </Element>
 
@@ -1712,12 +1713,13 @@
                         <Term>cbc:AttributeID</Term>
                         <Name>Attribute identifier</Name>
                         <Description>An identifier for the attribute to which the measure applies.</Description>
+                        <Reference type="CODE_LIST">UNCL6313</Reference>
                         <Value type="EXAMPLE">GW</Value>
                     </Element>
 
                     <Element cardinality="0..1">
                         <Term>cbc:Measure</Term>
-                        <Description>The measure of the item/packagin unit.</Description>          
+                        <Description>The measure of the item/packaging unit.</Description>          
 
                         <Attribute>
                             <Term>unitCode</Term>

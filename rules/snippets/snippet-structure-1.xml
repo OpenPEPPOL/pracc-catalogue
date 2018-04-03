@@ -18,8 +18,8 @@
 	<cbc:VersionID>1</cbc:VersionID>
 	<!-- tag::validity-doc[] -->
 	<cac:ValidityPeriod>
-		<cbc:StartDate>2018-01-01</cbc:StartDate>
-		<cbc:EndDate>2018-01-31</cbc:EndDate>
+		<cbc:StartDate>2017-01-01</cbc:StartDate>
+		<cbc:EndDate>2017-12-31</cbc:EndDate>
 	</cac:ValidityPeriod>
 	<!-- end::validity-doc[] -->
 	<cac:ReferencedContract>
@@ -106,8 +106,8 @@
 			<cac:Price>
 				<cbc:PriceAmount currencyID="EUR">1.5</cbc:PriceAmount>
 				<cac:ValidityPeriod>
-					<cbc:StartDate>2018-01-01</cbc:StartDate>
-					<cbc:EndDate>2018-01-15</cbc:EndDate>
+					<cbc:StartDate>2017-01-01</cbc:StartDate>
+					<cbc:EndDate>2017-05-15</cbc:EndDate>
 				</cac:ValidityPeriod>
 			</cac:Price>		
 		</cac:RequiredItemLocationQuantity>
