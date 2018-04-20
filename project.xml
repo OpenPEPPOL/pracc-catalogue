@@ -82,7 +82,14 @@
         <Type>CodeList-1</Type>
         <Path>structure/codelist/UNECERec20-11e.xml</Path>
     </Resource>
-
+    <Resource>
+        <Type>CodeList-1</Type>
+        <Path>structure/codelist/TransactionConditions.xml</Path>
+    </Resource>
+    <Resource>
+        <Type>CodeList-1</Type>
+        <Path>structure/codelist/UNCL6313.xml</Path>
+    </Resource>
     <!-- Files -->
 
     <Resource>
