@@ -125,14 +125,14 @@
 				<cbc:Name>Fat % for milk</cbc:Name>
 				<cbc:Value>3%</cbc:Value>
 			</cac:AdditionalItemProperty>
-			<!-- tag::expiry[]-->
+			<!-- tag::expiry[] -->
 			<cac:ItemInstance>
 				<cbc:BestBeforeDate>2017-12-31</cbc:BestBeforeDate>
 				<cac:LotIdentification>
 					<cbc:ExpiryDate>2018-02-28</cbc:ExpiryDate>
 				</cac:LotIdentification>
 			</cac:ItemInstance>		
-			<!-- end::expiry[]-->
+			<!-- end::expiry[] -->
 		</cac:Item>
 		<cac:CallForTendersLineReference>
 			<cbc:LineID>1</cbc:LineID>

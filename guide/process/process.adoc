@@ -1,4 +1,4 @@
-[[process]]
+
 = Business processes
 
 The PEPPOL BIS pre-award catalogue is most normally used in
