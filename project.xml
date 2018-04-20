@@ -20,7 +20,8 @@
         <Type>native:Schematron</Type>
         <Path>rules/sch/parts/BIIRULES-UBL-T68-LOGIC.sch</Path>
         <Title>Rules defined by CEN BII</Title>
-        <Description>Subset of rules provided by CEN BII. Rules duplicate of generated rules are removed.</Description>
+        <Description>Subset of rules provided by CEN BII. Rules duplicate of generated rules are
+            removed.</Description>
     </Resource>
     <Resource>
         <Identifier>eugen</Identifier>
@@ -33,7 +34,8 @@
         <Type>native:Schematron</Type>
         <Path>rules/sch/parts/EMPTY.sch</Path>
         <Title>Empty elements</Title>
-        <Description>Rules to verify instance documents does not contain empty elements.</Description>
+        <Description>Rules to verify instance documents does not contain empty
+            elements.</Description>
     </Resource>
 
     <!-- Code lists -->
@@ -108,7 +110,8 @@
         <Type>native:File</Type>
         <Path>rules/sch/OPENPEPPOL-UBL-T68.sch</Path>
         <Title>Schematron for PEPPOL BIS Pre-Award Catalogue</Title>
-        <Description>Schematron file containing rules according to ISO Schematron. This file also include rules defined for CEN BII Pre-Award Catalogue.</Description>
+        <Description>Schematron file containing rules according to ISO Schematron. This file also
+            include rules defined for CEN BII Pre-Award Catalogue.</Description>
         <Property key="download">OPENPEPPOL-UBL-T68.sch</Property>
     </Resource>
 
