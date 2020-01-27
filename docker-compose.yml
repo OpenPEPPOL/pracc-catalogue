@@ -21,7 +21,7 @@ services:
      - ./target/site/files:/target
 
   validator:
-    image: "difi/vefa-validator"
+    image: "anskaffelser/validator:2.1.0"
     command: build -x -t /src -t -target target/validator -n eu.peppol.pracc.catalogue
     volumes:
      - .:/src
